@@ -1,0 +1,5 @@
+id,level,subject,question,ground_truth,model_answer,evaluation_passed,run_time
+1,2,arithmetic,"Which number should be written in place of the question mark?
+<image1>",60,60,True,14.121
+2,2,arithmetic,"Which bike is most expensive?
+<image1>",A,A,True,6.614
