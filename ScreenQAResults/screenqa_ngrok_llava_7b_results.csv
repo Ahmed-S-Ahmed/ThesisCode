@@ -1,0 +1,5 @@
+id,image,question,ground_truth,model_answer,evaluation_passed,run_time
+16602,images/rico/16602.jpg,What is the price of 500 bids?,The price of 500 bids is $70.,$700,False,5.489
+16603,images/rico/16603.jpg,What is the user name?,The user name is Grace.,"The user name is ""Dash"".",False,2.367
+16605,images/rico/16605.jpg,With which account can the user register?,"The user can register with ""Facebook"" and ""Email"" accounts.","The image shows a screenshot of a mobile phone displaying a Facebook login screen with a Starbucks advertisement in the background. The ad features a Keurig coffee maker and promotes a discount for new customers. The phone's screen is showing the Facebook login interface, where users can enter their email or phone number to sign up or log in to their account.",False,3.502
+16608,images/rico/16608.jpg,What is the email address?,"The email address is ""appcrawler6@gmail.com"".",The email address in the image is awe@pcw.com.,False,2.447
