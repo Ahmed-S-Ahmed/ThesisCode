@@ -1,0 +1,3 @@
+imgname,image_path,question,ground_truth,model_answer,evaluation_passed,run_time
+two_col_103562.png,../DChartQA/ChartQA Dataset/train/png/two_col_103562.png,"As of 2021, how many championship titles had Ferrari won?",16,16,True,3.801
+two_col_2954.png,../DChartQA/ChartQA Dataset/train/png/two_col_2954.png,What game topped the charts with 512.3 million hours watched on Twitch in the first half of 2019?,League of Legends,League of Legends,True,6.581

@@ -1,0 +1,18 @@
+id,image,question,ground_truth,model_answer,evaluation_passed,run_time
+0,train/png/two_col_103562.png,"As of 2021, how many championship titles had Ferrari won?",16,19,False,2.482
+1,train/png/two_col_2954.png,What game topped the charts with 512.3 million hours watched on Twitch in the first half of 2019?,League of Legends,512300000,False,2.683
+2,train/png/two_col_2954.png,How many hours did League of Legends watch on Twitch in the first half of 2019?,512.3,104276,False,2.587
+3,train/png/two_col_61737.png,Which country was the leading pharmaceutical supplier to Germany in 2019?,Switzerland,1.0000000000000000000000000000000,False,3.416
+4,train/png/multi_col_40810.png,What is the region with the highest number of ICUs in Italy?,Lombardy,"1000000
+200000
+300000
+400000
+500000
+600000
+700000
+800000
+900000
+1000000
+
+Italy",False,304.6
+5,train/png/two_col_62773.png,What was the global sales income of certified Fairtrade International coffee in 2018?,76.4,100000000,False,2.372
