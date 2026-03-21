@@ -1,0 +1,3 @@
+id,lang,question,ground_truth,model_answer,evaluation_passed,run_time
+AR_0,AR,ما هو نوع المنتج؟,جبنة طرية,معجون,False,13.958
+AR_9,AR,ما هي المناسبة التي تم فيها تقديم هذه الجائزة؟,تكريم المتفوقين في المدرسة.,نادي مهرم حضر,False,55.908
