@@ -1,0 +1,9 @@
+task_id,task_type,query_text,model_code,gen_time
+1,unknown,"creates exactly the same shape.
+
+Constraint - Use these variables strictly:
+radius=100","radius=100
+t.penup()
+t.goto(0, 0)
+t.pendown()
+t.circle(radius)",48.01941895484924
