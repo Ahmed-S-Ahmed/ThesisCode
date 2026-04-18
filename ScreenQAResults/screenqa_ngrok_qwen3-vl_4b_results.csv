@@ -1,7 +1,0 @@
-id,image,question,ground_truth,model_answer,evaluation_passed,run_time
-16602,images/rico/16602.jpg,What is the price of 500 bids?,The price of 500 bids is $70.,$70,True,3.45
-16603,images/rico/16603.jpg,What is the user name?,The user name is Grace.,Grace,True,2.175
-16605,images/rico/16605.jpg,With which account can the user register?,"The user can register with ""Facebook"" and ""Email"" accounts.",Facebook and email,True,20.505
-16608,images/rico/16608.jpg,What is the email address?,"The email address is ""appcrawler6@gmail.com"".",appcrawler6@gmail.com,True,2.42
-16609,images/rico/16609.jpg,"What is the price of the ""Ghosts"" application?","The ""Ghosts"" application is free.",Free,True,2.004
-16610,images/rico/16610.jpg,"What is the status of ""Terms and Conditions""?","The status is ""on"".",Agreed,False,3.162

@@ -1,3 +1,0 @@
-index,image_id,category,question,ground_truth,model_answer,evaluation_passed,run_time
-0,131625,LandMarks,ما هو الموقع الذي يحيط بالسراي الحمراء ويوفر مساحة للتنزه والأنشطة العامة؟,ساحة واسعة,كورنيش,False,140.629
-1,32236,Architecture,الظاهر في الصورة هو باب ضخم مصنوع من الخشب المزخرف بالذهب، وهذا الباب هو جزء من توسعة المسجد النبوي في عهد الملك فهد.,'TRUE',صحيح,False,87.788

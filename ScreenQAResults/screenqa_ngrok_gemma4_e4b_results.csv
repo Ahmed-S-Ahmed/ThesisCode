@@ -1,3 +1,0 @@
-id,image,question,ground_truth,model_answer,evaluation_passed,run_time
-16602,images/rico/16602.jpg,What is the price of 500 bids?,The price of 500 bids is $70.,$70,True,51.548
-16603,images/rico/16603.jpg,What is the user name?,The user name is Grace.,Grace,True,15.236
