@@ -1,0 +1,5 @@
+id,level,subject,image,question,ground_truth,model_answer,evaluation_passed,run_time,ComplexEval
+1,2,arithmetic,images/1.jpg,"Which number should be written in place of the question mark?
+<image1>",60,60,True,81.97,True
+2,2,arithmetic,images/2.jpg,"Which bike is most expensive?
+<image1>",A,A,True,87.356,True
