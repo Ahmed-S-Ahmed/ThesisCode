@@ -1,3 +1,0 @@
-id,level,subject,image,question,ground_truth,model_answer,evaluation_passed,run_time,ComplexEval
-1,2,arithmetic,images/1.jpg,ما الرقم الذي يجب وضعه مكان علامة الاستفهام؟,60,60,True,277.116,True
-2,2,arithmetic,images/2.jpg,أي دراجة هي الأغلى؟,A,A,True,177.041,True

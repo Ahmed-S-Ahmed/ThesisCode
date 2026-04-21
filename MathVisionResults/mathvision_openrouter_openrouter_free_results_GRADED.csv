@@ -1,0 +1,9 @@
+﻿id,level,subject,image,question,ground_truth,model_answer,evaluation_passed,run_time,ComplexEval
+1,2,arithmetic,images/1.jpg,"Which number should be written in place of the question mark?
+<image1>",60,60,True,16.68,True
+2,2,arithmetic,images/2.jpg,"Which bike is most expensive?
+<image1>",A,A,True,1.881,True
+3,1,metric geometry - length,images/3.jpg,"Which kite has the longest string?
+<image1>",C,C,True,2.154,True
+4,1,counting,images/4.jpg,"How many different digits can you find in this picture?
+<image1>",6,A,False,4.091,False
