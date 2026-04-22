@@ -1,0 +1,3 @@
+﻿id,image,question,ground_truth,model_answer,evaluation_passed,run_time
+16602,images/rico/16602.jpg,What is the price of 500 bids?,$70,$70,1.0,3.98
+16603,images/rico/16603.jpg,What is the user name?,Grace,Grace,1.0,2.47

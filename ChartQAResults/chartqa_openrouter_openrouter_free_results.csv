@@ -1,0 +1,3 @@
+﻿id,imgname,query,ground_truth,type,model_answer,evaluation_passed,run_time
+0,two_col_22779.png,How many colleges did Bengaluru have in 2019?,880,augmented,880,True,8.827
+1,two_col_22779.png,What is the capital of Rajasthan?,Jaipur,augmented,Jaipur,True,10.7

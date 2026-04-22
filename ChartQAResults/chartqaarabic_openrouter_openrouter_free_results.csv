@@ -1,0 +1,3 @@
+﻿id,imgname,query,ground_truth,type,model_answer,evaluation_passed,run_time
+0,two_col_22779.png,كم عدد الكليات التي كانت في بنغالورو عام 2019؟,٨٨٠,augmented,880,True,2.712
+1,two_col_22779.png,ما هي عاصمة راجستان؟,جايبور,augmented,جايبور,True,55.14
