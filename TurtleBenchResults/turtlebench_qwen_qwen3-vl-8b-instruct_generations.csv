@@ -1,5 +1,5 @@
 ﻿task_id,question_id,image_path,query_text,ground_truth_code,model_response,code_generation_time
-1,q4,..\Datasets\TurtleBench\Tasks\1\image\1.png,"recreates the given shape + its horizontal and vertical diameters.
+1,q4,../Datasets/TurtleBench/Tasks/1/image/1.png,"recreates the given shape + its horizontal and vertical diameters.
 
 Constraint - Use these variables strictly:
 radius=100","t.circle(radius)
@@ -10,7 +10,7 @@ t.left(90)
 t.circle(radius, 90)
 t.left(90)
 t.forward(2 * radius)
-","radius = 100
+","import math
 t.penup()
 t.goto(0, -radius)
 t.pendown()
@@ -22,13 +22,13 @@ t.goto(radius, 0)
 t.penup()
 t.goto(0, -radius)
 t.pendown()
-t.goto(0, radius)",6.9
-1,q1,..\Datasets\TurtleBench\Tasks\1\image\1.png,"creates exactly the same shape.
+t.goto(0, radius)",1.97
+1,q1,../Datasets/TurtleBench/Tasks/1/image/1.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
 radius=100","t.circle(radius)
-","radius=100
+","import math
 t.penup()
 t.goto(0, -radius)
 t.pendown()
-t.circle(radius)",4.9
+t.circle(radius)",1.04

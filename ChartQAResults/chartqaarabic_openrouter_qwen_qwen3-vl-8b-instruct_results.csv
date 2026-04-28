@@ -1,0 +1,5 @@
+﻿id,imgname,query,ground_truth,ground_truth_ar,type,model_answer,evaluation_passed,run_time
+0,two_col_22779.png,كم عدد الكليات التي كانت في بنغالورو عام 2019؟,880,٨٨٠,augmented,880,True,3.505
+1,two_col_22779.png,ما هي عاصمة راجستان؟,Jaipur,جايبور,augmented,Jaipur,True,0.477
+2,two_col_2902.png,في أي عام انخفض متوسط حجم الأسرة إلى 2.36؟,2004,٢٠٠٤,augmented,2002,False,1.33
+3,two_col_2902.png,ما هو متوسط عدد الأفراد في الأسرة في المملكة المتحدة عام 2020؟,2.39,٢.٣٩,augmented,2.39,True,0.538

@@ -1,6 +1,0 @@
-id,image,question,ground_truth,model_answer,evaluation_passed,run_time
-16602,images/rico/16602.jpg,What is the price of 500 bids?,$70,$70,1.0,11.64
-16603,images/rico/16603.jpg,What is the user name?,Grace,No,0.0,7.88
-16605,images/rico/16605.jpg,With which account can the user register?,FACEBOOK,FACEBOOK,1.0,11.41
-16608,images/rico/16608.jpg,What is the email address?,appcrawler6@gmail.com,appcrawler6@gmail.com,1.0,8.44
-16609,images/rico/16609.jpg,"What is the price of the ""Ghosts"" application?",Free,Free,1.0,7.33
