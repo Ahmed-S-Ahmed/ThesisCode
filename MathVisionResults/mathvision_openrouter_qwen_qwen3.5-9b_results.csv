@@ -1,0 +1,13 @@
+﻿id,level,subject,image,question,ground_truth,model_answer,evaluation_passed,run_time
+1,2,arithmetic,images/1.jpg,"Which number should be written in place of the question mark?
+<image1>",60,60,True,2.734
+2,2,arithmetic,images/2.jpg,"Which bike is most expensive?
+<image1>",A,A,True,5.725
+3,1,metric geometry - length,images/3.jpg,"Which kite has the longest string?
+<image1>",C,C,True,10.111
+4,1,counting,images/4.jpg,"How many different digits can you find in this picture?
+<image1>",6,2,False,22.401
+5,2,arithmetic,images/5.jpg,"Which number do you have to write in the last daisy?
+<image1>",61,61,True,4.43
+6,3,logic,images/6.jpg,"Misty the cat has five kittens: two of them are striped, one spotty, the rest of them are absolutely white. In which picture can we see the kittens of Misty, knowing that the ears of one of them are of different colour?
+<image1>",D,D,True,13.463
