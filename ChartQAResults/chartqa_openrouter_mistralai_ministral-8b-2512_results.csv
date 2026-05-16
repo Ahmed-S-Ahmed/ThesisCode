@@ -5174,7 +5174,6 @@ Giovani dos Santos: Not listed",True,1.739
 5155,multi_col_80495.png,How many terrorist attacks were made in Africa in 2010?,879,augmented,879,True,0.667
 5156,two_col_42885.png,What is the oldest age group in Great Britain?,65+,augmented,65+,True,1.182
 5157,two_col_60422.png,Who holds the record for most tries scored at the RWC?,Iwan Tukalo,augmented,Gavin Hastings,False,1.628
-5158,two_col_60422.png,Who holds the record for most tries scored at the Rugby World Cup?,Gavin Hastings,augmented,Gavin Hastings,True,0.889
 5159,two_col_43027.png,"What was the infant mortality rate per 1,000 live births in Jordan in 2019?",13.4,augmented,13.4,True,0.766
 5160,multi_col_81010.png,How much did the number of BLIK transactions in this category increase compared to February 2020?,542,augmented,542%,True,1.134
 5161,two_col_81359.png,How many households in Hong Kong used a multichannel TV service in 2010?,1.6,augmented,1.64 million,True,0.696
@@ -7579,7 +7578,6 @@ Madrid: 11.5%",True,1.019
 7542,two_col_103839.png,How many men were confirmed infected with COVID-19?,908,augmented,908,True,0.666
 7543,multi_col_60608.png,What was the literacy rate among males living in rural areas in Kerala in 2011?,95,augmented,100%,False,1.295
 7544,two_col_41853.png,What country had the highest fixed-line telephone penetration rate in 2019?,Barbados,augmented,Barbados,True,0.909
-7545,two_col_41853.png,What country had the highest fixed-line phone penetration rate in 2019?,Uruguay,augmented,Barbados,False,1.386
 7546,two_col_41853.png,How many fixed phone subscriptions per 100 Barbadians were there in 2019?,44.61,augmented,44.61,True,1.202
 7547,two_col_4546.png,How much revenue did Aldi Einkauf GmbH & Ko. oHG generate in 2019?,106.33,augmented,106.33 billion U.S. dollars,True,1.129
 7548,two_col_4546.png,How much revenue did Schwarz Gruppe generate in the U.S. in 2019?,126.12,augmented,126.12,True,1.783
@@ -7770,7 +7768,6 @@ Madrid: 11.5%",True,1.019
 7738,two_col_4207.png,What was the value of U.S. investments made in Russia in 2019?,14.44,augmented,14.44,True,0.824
 7739,two_col_22101.png,What country accounted for the largest share of foreign tourist arrivals in India in 2019?,Bangladesh,augmented,Bangladesh,True,1.245
 7740,two_col_20837.png,What was the second largest country by stock market share?,China,augmented,Japan,False,1.152
-7741,two_col_20837.png,What is the second largest country by stock market share?,Japan,augmented,Japan,True,0.971
 7742,two_col_20837.png,What percentage of world stocks were held by stock markets in the United States in 20201?,55.9,augmented,55.9%,True,0.8
 7743,two_col_104334.png,What is the name of the sleep and meditation sounds generator?,Relax Melodies,augmented,Relax Melodies,True,0.788
 7744,two_col_103663.png,Which stock exchange raised 2.5 billion U.S. dollars in IPOs in 2018?,Thailand,augmented,Thailand,True,0.694
@@ -7916,7 +7913,6 @@ Madrid: 11.5%",True,1.019
 7885,two_col_22504.png,How much revenue did Express Scripts generate in 2008?,21941.2,augmented,21941.2,True,1.027
 7886,two_col_5625.png,What was the market leader in the United Kingdom?,Tesco,augmented,Morrisons,False,0.785
 7887,two_col_5625.png,What is the most popular supermarket chain in the UK?,Morrisons,augmented,Morrisons,True,0.676
-7888,two_col_5625.png,What was the most popular supermarket chain in the UK?,Lidl,augmented,Morrisons,False,0.921
 7889,two_col_40631.png,What was the market share of DR P3?,12.5,augmented,12.5%,True,1.654
 7890,two_col_40631.png,What was the market share of Danish Broadcasting Corporation's radio channel in June 2021?,44.9,augmented,"44.9%, 12.5%, 8.7%, 6.5%, 3.1%, 1.2%, 0.7%, 0.1%",True,1.047
 7891,two_col_40631.png,What was the audience share of DR P1?,8.7,augmented,8.7%,True,1.087
@@ -9122,7 +9118,6 @@ Sum: 13675 billion GBP",True,1.148
 9037,multi_col_80666.png,How many tourists arrived for overnight stays in Curaçao in 2020?,174871,augmented,174871,True,0.949
 9038,multi_col_80666.png,What was the lowest number of cruise arrivals in Curaçao in 2020?,256033,augmented,256033,True,0.782
 9039,two_col_1508.png,Which pharmaceutical company had the highest gross margin in 2019?,Amgen,augmented,Novo Nordisk,False,1.333
-9040,two_col_1508.png,What pharmaceutical company had the highest gross margin in 2019?,Amgen,augmented,Novo Nordisk,False,0.831
 9042,two_col_1508.png,What was Novo Nordisk's gross margin in 2019?,82.6,augmented,82.6%,True,0.862
 9043,two_col_42849.png,What was Swaziland's gross domestic product in 2019?,4.5,augmented,3.95,False,0.816
 9044,two_col_20040.png,Which clothing retailer earned the highest revenue in Germany in 2013?,Amazon.de,augmented,Amazon.de,True,1.167
@@ -11201,7 +11196,6 @@ Referenced attractive: 13.9%",True,1.459
 11061,two_col_103496.png,What was the infant mortality rate in the Kyrgyz Republic in 2019?,16.4,augmented,16.4,True,0.738
 11062,two_col_43475.png,Which country was the most popular long-haul summer holiday destination in 2015?,Spain,augmented,France,False,0.825
 11063,two_col_43475.png,What neighbor country received roughly four percent of the long-haul Dutch tourists in 2015?,Belgium,augmented,Belgium,True,0.737
-11064,two_col_43475.png,Which country was the most popular destination to spend a long-haul summer holiday in 2015?,France,augmented,France,True,0.719
 11065,two_col_43475.png,What is the only intercontinental country in the top 10 long haul summer destinations?,Great Britain,augmented,United States,False,0.668
 11066,two_col_43475.png,What percentage of Dutch long-haul summer holiday tourists come from the United States?,2.5,augmented,2.5%,True,1.02
 11067,two_col_101928.png,What was Turkey's poverty headcount ratio in 2018?,14.4,augmented,14.4%,True,0.845
@@ -17846,7 +17840,6 @@ Boxed: 2011 - 200, 2012 - 200, 2013 - 230, 2014 - 200, 2015 - 184, 2016 - 230, 2
 17677,two_col_23194.png,"What was the homicide rate per 100,000 inhabitants in Ecuador in 2019?",6.7,augmented,6.7,True,0.79
 17678,two_col_43870.png,What was New York Life Insurance company's revenue in dollars in 2020?,46.71,augmented,46.71 billion U.S. dollars,True,0.708
 17679,multi_col_80796.png,How many people immigrated to Norway in 2020?,38075,augmented,40000,False,1.524
-17680,multi_col_80796.png,How many people emigrated to Norway in 2020?,26744,augmented,30000,False,0.741
 17681,multi_col_80796.png,How many people immigrated to Norway in 2011?,79498,augmented,80000,True,0.955
 17682,two_col_62360.png,What was the Russian film and series streaming industry forecast to grow by in 2020?,51.6,augmented,51.6%,True,0.81
 17683,two_col_62360.png,What percentage was the food and grocery delivery segment predicted to expand by in 2020?,46.8,augmented,46.8%,True,1.301
@@ -18044,7 +18037,6 @@ China: 21.01 million GBP",True,1.015
 17858,multi_col_60273.png,What is the total number of net metering customers in the U.S. as of 2019?,2376753,augmented,"2,438,193",True,0.895
 17859,two_col_100821.png,What was the value of the outlet personal luxury goods market worldwide in 2020?,30.38,augmented,30.38,True,1.308
 17860,two_col_41902.png,What was the value of M&A deals in Asia in December 2020?,79.3,augmented,79.3,True,2.117
-17861,two_col_41902.png,What was the value of M&A deals in Asia in December of 2020?,80.5,augmented,79.3,True,0.756
 17862,two_col_2729.png,What was HP's net earnings in 2018?,5.33,augmented,5.33,True,2.135
 17863,two_col_2729.png,What was HP's net earnings in the 2020 fiscal year?,2.8,augmented,2.8,True,2.004
 17864,two_col_63809.png,What was South and Central America's export value of food in 2014?,192,augmented,192,True,1.181
@@ -18608,7 +18600,6 @@ Bancassurance: 19.9%, 20.7%, 21%, 19.8%, 18.7%",False,1.262
 18404,two_col_62535.png,What was the retail value of the 87.7 million CDs shipped in 2017?,1.06,augmented,1.06,True,0.829
 18405,two_col_3350.png,What was the death rate for all causes in the United States between 1950 and 2018?,723.6,augmented,"1450, 1300, 1200, 1050, 950, 900, 850, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800, 800",False,3.061
 18406,two_col_62351.png,What law firm reported the highest profit per lawyer in the U.S. in 2020?,Wachtell,augmented,Wachtell,True,0.787
-18407,two_col_62351.png,Which law firm reported the highest profit per lawyer in the U.S. in 2020?,Kirkland,augmented,Wachtell,False,2.787
 18408,multi_col_100532.png,What was the amount of industrial roundwood imports in the United States in 2018?,4258,augmented,4300,True,0.795
 18409,multi_col_100532.png,How many cubic feet of industrial roundwood were exported in the United States in 2018?,2457,augmented,2500,True,0.774
 18410,two_col_82878.png,What was Panama's Gini coefficient as of 2017?,49.9,augmented,49.9,True,0.807
@@ -18999,7 +18990,6 @@ Bancassurance: 19.9%, 20.7%, 21%, 19.8%, 18.7%",False,1.262
 18796,two_col_82952.png,How many deaths were registered among Swedes in the oldest age group in 2019?,53,augmented,53,True,0.685
 18797,two_col_82952.png,How many deaths were there in traffic accidents between 15 and 44 years in Sweden in 2019?,99,augmented,99,True,0.79
 18798,two_col_452.png,What was the second largest country by stock market share?,China,augmented,Japan,False,0.75
-18799,two_col_452.png,What is the second largest country by stock market share?,Japan,augmented,Japan,True,1.23
 18800,two_col_452.png,What percentage of world stocks were held by stock markets in the United States in 20201?,55.9,augmented,55.9%,True,0.741
 18801,multi_col_568.png,What was Spain's government revenue in 2019?,487.8,augmented,480,True,0.722
 18802,multi_col_568.png,What was Spain's government spending in 2019?,525.39,augmented,500,True,0.644
@@ -28562,7 +28552,6 @@ No",True,0.972
 27859,two_col_2005.png,What the sum of distribution production of corn of china and brazil country,32.49,human,32.49%,True,0.691
 27860,two_col_2014.png,Which country has the highest economic trade impact in million US dollars ?,European Union,human,European Union,True,0.834
 27861,two_col_2014.png,What the difference of economic trade impact in million US dollars between japan and UK,305,human,305,True,1.165
-27862,two_col_392.png,What is the forecast number of social network users in India in 2023,447.9,human,447.9,True,4.368
 27863,two_col_392.png,What is the average forecast on social network users in India for the next two years?,435.3,human,435.3,True,0.693
 27864,two_col_426.png,What was the number of active coronavirus cases?,568.11,human,568.11,True,0.648
 27865,two_col_426.png,What is the difference between the confirmed and recovered numbers?,976.77,human,177.77,False,1.026
@@ -31637,7 +31626,6 @@ August 2017, December 2017, January 2018, June 2018, November 2018, March 2019, 
 30823,two_col_478.png,How many unique users did Facebook Messenger have in September 2019?,106.4,augmented,106.4,True,16.397
 30824,two_col_478.png,How many unique users did Snapchat have in September 2019?,45.98,augmented,45.98,True,13.339
 30825,two_col_1435.png,What was the unadjusted unemployment rate of women in May of 2021?,5.4,augmented,5.2%,True,0.741
-30826,two_col_1435.png,What was the unadjusted unemployment rate of women in May 2021?,5.2,augmented,5.2%,True,0.698
 30827,two_col_60383.png,What is the market value for raw materials for medical disposables predicted to be in 2025?,20400,augmented,20400,True,0.672
 30828,two_col_60383.png,What was the value of the demand for raw materials for medical disposables in 2015?,12220,augmented,12220,True,4.956
 30829,two_col_60383.png,What was the value of the demand for raw materials for medical disposables in 2005?,6880,augmented,6880,True,0.759
@@ -32045,7 +32033,6 @@ August 2017, December 2017, January 2018, June 2018, November 2018, March 2019, 
 31235,two_col_50.png,Who is the career leader in prize money earnings on the ATP tennis World Tour?,Novak Djokovic,augmented,Novak Djokovic,True,0.84
 31236,two_col_50.png,How much money does Novak Djokovic earn on the ATP tennis World Tour?,143.63,augmented,143.63,True,0.915
 31237,two_col_4531.png,What was Yelp's revenue in the first quarter of 2021?,232.1,augmented,233.2,True,0.879
-31238,two_col_4531.png,How much was Yelp's revenue in the first quarter of 2021?,249.9,augmented,233.2,False,1.029
 31239,multi_col_40317.png,What was Snapchat's ARPU in the fourth quarter of 2020?,5.49,augmented,10.5,False,0.762
 31240,multi_col_40317.png,What was Snapchat's ARPU per quarter as of the fourth quarter of 2020?,7.19,augmented,10.5,False,0.676
 31241,two_col_20329.png,What company captured a sales share of about 69 percent of total Inditex Group's sales in 2020?,Zara,augmented,Zara,True,0.679
