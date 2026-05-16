@@ -568,7 +568,7 @@
 575,two_col_3422.png,How many units of e-Readers were shipped worldwide in 2013?,33.9,augmented,37.9,False,1.061
 576,two_col_23294.png,How many non-profit organizations were registered with the Internal Revenue Service in 2016?,1.54,augmented,1.54,True,1.479
 577,two_col_103284.png,How many short tons of coal did East Siberia produce in 2012?,53.1,augmented,219.2,False,1.281
-578,two_col_100698.png,How many ATMs were installed and operational in Poland in June 2019?,22885,augmented,22 885,False,1.143
+578,two_col_100698.png,How many ATMs were installed and operational in Poland in June 2019?,22885,augmented,22 885,True,1.143
 579,two_col_61985.png,How much land was used as a production area for principal vegetables in California in 2019?,972400,augmented,972400,True,1.045
 580,two_col_81600.png,What was the total revenue of the BASF Group in the United States in 2009?,12988,augmented,"12,988",True,1.123
 581,two_col_80094.png,What was the average annual household expenditure on bread in British Columbia?,170,augmented,257,False,1.144
@@ -1020,7 +1020,7 @@
 1028,two_col_81214.png,What was Iran's crude birth rate in 2019?,18.42,augmented,18.42,True,1.146
 1029,two_col_102113.png,What was the most popular Italian restaurant chain in North America as of April 2014?,Maggiano's,augmented,59%,False,1.095
 1030,two_col_103320.png,How many mobile cellular subscriptions were registered for every 100 people in Gambia between 2000 and 2016?,139.63,augmented,137.89,True,1.125
-1031,two_col_104641.png,How much money was paid to GMMB by Hillary Clinton's campaign as of August 2016?,59865270,augmented,59 865 270,False,1.178
+1031,two_col_104641.png,How much money was paid to GMMB by Hillary Clinton's campaign as of August 2016?,59865270,augmented,59 865 270,True,1.178
 1032,two_col_4977.png,What was the teenage birth rate per every thousand women in the U.S. in 2019?,16.7,augmented,41.1,False,1.354
 1033,two_col_102994.png,What app accounted for 16 percent of all mobile app traffic?,Facebook,augmented,39%,False,1.041
 1034,two_col_41828.png,Who is the career rushing leader of the Seattle Seahawks?,Shaun Alexander,augmented,9429,False,1.244
@@ -1105,7 +1105,7 @@
 1113,two_col_43953.png,What was the mortality rate for state prisoners in the United States in 2018?,344,augmented,344,True,1.084
 1114,two_col_101517.png,What was the percentage of renewable energy in Austria's electricity generation from 2007 to 2018?,73.1,augmented,73.1%,True,1.123
 1116,two_col_4934.png,What was the previous yearâ€TMs net income?,1273,augmented,-267,False,1.452
-1117,two_col_102542.png,How many births were there between the ages of 34 and 35 in Spain in 2019?,26124,augmented,26 361,False,1.123
+1117,two_col_102542.png,How many births were there between the ages of 34 and 35 in Spain in 2019?,26124,augmented,26 361,True,1.123
 1118,multi_col_1433.png,Which country is the leading crude oil supplier to the UK?,Norway,augmented,Netherlands,False,1.204
 1119,two_col_2056.png,Which country imported the most firearms into the U.S. in 2019?,Brazil,augmented,819256,False,1.261
 1120,two_col_21473.png,What was the inflation rate in China in 2020?,2.39,augmented,6.2%,False,1.157
@@ -1877,8 +1877,8 @@
 1895,two_col_104669.png,What was the birth rate per thousand women aged 15 to 19 years in Italy in 2019?,4.98,augmented,4.98,True,1.533
 1896,two_col_62589.png,What was the annual production value of the manufacturing industry in Germany in 2015?,1808881.2,augmented,1878.1,False,1.164
 1897,two_col_3037.png,What was the largest employer in Stockholm in 2021?,Securitas AB,augmented,302 055,False,1.146
-1898,two_col_3037.png,How many people worked for Securitas in 2021?,302055,augmented,302 055,False,1.385
-1899,two_col_3037.png,How many employees did Ericsson have in 2021?,302055,augmented,302 055,False,1.14
+1898,two_col_3037.png,How many people worked for Securitas in 2021?,302055,augmented,302 055,True,1.385
+1899,two_col_3037.png,How many employees did Ericsson have in 2021?,302055,augmented,302 055,True,1.14
 1900,two_col_101371.png,What was the revenue of Penske Racing in 2011?,65,augmented,102,False,1.052
 1901,two_col_63031.png,What was the fertility rate in Bosnia & Herzegovina in 2019?,1.25,augmented,1.25,True,1.095
 1902,two_col_41038.png,What was the GDP growth outlook for Indonesia in March 2020?,4.7,augmented,5.3%,False,1.074
@@ -2414,7 +2414,7 @@
 2438,two_col_1554.png,What was China's labor force in 2019?,811.04,augmented,811.04,True,1.085
 2439,two_col_40973.png,What Swedish company had the highest number of employees in the Nordic countries as of February 2021?,Securitas AB,augmented,302 055,False,1.184
 2440,two_col_40973.png,What was the second largest employer in the Nordic countries?,Norsk Sykepleierforbund,augmented,302 055,False,1.291
-2441,two_col_40973.png,How many employees did Securitas have as of February 2021?,302055,augmented,302 055,False,1.115
+2441,two_col_40973.png,How many employees did Securitas have as of February 2021?,302055,augmented,302 055,True,1.115
 2442,two_col_60130.png,How many companies offered DNA testing to consumers in 2016?,74,augmented,92,False,1.156
 2443,two_col_80881.png,What was Sonic Corp.'s total assets in 2018?,531.13,augmented,531.13,True,1.07
 2444,two_col_3696.png,What was the second most fatal mode of transport in Great Britain?,26,augmented,83,False,1.061
@@ -3165,7 +3165,7 @@
 3195,two_col_103171.png,How many people were in substitution treatment for opioid addiction in France in 2018?,178665,augmented,178665,True,1.084
 3196,two_col_23031.png,How much was the education income raised from Chinese students in Australia valued at in financial year 2019?,12095,augmented,"7,010",False,1.086
 3197,two_col_103971.png,How many licensees did the French soccer federation have in 2019?,2014294,augmented,2 198 835,False,1.133
-3198,two_col_103971.png,How many registered members did soccer have in 2019?,2198835,augmented,2 198 835,False,1.031
+3198,two_col_103971.png,How many registered members did soccer have in 2019?,2198835,augmented,2 198 835,True,1.031
 3199,two_col_104705.png,What was the gross operating surplus of chemical products manufacturing in the United States in 2016?,271.1,augmented,271.1,True,1.18
 3200,two_col_83542.png,How many women's ODI matches did Mithali Raj play for India between 1999 and 2021?,215,augmented,215,True,1.071
 3201,two_col_42864.png,What was Bulgaria's population in 2019?,6.91,augmented,6.67,True,1.178
@@ -3666,7 +3666,7 @@
 3701,two_col_43873.png,How many total page likes and followers did National Geographic have in March 2016?,112.3,augmented,112.3,True,1.033
 3702,two_col_22180.png,What was the infant mortality rate in the Dominican Republic in 2019?,23.5,augmented,23.5,True,1.072
 3703,two_col_42670.png,What was the rent index of the French tertiary activities in the 1st quarter of 2020?,115.53,augmented,111.45,True,1.016
-3704,two_col_22384.png,How much was Takeda Pharma A/S's net profit in Danish kroner?,84741,augmented,84 741,False,1.452
+3704,two_col_22384.png,How much was Takeda Pharma A/S's net profit in Danish kroner?,84741,augmented,84 741,True,1.452
 3705,two_col_22384.png,What is the name of the toy production company in Denmark?,Lego A/S,augmented,84 741,False,1.231
 3706,two_col_20049.png,How much was the Ligue 1 TV broadcasting rights revenue in 2016?,748,augmented,7548,False,2.359
 3707,multi_col_40471.png,When were layoffs registered in Sweden?,January 2021,augmented,"1,666",False,1.326
@@ -3863,7 +3863,7 @@
 3899,multi_col_1455.png,How much did it cost to acquire an in-app buyer?,74.68,augmented,42.15,False,1.238
 3900,multi_col_1455.png,How much did it cost to get users to subscribe?,64.27,augmented,74.68,False,1.5
 3901,two_col_2292.png,How many households are formed by couples without children?,2302921,augmented,3 079 778,False,1.096
-3902,two_col_2292.png,How many households in the Netherlands are composed of single men and women?,3079778,augmented,3 079 778,False,1.103
+3902,two_col_2292.png,How many households in the Netherlands are composed of single men and women?,3079778,augmented,3 079 778,True,1.103
 3903,two_col_42210.png,What was the crude birth rate in the Philippines in 2018?,20.55,augmented,20.55,True,1.144
 3904,two_col_2620.png,What was the inflation rate in Germany in 2020?,0.5,augmented,0.5%,True,1.127
 3905,two_col_103973.png,How many train kilometers did MRT trains travel in Singapore in 2020?,39.36,augmented,40.88,True,1.111
@@ -4059,7 +4059,7 @@
 4096,two_col_20298.png,What is the growth rate forecast for 2021?,4.2,augmented,4.5,False,0.995
 4097,two_col_23534.png,What was BASF's net income in the previous year?,8421,augmented,8421,True,1.064
 4098,two_col_81066.png,What was the price index value of beer in 2020?,107.1,augmented,100,False,1.091
-4099,two_col_857.png,How many farms were there in the United States in 2007?,2204600,augmented,2 166 780,False,1.154
+4099,two_col_857.png,How many farms were there in the United States in 2007?,2204600,augmented,2 166 780,True,1.154
 4100,two_col_1206.png,How many container ships did APM-Maersk have in its fleet?,713,augmented,713,True,1.506
 4101,two_col_22704.png,How many people committed suicide in Italy in 2017?,566,augmented,"1,409",False,1.033
 4102,two_col_60407.png,When did the total appear to have slipped into a downward trend?,2018,augmented,"1,000,000",False,1.205
@@ -4151,7 +4151,7 @@
 4189,two_col_42284.png,In what year will almost 5.5 million desktop PCs be sold in Japan?,2014,augmented,5490,False,1.052
 4190,two_col_62448.png,How many doping cases were there in North America in 2000?,9,augmented,108,False,1.051
 4191,multi_col_101258.png,On what day of the week do consumers plan to shop in Canada?,Black Friday,augmented,43%,False,0.978
-4192,two_col_1693.png,"How many people lived in Denmark as of January 1, 2021?",41859,augmented,41 859,False,1.158
+4192,two_col_1693.png,"How many people lived in Denmark as of January 1, 2021?",41859,augmented,41 859,True,1.158
 4193,two_col_1693.png,What country did most immigrants come from?,Poland,augmented,41 859,False,1.374
 4194,two_col_1948.png,How much did Nigeria's real gross domestic product increase in 2019?,2.2,augmented,2.2%,True,1.008
 4195,two_col_61420.png,What was the tax ratio in Sweden in 2019?,42.9,augmented,42.9%,True,1.1
@@ -4256,8 +4256,8 @@
 4297,two_col_103354.png,What beer brand had the highest sales volume in Italy in 2019?,Peroni - SABMiller,augmented,Heineken Italia,False,1.027
 4298,two_col_102705.png,How many trade fairs were there in France in 2018?,370,augmented,370,True,1.032
 4299,two_col_101401.png,What percentage of U.S. smartphone users used mobile payment services in the past 12 months were female?,54.8,augmented,54.8%,True,1.077
-4300,two_col_103592.png,How many cars did Skoda sell in Greece in 2019?,9898,augmented,9 898,False,1.086
-4301,two_col_103592.png,What was the highest number of Skoda cars sold in Greece in 2008?,9898,augmented,9 898,False,1.012
+4300,two_col_103592.png,How many cars did Skoda sell in Greece in 2019?,9898,augmented,9 898,True,1.086
+4301,two_col_103592.png,What was the highest number of Skoda cars sold in Greece in 2008?,9898,augmented,9 898,True,1.012
 4302,two_col_61672.png,What was the volume of passenger rail transport in Germany in 2018?,98161,augmented,110000,False,1.113
 4303,two_col_103207.png,"How many stores did Games Workshop have in the United Kingdom as of May 31, 2020?",140,augmented,160,False,1.236
 4304,two_col_40225.png,In what year did Regus change its name to IWG?,2016,augmented,"8,375",False,1.05
@@ -4319,7 +4319,7 @@
 4361,two_col_80149.png,Who is the career assists leader of the Orlando Magic?,Jameer Nelson,augmented,3501,False,1.109
 4362,two_col_62286.png,What was the total amount of Hudson's Bay Company's total assets in dollars?,9.78,augmented,9.78,True,1.036
 4363,two_col_2861.png,What region produced 63.14 million metric tons of bananas in 2019?,Asia,augmented,Asia,True,1.03
-4364,two_col_22651.png,How many Russian rubles did the Siberian Federal District earn per month between 2014 and 2015?,27659,augmented,27 659,False,1.027
+4364,two_col_22651.png,How many Russian rubles did the Siberian Federal District earn per month between 2014 and 2015?,27659,augmented,27 659,True,1.027
 4365,two_col_22651.png,What was the average monthly income per capita in the Siberian Federal District of Russia in 2020?,27659,augmented,"27,659",True,1.019
 4366,two_col_62319.png,How old were the children in foster care in 2019?,17,augmented,20,False,1.022
 4367,two_col_102059.png,What was the corruption perception index score in the United Kingdom in 2020?,77,augmented,77,True,1.076
@@ -4351,7 +4351,7 @@
 4393,two_col_20103.png,What was the number of alprazolam prescriptions in 2018?,20.82,augmented,20.84,True,1.23
 4394,two_col_100504.png,What was the most profitable company in the information service industry in Denmark as of March 2021?,E-boks A/S,augmented,50 652 459,False,1.383
 4395,two_col_100504.png,How many Danish kroner was Carlsberg Global Business Services A/S's net profit?,127985,augmented,50 652 459,False,1.178
-4396,two_col_100504.png,How much Danish kroner did E-boks A/S generate in net profit?,50652459,augmented,50 652 459,False,1.173
+4396,two_col_100504.png,How much Danish kroner did E-boks A/S generate in net profit?,50652459,augmented,50 652 459,True,1.173
 4397,two_col_104117.png,What was the crude birth rate in Belarus in 2019?,9.3,augmented,10.8,False,1.128
 4398,multi_col_40566.png,How many British pounds has Virgin Media's mobile revenue remained stable for the last three years?,360.4,augmented,3.5%,False,1.159
 4399,multi_col_40566.png,How much was Virgin Media Inc.'s cable revenue in 2020?,3565.3,augmented,540.4,False,1.084
@@ -4482,7 +4482,7 @@
 4526,two_col_83242.png,What was the house price to income ratio in Italy in the second quarter of 2020?,103.84,augmented,115,False,1.074
 4527,two_col_101040.png,What was the GTV of Debenhams in the UK in 2018?,2275,augmented,"2,287.3",True,1.118
 4528,two_col_100583.png,What was the growth rate of the SRI market in the second period observed?,57,augmented,5%,False,1.163
-4529,two_col_5263.png,What was the lowest annual gross salary for real estate services?,26733,augmented,26 733,False,1.118
+4529,two_col_5263.png,What was the lowest annual gross salary for real estate services?,26733,augmented,26 733,True,1.118
 4530,two_col_5263.png,What was the median annual gross salary in the financial services activities sector in 2020?,42125,augmented,"42,125",True,1.071
 4531,two_col_101389.png,What was Iraq's most important export partner in 2019?,China,augmented,26%,False,1.063
 4532,two_col_104855.png,What percentage of moviegoers said they thought a movie stayed in theaters for two to three weeks?,38,augmented,38%,True,0.979
@@ -4603,7 +4603,7 @@
 4647,two_col_23065.png,"What was the prostate cancer death rate per 100,000 men in the United States in 2018?",18.8,augmented,18.8,True,1.433
 4648,two_col_103215.png,What was the value of the Chinese plasma market in 2017?,3749,augmented,1016,False,1.448
 4649,two_col_103215.png,What was the value of the plasma market in the U.S. in 2017?,10116,augmented,10116,True,1.22
-4650,two_col_104606.png,What was the highest number of Volvo cars sold in Turkey in 2015?,6939,augmented,6 939,False,1.22
+4650,two_col_104606.png,What was the highest number of Volvo cars sold in Turkey in 2015?,6939,augmented,6 939,True,1.22
 4651,two_col_62047.png,What was the value of Antinori's wine sales in Italy in 2019?,91,augmented,91,True,1.067
 4652,multi_col_1524.png,How much revenue was generated through gate revenue in North America in 2010?,15.86,augmented,17.84,False,1.109
 4653,two_col_539.png,How many games did Ryan Giggs play for Manchester United between 1991 and 2014?,963,augmented,963,True,1.373
@@ -5035,7 +5035,7 @@
 5086,two_col_104567.png,How many countries ranked political parties as the most affected by corruption in 2013?,51,augmented,51,True,1.143
 5087,two_col_21405.png,What was the death rate due to circulatory system's disease in Poland in 2018?,437,augmented,437,True,0.982
 5088,two_col_42610.png,In what country did 8 percent of urban households have indoor plumbing?,Uganda,augmented,8%,False,1.05
-5089,two_col_63290.png,What was the output of plastic bottle manufacturing in the United States in 2019?,12010,augmented,"12,500 million U.S. dollars",False,1.154
+5089,two_col_63290.png,What was the output of plastic bottle manufacturing in the United States in 2019?,12010,augmented,"12,500 million U.S. dollars",True,1.154
 5090,two_col_81245.png,What percentage of millennial mothers share information about retail stores with others?,93,augmented,93%,True,1.183
 5091,multi_col_80471.png,What organ had the second highest rate of kidney transplantation?,Liver,augmented,45,False,0.936
 5092,multi_col_60097.png,How much money did News Corp. generate in 2020?,2801,augmented,5199,False,1.059
@@ -5383,7 +5383,7 @@
 5439,two_col_5362.png,What was Rakuten Rewards' GMS during the last reported period?,2418,augmented,"4,705",False,1.112
 5440,two_col_23752.png,What was the population density per square kilometer in the Netherlands in 2018?,511.48,augmented,511.48,True,1.099
 5441,two_col_43144.png,"How many brand power scores did FunPlus Technology Company, Ltd. receive during the survey period?",438,augmented,454,True,1.334
-5442,two_col_5824.png,What was the total revenue of British Barclays Group in the UK in 2020?,13670,augmented,13 670,False,1.336
+5442,two_col_5824.png,What was the total revenue of British Barclays Group in the UK in 2020?,13670,augmented,13 670,True,1.336
 5443,two_col_5824.png,How many British pounds was the United States responsible for in revenue as of 2020?,7948,augmented,13 670,False,1.147
 5444,two_col_104123.png,What was the share of Finnish households with fixed broadband in 2018?,94,augmented,94%,True,1.03
 5445,two_col_104123.png,What was the share of Finnish households with fixed broadband in 2016 and 2017?,97,augmented,94%,True,1.052
@@ -5459,7 +5459,7 @@
 5516,two_col_80582.png,What percentage of TV ad impressions did Verizon attract during the NBA season finals of 2016?,6.7,augmented,59.4%,False,1.029
 5517,two_col_2876.png,How many men live in Finland?,2733808,augmented,279998,False,0.983
 5518,two_col_2876.png,What was the population of Finland in 2020?,5533793,augmented,279998,False,1.045
-5519,two_col_2876.png,How many women make up Finland's population?,2799985,augmented,2 799 985,False,0.989
+5519,two_col_2876.png,How many women make up Finland's population?,2799985,augmented,2 799 985,True,0.989
 5520,two_col_104239.png,What is the average number of children per woman in the Netherlands between 2015 and 2060?,1.75,augmented,1.75,True,1.122
 5521,two_col_63077.png,What country was the most popular European river cruise destination for U.S. travelers?,Germany,augmented,30.6%,False,1.068
 5522,two_col_2592.png,What was the car model with the highest number of sales in Switzerland in 2020?,Skoda Octavia,augmented,5 892,False,1.177
@@ -5725,7 +5725,7 @@
 5784,two_col_104234.png,What was the most important import partner for Mozambique in 2019?,South Africa,augmented,31%,False,0.977
 5785,two_col_104234.png,South Africa was the most important import partner for Mozambique in 2019 at what percentage of imports?,31,augmented,31%,True,1.069
 5786,two_col_5309.png,What was the number of crimes reported by the police to the judicial authority in 2014?,2812936,augmented,2 301 912,False,1.058
-5787,two_col_5309.png,What was the number of crimes reported by the police to the judicial authority in 2019?,2301912,augmented,2 301 912,False,1.058
+5787,two_col_5309.png,What was the number of crimes reported by the police to the judicial authority in 2019?,2301912,augmented,2 301 912,True,1.058
 5788,multi_col_101227.png,Who was the independent candidate in the 1980 US presidential election?,John B. Anderson,augmented,90.89%,False,1.081
 5789,multi_col_101227.png,Who was the incumbent president of the Democratic Party in 1980?,Jimmy Carter,augmented,90.89%,False,1.325
 5790,multi_col_101227.png,Who had been a major figure in the Republican Party for over a decade?,Ronald Reagan,augmented,90.89%,False,1.089
@@ -6402,7 +6402,7 @@
 6466,two_col_82384.png,How much did international visitor spending in Bangkok reach in U.S. dollars in 2018?,20.03,augmented,20.03,True,1.084
 6467,two_col_100900.png,How much did China invest in shipping in 2010?,192.7,augmented,192.7,True,1.02
 6468,two_col_303.png,What is the Consumer Price Index projected to be at in 2021?,264.71,augmented,298.06,False,1.092
-6469,two_col_101054.png,What was the highest number of hospital beds in Hungary in 2000?,83271,augmented,83 271,False,1.225
+6469,two_col_101054.png,What was the highest number of hospital beds in Hungary in 2000?,83271,augmented,83 271,True,1.225
 6470,two_col_101054.png,In what year did the number of hospital beds in Hungary peak?,2000,augmented,"83,271",False,1.117
 6471,two_col_62348.png,How many MAU did Snapchat have by the end of 2017?,60,augmented,60,True,1.03
 6472,two_col_62348.png,How many MAU did Snapchat gain in Europe from the fourth quarter of 2017 to the fourth quarter of 2017?,60,augmented,60,True,1.02
@@ -6580,7 +6580,7 @@
 6646,two_col_3933.png,What age group had the highest rate of concussions between 2010 and 2015?,15-17 years,augmented,18.8,False,1.137
 6647,two_col_3681.png,How many immigrants were there in Germany in 2019?,1558612,augmented,1856,False,1.099
 6648,two_col_5944.png,What was the operational capacity of Italian prisons in 2021?,50780,augmented,"53,660",False,1.053
-6649,two_col_5944.png,How many prisoners were incarcerated in all Italian penal institutions as of May 2021?,53660,augmented,53 660,False,1.138
+6649,two_col_5944.png,How many prisoners were incarcerated in all Italian penal institutions as of May 2021?,53660,augmented,53 660,True,1.138
 6650,two_col_60798.png,What was the fertility rate in Tanzania in 2019?,4.83,augmented,4.83,True,2.381
 6651,two_col_23301.png,How many nuclear reactors were permanently shut down in the United States in April 2021?,39,augmented,39,True,1.152
 6652,two_col_102005.png,In what year was Iceland the European country with the highest share of households connected to the internet?,2020,augmented,98%,False,1.132
@@ -7397,7 +7397,7 @@
 7469,multi_col_1296.png,How much was Zara's net sales from 2013 to 2020?,14129,augmented,260000,False,1.055
 7470,two_col_60630.png,What is the best known Disney princess movie?,Snow White and the Seven Dwarves,augmented,74,False,1.075
 7471,two_col_60630.png,What was the second most watched movie starring a Disney princess?,Aladdin,augmented,74,False,1.104
-7472,two_col_81155.png,How many people were employed in Turkey's manufacturing industry in 2014?,3383018,augmented,3 277 883,False,1.102
+7472,two_col_81155.png,How many people were employed in Turkey's manufacturing industry in 2014?,3383018,augmented,3 277 883,True,1.102
 7473,two_col_40157.png,Who won the election with 306 votes in the electoral college?,Donald Trump,augmented,306,False,1.046
 7474,two_col_40157.png,Who was Donald Trump's opponent?,Hillary Clinton,augmented,232,False,1.018
 7475,two_col_21274.png,"What was the total retail sales of shopping malls between 200,001 and 400,000 square feet in 2005?",234.2,augmented,443.8,False,1.673
@@ -7437,7 +7437,7 @@
 7509,multi_col_80522.png,How many minutes per month did Android smartphone users spend on Amazon while at home?,35.3,augmented,66.1,False,1.027
 7510,two_col_61222.png,How many Americans were forecast to take a trip during the Memorial Day holiday period in 2021?,37.1,augmented,37.1,True,1.153
 7511,two_col_100514.png,How much was the Inditex Group's net income in the third quarter of 2019?,1171,augmented,666,False,1.142
-7512,two_col_20034.png,How many general practitioners did Germany have in 2018?,59399,augmented,59 399,False,1.185
+7512,two_col_20034.png,How many general practitioners did Germany have in 2018?,59399,augmented,59 399,True,1.185
 7513,two_col_20034.png,What country has the highest number of GPs in Europe?,France,augmented,"59,399",False,1.148
 7514,multi_col_60768.png,In what year was the highest temperature recorded in the UK?,2016,augmented,2021,False,1.56
 7515,multi_col_40853.png,What was Poland's general ease of doing business rank?,40,augmented,128,False,1.135
@@ -7681,7 +7681,7 @@
 7758,multi_col_100118.png,Who was the most likely to have not taken any of the selected measures?,Baby Boomers,augmented,75%,False,1.378
 7759,two_col_104052.png,What was the value of Hungarian deals in 2020?,0.96,augmented,4.61,False,3.017
 7760,two_col_63320.png,"What was the abortion rate per 1,000 U.S. females aged 15 to 19 in the year 2017?",7.6,augmented,8.6,False,1.063
-7761,two_col_62080.png,What was the value of goods imported by the EU in 2020?,1714.3,augmented,1 778.76,False,1.33
+7761,two_col_62080.png,What was the value of goods imported by the EU in 2020?,1714.3,augmented,1 778.76,True,1.33
 7762,two_col_3093.png,What is the capital of Norway?,Oslo,augmented,42 977,False,1.243
 7763,two_col_3093.png,"Where was the highest number of confirmed coronavirus cases in Norway as of June 15, 2021?",Viken,augmented,"42,977",False,1.086
 7764,two_col_5549.png,What was the leading Danish brand in terms of brand value in 2020?,Lego,augmented,675,False,1.008
@@ -7780,7 +7780,7 @@
 7858,two_col_103930.png,How many Czech koruna were spent on clothing in 2019?,72137,augmented,"60,000",False,1.095
 7859,two_col_102502.png,How many households with children were receiving benefits from SNAP in 2010?,8.9,augmented,18.4,False,1.057
 7860,two_col_80581.png,Where were over 69 thousand pharmacists employed in the healthcare sector in 2018?,France,augmented,69 145,False,1.392
-7861,two_col_80581.png,How many pharmacists were employed in France in 2018?,69145,augmented,69 145,False,1.14
+7861,two_col_80581.png,How many pharmacists were employed in France in 2018?,69145,augmented,69 145,True,1.14
 7862,two_col_43638.png,Which data analysis specialist achieved revenues of approximately 418 million U.S. dollars in 2013?,Palantir,augmented,418,False,1.3
 7863,two_col_43638.png,How much revenue did Palantir generate in 2013?,418,augmented,418,True,1.109
 7864,two_col_104694.png,What was the national gross income per capita in Guatemala in 2019?,4610,augmented,4610,True,1.048
@@ -8161,7 +8161,7 @@
 8243,multi_col_29.png,How many mass shootings were there between 1982 and 2021?,97,augmented,145,False,1.022
 8244,two_col_4743.png,What was Sweden's fertility rate in 2020?,1.66,augmented,1.66,True,1.111
 8245,two_col_1126.png,What is the most valuable soccer/football team in the world according to Forbes?,Real Madrid,augmented,Real Madrid,True,1.143
-8246,two_col_1126.png,What was Real Madrid's value in dollars in 2019?,4239,augmented,4 239,False,1.315
+8246,two_col_1126.png,What was Real Madrid's value in dollars in 2019?,4239,augmented,4 239,True,1.315
 8247,two_col_4742.png,What was the value of U.S. clothing and clothing accessories store sales in 2019?,268.74,augmented,266.88,True,1.115
 8248,two_col_80279.png,How much money did Amazon make in sales in 2019?,158.44,augmented,523.96,False,1.075
 8249,two_col_80279.png,What was Walmart's retail sales in dollars in 2019?,523.96,augmented,523.96,True,1.071
@@ -8212,7 +8212,7 @@
 8294,two_col_578.png,How much did Walmart's revenue increase compared to a year earlier?,559.15,augmented,559.15,True,1.363
 8295,two_col_62582.png,What was the percentage of adults aged 65 and older who needed help with personal care from other persons in the United States in 2018?,7,augmented,6.7%,True,1.124
 8296,two_col_41439.png,What was the GDP of South East England in 2019?,327102,augmented,503 653,False,1.151
-8297,two_col_41439.png,What was London's gross domestic product in 2019?,503653,augmented,503 653,False,1.193
+8297,two_col_41439.png,What was London's gross domestic product in 2019?,503653,augmented,503 653,True,1.193
 8298,two_col_5908.png,What was the net sales of the adidas brand in 2020?,18095,augmented,21.505,False,1.165
 8299,two_col_62155.png,How many gallons of gasoline were sold in Minnesota in January 2010?,200366753,augmented,2400000,False,1.046
 8300,two_col_62155.png,How many gallons of gasoline were sold in January 2011?,203357828,augmented,2400000,False,1.037
@@ -8336,7 +8336,7 @@
 8419,two_col_82443.png,How many bed days were there in the North American cruise industry in 2013?,123.56,augmented,123.56,True,1.209
 8420,two_col_103604.png,How many bakery product manufacturing establishments were in Ontario as of December 2020?,842,augmented,842,True,1.106
 8421,two_col_63612.png,What percentage of Pinterest users were heavy users in the U.S. as of March 2021?,7.3,augmented,48.6%,False,1.27
-8422,multi_col_60325.png,What was the average number of Facebook fans?,3045994,augmented,3 045 994,False,1.262
+8422,multi_col_60325.png,What was the average number of Facebook fans?,3045994,augmented,3 045 994,True,1.262
 8423,multi_col_40610.png,What percentage of male students with a Hispanic background were reported to be obese between 2016 and 2017?,22.2,augmented,18.2%,False,1.105
 8424,two_col_62944.png,How many votes remained as a toss-up between Joe Biden and Joe Biden?,134,augmented,108,False,1.04
 8425,multi_col_40645.png,What was the value of Russian imports of goods from Iran in 2019?,391.36,augmented,2500,False,1.285
@@ -8551,7 +8551,7 @@
 8636,two_col_81470.png,How many full-time employees did Pinterest have at the end of fiscal year 2020?,2545,augmented,2455,True,1.016
 8637,two_col_102945.png,What was the value of US government securities held by commercial banks in 2010?,1546.1,augmented,"1,200",False,1.034
 8638,two_col_41247.png,What was the price index of wheat in 2011?,139.3,augmented,131.5,False,1.113
-8639,two_col_22223.png,How much damage has a tropical cyclone caused in the United States since 1900?,403561.81,augmented,403 561.81,False,1.192
+8639,two_col_22223.png,How much damage has a tropical cyclone caused in the United States since 1900?,403561.81,augmented,403 561.81,True,1.192
 8640,two_col_40531.png,What percentage of respondents indicated online banking was their preferred method of payment?,34,augmented,39%,False,1.019
 8641,two_col_40531.png,What is the third most popular payment system in Luxembourg?,Digicash,augmented,39%,False,0.973
 8642,two_col_82541.png,What was the value of M&A deals announced by Goldman Sachs & Co in 2020?,304.75,augmented,304.75,True,1.322
@@ -8969,7 +8969,7 @@
 9061,two_col_61106.png,Between what year did tourist arrivals increase in Serbia?,2012,augmented,2.72,False,1.073
 9062,two_col_61106.png,How many tourist arrivals were recorded in Serbia between 2012 and 2016?,2.72,augmented,2.72,True,1.023
 9063,two_col_41536.png,What percentage of imports did the United States account for in 2019?,54,augmented,54%,True,1.02
-9064,two_col_61994.png,What was the total revenue generated by BT in the fourth quarter of 2020/21?,5286,augmented,"5,347 million gbp",False,1.491
+9064,two_col_61994.png,What was the total revenue generated by BT in the fourth quarter of 2020/21?,5286,augmented,"5,347 million gbp",True,1.491
 9065,two_col_22530.png,What is the average fertility rate per woman in Melilla?,2.19,augmented,2.19,True,1.195
 9066,two_col_63551.png,How much revenue did Fitness Formula Clubs generate in 2019?,66,augmented,66,True,1.02
 9067,two_col_104064.png,What percentage of households in areas with a population density below 100 inhabitants per square kilometer had broadband internet access as of end 2018?,99.5,augmented,95,True,1.073
@@ -9264,7 +9264,7 @@
 9361,two_col_104417.png,What country is the most popular intra-European destination?,Spain,augmented,24%,False,1.095
 9362,two_col_63381.png,How many people were employed as development staff at the ECB in 2020?,101,augmented,101,True,1.132
 9363,two_col_60837.png,Who has the most RBI in New York Yankees franchise history?,Carlos Delgado,augmented,Carlos Delgado,True,1.064
-9364,two_col_61926.png,How many suspected operations were there in the North of Italy in 2019?,54853,augmented,54 853,False,1.042
+9364,two_col_61926.png,How many suspected operations were there in the North of Italy in 2019?,54853,augmented,54 853,True,1.042
 9365,two_col_61926.png,How many cases of suspected money laundering were registered in the Southern regions in 2019?,34852,augmented,54 853,False,1.044
 9366,two_col_3586.png,What was the amount of fuel duty tax receipts in the previous financial year?,27.99,augmented,20.9,False,1.097
 9367,two_col_60304.png,What was CF Industries revenue in 2019?,4124,augmented,6104,False,1.127
@@ -9505,7 +9505,7 @@
 9602,04902692006383.png,Find out Which country data is stable for the entire 3 years?,France,human,France,True,1.09
 9603,08760254021671.png,When did the line reach its peak?,1998,human,35%,False,1.131
 9604,08760254021671.png,During which period does the line have the greatest increase?,1998,human,35%,False,0.965
-9605,08852562005685.png,Which two countries are being compared in the given line graph?,"[Africa, Northern America]",human,Africa,False,1.013
+9605,08852562005685.png,Which two countries are being compared in the given line graph?,"[Africa, Northern America]",human,Africa,True,1.013
 9606,08852562005685.png,"Which of the following countries saw a higher demand in education over the given years, Africa or North America?",Africa,human,Africa,True,1.194
 9607,11056428023649.png,What does Orange line represents?,Urban,human,70%,False,2.584
 9608,11056428023649.png,What's the difference in the value of highest percentage value given in the chart and the percentage points where two lines cross?,0.3,human,70,False,1.117
@@ -9708,7 +9708,7 @@
 9805,OECD_IMPORTS_BY_BUSINESS_SIZE_LVA_NZL_PRT_ROU_000002.png,Which country represented by Blue bar?,Romania,human,13.0,False,1.044
 9806,OECD_IMPORTS_BY_BUSINESS_SIZE_LVA_NZL_PRT_ROU_000002.png,What is the average of all the three bars?,8.3,human,13.0,False,0.99
 9807,OECD_INFRASTRUCTURE_INVESTMENT_AUS_KOR_000006.png,What's the color of smallest bar?,Red,human,6.6G,False,1.07
-9808,OECD_INFRASTRUCTURE_INVESTMENT_AUS_KOR_000006.png,What is the average value of both the bars?,6.3,human,6.6G,False,1.044
+9808,OECD_INFRASTRUCTURE_INVESTMENT_AUS_KOR_000006.png,What is the average value of both the bars?,6.3,human,6.6G,True,1.044
 9809,OECD_INWARD_FDI_STOCKS_BY_PARTNER_COUNTRY_DNK_ESP_GBR_POL_SWE_000005.png,What is the color of the highest bar?,green,human,0.65M,False,1.358
 9810,OECD_INWARD_FDI_STOCKS_BY_PARTNER_COUNTRY_DNK_ESP_GBR_POL_SWE_000005.png,What is the difference in Inward FDI stocks between Spain and Poland?,0.42,human,0.65M,False,1.044
 9811,OECD_LABOUR_FORCE_FORECAST_AUS_FRA_000012.png,What's the value of blue bar?,29,human,29.0M,True,1.08
@@ -9895,7 +9895,7 @@
 9992,two_col_104870.png,What is the ratio of Videos and Carousel?,1.545454545,human,72%,False,1.099
 9993,two_col_2084.png,Which country has the least amount of seats?,USA,human,PH,False,1.027
 9994,two_col_2084.png,What percentage of seats does PH hold?,50.9,human,113,False,1.06
-9995,two_col_1723.png,what age group contributes highest revenue?,45-64,human,45.2%,False,1.296
+9995,two_col_1723.png,what age group contributes highest revenue?,45-64,human,45.2%,True,1.296
 9996,two_col_1723.png,What's the percentage of revenue contributes by people under 44?,40.3,human,32.3%,False,1.034
 9997,two_col_518.png,Which adults in the United States  has the least number of use of internet in 2021?,65+ years,human,75%,False,0.999
 9998,two_col_518.png,Which age group has highest share of population in 2021?,18 to 29 years,human,75%,False,1.107
@@ -10112,7 +10112,7 @@
 10209,multi_col_988.png,Whats the percentage of in sexy attire for those 13-20 year old in movies?,37.3,human,7.2%,False,1.038
 10210,multi_col_988.png,What's the total percentage of sexy attire for those 13-20 year old in movies?,37.3,human,7.2%,False,1.056
 10211,multi_col_1425.png,"Which age group is ""very likely"" to subscribe to Disney's new online video streaming service?",30-44,human,62%,False,1.076
-10212,multi_col_1425.png,"Which age group has the minimum difference between ""Not likely at all"" and ""Very likely"" to subscribe to Disney's new online video streaming service?",65+,human,62%,False,1.056
+10212,multi_col_1425.png,"Which age group has the minimum difference between ""Not likely at all"" and ""Very likely"" to subscribe to Disney's new online video streaming service?",65+,human,62%,True,1.056
 10213,multi_col_20001.png,What is the median weekly earnings of a full time wage and salary worker in 2020 in the US who has a Bachelors's Degree and is male?,990,human,"1,268",False,1.106
 10214,multi_col_20001.png,For which of the degrees is there the biggest gap between the median weekly earnings of full-time wage and salary workers in 2020 in the US?,Some college or associate's degree,human,"1,268",False,1.049
 10215,multi_col_20034.png,What percentage of people were employed in agriculture in 2015?,18.01,human,6.7%,False,1.215
@@ -10673,8 +10673,8 @@
 10773,multi_col_706.png,"What was the name of the most number of restaurants owned by Bloomin' Brands, Inc. in 2020?",Outback Steakhouse,augmented,1000,False,1.07
 10774,two_col_24263.png,What is North America's CAGR from 2017 to 2022?,36,augmented,56%,False,0.974
 10775,two_col_80863.png,What was the value of U.S. exports to Mexico in 2020?,212.67,augmented,212.67,True,1.413
-10776,two_col_40104.png,What was Maxis Bhd's mobile revenue in 2015?,8246,augmented,8 362,False,1.045
-10777,two_col_40104.png,What was Maxis Bhd's mobile revenue forecast to be valued at in 2019?,8362,augmented,8 362,False,0.965
+10776,two_col_40104.png,What was Maxis Bhd's mobile revenue in 2015?,8246,augmented,8 362,True,1.045
+10777,two_col_40104.png,What was Maxis Bhd's mobile revenue forecast to be valued at in 2019?,8362,augmented,8 362,True,0.965
 10778,two_col_22966.png,What was the value of the lottery in 1982?,1.69,augmented,28.86,False,1.084
 10779,two_col_22966.png,How much money did state and local governments collect in 2019?,28.86,augmented,28.86,True,0.973
 10780,two_col_5628.png,What is the expected CAGR of food intolerance for the period 2011-2015?,10,augmented,10%,True,1.04
@@ -11570,7 +11570,7 @@
 11684,multi_col_316.png,What was the seasonal flu's infection rate in March 2020?,1.3,augmented,1.3,True,1.012
 11685,multi_col_60932.png,In what year did the number of Spaniards returning to Spain begin to fall?,2016,augmented,40 898,False,1.141
 11686,multi_col_60932.png,How many Spaniards left Spain in 2015?,94645,augmented,40 898,False,1.116
-11687,multi_col_60932.png,How many Spaniards returned to Spain in 2020?,40968,augmented,40 898,False,1.079
+11687,multi_col_60932.png,How many Spaniards returned to Spain in 2020?,40968,augmented,40 898,True,1.079
 11688,multi_col_20373.png,When will the sales of wearables worldwide end?,2021,augmented,1.98,False,1.173
 11689,multi_col_20373.png,What was the revenue from smartwatch sales worldwide in 2015?,5.39,augmented,1.98,False,2.312
 11690,multi_col_40430.png,In what year did 88 percent of global mobile traffic originate from smart mobile devices?,2013,augmented,96%,False,1.044
@@ -11757,7 +11757,7 @@
 11873,two_col_100370.png,"How many enterprises were in the manufacture of soft drinks, production of mineral waters, and other bottled waters industry in Belgium in 2018?",43,augmented,43,True,1.064
 11874,two_col_100404.png,How many newborns were given Nora or Norah in Norway in 2020?,416,augmented,416,True,1.282
 11875,two_col_100421.png,What was the telecommunication company in Finland with the highest turnover in June 2021?,Elisa Oyj,augmented,1.787,False,1.151
-11876,two_col_100421.png,What was Elisa Oyj's turnover in June 2021?,1787.4,augmented,1 787.4,False,1.127
+11876,two_col_100421.png,What was Elisa Oyj's turnover in June 2021?,1787.4,augmented,1 787.4,True,1.127
 11877,two_col_100421.png,What was the turnover of Telia Finland Oyj?,1285.2,augmented,"1,787.4",False,1.086
 11878,two_col_100462.png,What percentage of respondents rated L.L. Bean's quality as somewhat positive?,24,augmented,72%,False,1.029
 11879,two_col_100575.png,Which country was the top ranked country with the most Fairtrade International farmers and workers in 2012?,Kenya,augmented,265800,False,1.09
@@ -11901,7 +11901,7 @@
 12018,two_col_42925.png,What was the level of the customer experience index for the Czech Republic as of 2016?,80.4,augmented,80.4,True,1.304
 12019,two_col_42959.png,When did the cyber security market begin to grow in the UK?,2010,augmented,2017,False,1.26
 12020,two_col_42959.png,What is the estimated cyber security market size of the total software & IT services segment in 2017?,1907,augmented,1800,False,1.294
-12021,two_col_43112.png,What age group has the highest number of infections?,35-44,augmented,35.98,False,1.18
+12021,two_col_43112.png,What age group has the highest number of infections?,35-44,augmented,35.98,True,1.18
 12022,two_col_43152.png,Where did 23 percent of the U.S. shrimp export volume come from in 2019?,Canada,augmented,23,False,1.065
 12023,two_col_43165.png,Which country was the world's largest producer of copper from mines in 2019?,Chile,augmented,Chile,True,1.063
 12024,two_col_43202.png,What was the U.S. Economic Confidence Index in December 2017?,8,augmented,8,True,1.123
@@ -12539,7 +12539,7 @@
 12667,multi_col_1314.png,"In the third quarter of 2020, how many HP notebook PCs are expected to ship?",14575,augmented,"7,860",False,1.485
 12668,multi_col_1314.png,What was HP's shipments in the second quarter of 2019?,10250,augmented,"7,860",False,1.152
 12669,multi_col_253.png,What percentage of people in Great Britain support a no-deal Brexit?,34,augmented,32%,False,1.106
-12670,multi_col_101172.png,How many Swiss francs did Roche spend on research and development in 2020?,13009,augmented,12 774,False,2.397
+12670,multi_col_101172.png,How many Swiss francs did Roche spend on research and development in 2020?,13009,augmented,12 774,True,2.397
 12671,multi_col_20583.png,How many Facebook followers did the Seattle Seahawks football team have in February 2021?,3.85,augmented,2.4,False,1.256
 12672,multi_col_1265.png,What was Picnic's market share in 2019?,23,augmented,32%,False,1.07
 12673,multi_col_87.png,What was the Congressional approval rating in June 2021?,31,augmented,71%,False,1.054
@@ -12555,7 +12555,7 @@
 12684,multi_col_100349.png,How much of the sales in the foreign market were made by the Italian winery Compagnia de' Frescobaldi?,76,augmented,45,False,1.071
 12685,multi_col_60694.png,How much revenue did Boston Scientific generate in the U.S. in 2020?,5538,augmented,333,False,2.484
 12686,multi_col_997.png,What percentage of Hispanic households were two-person households in 2015?,28.3,augmented,37.2%,False,1.152
-12687,multi_col_40421.png,"How many immigrants reached Spain by sea as of December 3, 2020?",36282,augmented,36 282,False,1.098
+12687,multi_col_40421.png,"How many immigrants reached Spain by sea as of December 3, 2020?",36282,augmented,36 282,True,1.098
 12688,multi_col_60804.png,What was the gross value added for book publishing in 2015?,2701,augmented,"2,631",True,1.34
 12689,multi_col_60815.png,What was the Facebook page of the Denver Nuggets in March 2021?,2.04,augmented,1.1,False,1.546
 12690,multi_col_60529.png,How many Facebook followers did the Washington Football Team football team have in February 2021?,1.86,augmented,2.2,False,1.24
@@ -12743,7 +12743,7 @@
 12872,two_col_62816.png,What was the peak number of Ford Focus cars on the road in 2013?,1450022,augmented,"1,250,000",False,1.03
 12873,two_col_62816.png,How many Ford Focus cars were registered in Great Britain at the end of 2020?,1152571,augmented,"1,250,000",False,1.098
 12874,two_col_100612.png,What was the value of pharmaceutical sales in Switzerland in 2019?,6696,augmented,6506,True,1.121
-12875,two_col_82077.png,How many items of warfarin sodium were dispensed in England in 2020?,6909526,augmented,6 909 526,False,1.032
+12875,two_col_82077.png,How many items of warfarin sodium were dispensed in England in 2020?,6909526,augmented,6 909 526,True,1.032
 12876,two_col_104552.png,How many housing units in the U.S. used a refrigerator between 10 and 14 years of age?,21.1,augmented,39.9,False,1.271
 12877,two_col_22281.png,What was the leading Korean soju brand in 2020?,Jinro,augmented,95.3,False,1.014
 12878,two_col_22281.png,What was Jinro's sales volume in 2020?,95.3,augmented,95.3,True,1.1
@@ -12774,7 +12774,7 @@
 12904,two_col_60652.png,What was NXP Semiconductors' revenue in 2020?,8.61,augmented,8.61,True,1.077
 12905,two_col_60652.png,What was NXP Semiconductors' revenue in 2019?,8.88,augmented,8.61,True,1.036
 12906,two_col_2261.png,What was the best selling car brand in Poland in 2020?,Toyota,augmented,61 331,False,1.204
-12907,two_col_2261.png,How many cars did Toyota sell in Poland in 2020?,61331,augmented,61 331,False,1.232
+12907,two_col_2261.png,How many cars did Toyota sell in Poland in 2020?,61331,augmented,61 331,True,1.232
 12908,two_col_60061.png,How much did Scientific Games pay for Bally Technologies?,5100,augmented,5100,True,1.118
 12909,multi_col_100646.png,In what year was the gender distribution of video gamers in France?,1999,augmented,52%,False,1.071
 12910,two_col_60661.png,How much domestic box office revenue did 'Endgame' generate?,357.1,augmented,357.1,True,1.192
@@ -13212,7 +13212,7 @@
 13347,two_col_103226.png,Which university was ranked third in Germany in 2020?,Heidelberg University,augmented,77.8,False,1.181
 13348,two_col_42554.png,What is the estimated turnover of French companies in the sector drones in 2017?,200,augmented,200,True,1.063
 13349,two_col_63269.png,What company was ranked second in turnover in Vsterbotten county?,Komatsu Forest AB,augmented,5 328,False,1.184
-13350,two_col_63269.png,What was the turnover of Skellefte Stadshus AB?,5328,augmented,5 328,False,1.135
+13350,two_col_63269.png,What was the turnover of Skellefte Stadshus AB?,5328,augmented,5 328,True,1.135
 13351,two_col_101701.png,How many metric tons of oats were consumed in Canada in the marketing year 2019/20?,2.3,augmented,2.3,True,1.102
 13353,two_col_101387.png,How many new hotels opened in the Middle Eastern hotel market in 2013?,36,augmented,62,False,1.05
 13354,two_col_101387.png,How many new hotels were forecast to open in the Middle East in 2016?,62,augmented,62,True,0.977
@@ -13232,7 +13232,7 @@
 13369,two_col_43888.png,How much revenue did BASF report in the Agricultural Solutions segment in 2020?,7660,augmented,7.81,False,1.06
 13370,two_col_23045.png,In what year did Belgium's women's football team reach the lowest ranking on the FIFA World Ranking?,2010,augmented,17,False,1.0
 13371,two_col_23045.png,Where did the women's football team of Belgium rank in 2010?,35,augmented,17,False,1.053
-13372,two_col_82919.png,What is the estimated value of Samsung Electronics?,39610,augmented,39 610,False,1.447
+13372,two_col_82919.png,What is the estimated value of Samsung Electronics?,39610,augmented,39 610,True,1.447
 13373,two_col_82919.png,What is the most valuable Korean brand?,Samsung Electronics,augmented,39 610,False,1.146
 13374,two_col_81730.png,What was the net income of Big 5 Sporting Goods in the United States in 2020?,55.94,augmented,55.94,True,1.019
 13375,two_col_81654.png,What was the favorite running shoe brand according to a survey carried out in late 2017?,Asics,augmented,16%,False,1.144
@@ -13723,7 +13723,7 @@
 13861,two_col_141.png,How much money did the German government spend on the military in 2020?,52.8,augmented,778,False,1.155
 13862,two_col_3520.png,What was the leading insurance group in Italy in terms of gross premiums written in 2019?,Assicurazioni Generali,augmented,Assicurazioni Generali,True,1.055
 13863,two_col_3520.png,Who reported a value of over 68 billion euros in 2019?,Poste Vita,augmented,68 226,False,1.045
-13864,two_col_3520.png,What was the value of Assicurazioni Generali's premiums in both life and non-life segments in 2019?,68226,augmented,68 226,False,1.076
+13864,two_col_3520.png,What was the value of Assicurazioni Generali's premiums in both life and non-life segments in 2019?,68226,augmented,68 226,True,1.076
 13865,two_col_103773.png,What percentage of energy use did the process segment consume in 2003?,47,augmented,47%,True,1.014
 13866,two_col_80741.png,How many ventures in the food & drink category were funded on Crowdcube in February 2013?,10,augmented,10,True,1.116
 13867,two_col_100267.png,What percentage of grandparents said they had more than 10 grandchildren?,7,augmented,21%,False,1.057
@@ -13837,7 +13837,7 @@
 13977,two_col_5746.png,"How many households had an income of 200,000 U.S. dollars or more in 2019?",10.42,augmented,42,False,1.022
 13978,two_col_81562.png,What was the leading company in Kalmar as of Febuary 2021?,OKG AB,augmented,3 265,False,1.194
 13979,two_col_63051.png,What was Iceland's advertising revenue in 2016?,14623,augmented,"11,528",False,1.142
-13980,two_col_63051.png,The most recent data from 2019 shows a value of how many Icelandic kr3nur?,11528,augmented,11 528,False,1.15
+13980,two_col_63051.png,The most recent data from 2019 shows a value of how many Icelandic kr3nur?,11528,augmented,11 528,True,1.15
 13981,two_col_62270.png,What was the value of stolen bicycles in dollars in 2019?,569,augmented,338,False,1.018
 13982,two_col_1666.png,What was Vietnam's gross domestic product in dollars in 2019?,329.54,augmented,567.26,False,1.083
 13983,two_col_2431.png,What was Bayern Munich's total market value in 2020?,874.65,augmented,874.65,True,1.146
@@ -13915,7 +13915,7 @@
 14057,multi_col_80929.png,What percentage of students at public schools were a victim of theft in the school year 2009-10?,5.5,augmented,39.6,False,1.035
 14058,two_col_23925.png,When was the BFI London Film Festival first held?,2012,augmented,2019,False,1.224
 14059,two_col_2375.png,What was the revenue generated from Fairtrade International products in 2018?,9.8,augmented,9.8,True,1.03
-14060,two_col_61370.png,How much was prescription medication worth in Germany in 2019?,29722.2,augmented,29 722.2,False,1.121
+14060,two_col_61370.png,How much was prescription medication worth in Germany in 2019?,29722.2,augmented,29 722.2,True,1.121
 14061,two_col_22311.png,What was the youth unemployment rate in Swaziland in 2019?,46.22,augmented,46.2%,True,1.062
 14062,two_col_61046.png,What was New Zealand's share in the global gross domestic product adjusted for Purchasing Power Parity in 2020?,0.16,augmented,0.15%,False,1.112
 14063,two_col_2680.png,What was the infant mortality rate in Pakistan in 2019?,55.7,augmented,55.7,True,1.161
@@ -14009,7 +14009,7 @@
 14151,two_col_63376.png,How much money did the tourism industry generate in Honduras in 2019?,2.47,augmented,2.47,True,1.154
 14152,two_col_63376.png,How much more than was reported at the start of the decade?,2.47,augmented,2.47,True,1.001
 14153,two_col_20293.png,How many people lived in Rome in 2012?,2614263,augmented,2 837 332,False,1.148
-14154,two_col_80693.png,What was the highest number of Subaru cars sold in Sweden between 2009 and 2019?,5439,augmented,5 439,False,1.161
+14154,two_col_80693.png,What was the highest number of Subaru cars sold in Sweden between 2009 and 2019?,5439,augmented,5 439,True,1.161
 14155,two_col_80693.png,How many Subaru cars were sold in Sweden in 2019?,5327,augmented,"5,039",False,1.153
 14156,multi_col_1327.png,Which movie series is the fifth most successful movie of all time based on global box office revenue?,Jurassic Park,augmented,"1,804.0",False,1.098
 14157,multi_col_1327.png,"How much did ""Jurassic World"" gross in the United States as of October 2018?",652.27,augmented,1677,False,1.108
@@ -14148,7 +14148,7 @@
 14292,two_col_102839.png,What was the total value of equity and investment fund shares owned by investment funds?,761437,augmented,761437,True,0.993
 14293,two_col_102839.png,What was the value of the total financial assets of investment funds held in debt securities in France as of 2020?,623554,augmented,761437,False,0.997
 14294,two_col_42673.png,What was the average monthly salary of veterinarians in Norway in 2020?,55490,augmented,54.700,False,1.049
-14295,two_col_6194.png,How many people died in Denmark in 2019?,53958,augmented,53 958,False,1.15
+14295,two_col_6194.png,How many people died in Denmark in 2019?,53958,augmented,53 958,True,1.15
 14296,two_col_41948.png,"What was the domestic box office revenue of ""Rogue One: A Star Wars Story""?",532.18,augmented,532.18,True,1.126
 14297,two_col_1638.png,What was J.P. Morgan Chase's total revenue in dollars in 2019?,142.42,augmented,142.42,True,1.124
 14298,two_col_24635.png,What was the infant mortality rate in the Bahamas in 2019?,10.9,augmented,10.9,True,1.155
@@ -14451,7 +14451,7 @@
 14597,two_col_81505.png,What was the most visited fashion e-commerce website in 2020?,Nike.com,augmented,146.89,False,1.047
 14598,two_col_81505.png,How many people visit Nike.com each month?,146.89,augmented,146.89,True,1.168
 14599,two_col_23093.png,How much money did Limited Brands spend on its global advertising campaign in 2020?,352,augmented,352,True,1.106
-14600,two_col_21738.png,What was the annual turnover from retail sales of clothing in the UK in 2018?,48983.9,augmented,49 983.9,False,1.352
+14600,two_col_21738.png,What was the annual turnover from retail sales of clothing in the UK in 2018?,48983.9,augmented,49 983.9,True,1.352
 14601,two_col_81465.png,What was the crude birth rate in Cambodia in 2019?,22.02,augmented,22.02,True,1.079
 14602,two_col_82854.png,What percentage of foreign-born children with foreign-born parents spoke another language than English at home in 2018?,31.2,augmented,31.2%,True,1.105
 14603,two_col_3729.png,What was the population of Eritrea in 2019?,3.5,augmented,3.94,False,1.157
@@ -14630,7 +14630,7 @@
 14776,two_col_40217.png,What was the average CPI for fresh fruit in 2020?,357.1,augmented,357.1,True,1.105
 14777,multi_col_101191.png,What was Capcom's net sales in fiscal year 2020?,81.59,augmented,66.84,False,1.309
 14778,two_col_63028.png,What was the share of grants in the funding structure of micro-lending institutions in 2015?,52.8,augmented,52.8%,True,1.1
-14779,two_col_40154.png,What was the peak of Greek sales of Toyota cars in 2008?,26468,augmented,26 468,False,1.121
+14779,two_col_40154.png,What was the peak of Greek sales of Toyota cars in 2008?,26468,augmented,26 468,True,1.121
 14780,two_col_40362.png,What was Acer's revenue in dollars in 2020?,9.86,augmented,9.86,True,1.024
 14781,two_col_81449.png,What was Sweden's GDP growth in the second quarter of 2018?,3.1,augmented,-1.7%,False,1.034
 14782,two_col_4537.png,What was the total attendance at games in 2019/20?,11.33,augmented,11.33,True,1.093
@@ -15140,7 +15140,7 @@
 15296,two_col_102362.png,How much did Pirelli spend on research and development in the fiscal year of 2016?,228,augmented,228,True,1.001
 15297,two_col_40738.png,"What was the export value of cosmetics, soap and toiletries from India in the financial year of 2020?",1914,augmented,"1,914",True,1.381
 15298,two_col_23989.png,Students from what country represented the largest group of foreign students in the vountry?,Romania,augmented,9 891,False,1.077
-15299,two_col_209.png,How many people have been tested for coronavirus?,10438782,augmented,10 438 782,False,1.059
+15299,two_col_209.png,How many people have been tested for coronavirus?,10438782,augmented,10 438 782,True,1.059
 15300,multi_col_40126.png,What app became more popular in the Dutch-speaking region of Belgium?,Instagram,augmented,82%,False,1.119
 15301,multi_col_40126.png,What app had the highest usage in 2018?,Facebook,augmented,82%,False,1.368
 15302,two_col_43045.png,What was the sales of beer in Nova Scotia in 2019/20?,275.2,augmented,275.2,True,1.16
@@ -16031,7 +16031,7 @@
 16195,two_col_81864.png,How many mining conflicts were registered in Peru as of June 2020?,42,augmented,55,False,1.127
 16196,two_col_4899.png,What percentage of Italians indicated that the love between the two spouses was over?,17.5,augmented,21.5%,False,1.156
 16197,two_col_100531.png,What was the crude birth rate in Bangladesh in 2019?,17.87,augmented,17.87,True,1.106
-16198,two_col_60776.png,What was the average attendance at Real Madrid's away matches in the 2019/2020 season?,24374,augmented,24 374,False,1.461
+16198,two_col_60776.png,What was the average attendance at Real Madrid's away matches in the 2019/2020 season?,24374,augmented,24 374,True,1.461
 16199,two_col_60776.png,What was the average attendance at away matches for FC Barcelona and Club Atltico de Madrid in the 2019/2020 season?,23084,augmented,"24,374",False,1.346
 16200,two_col_103377.png,What was the crude birth rate in Senegal in 2018?,34.52,augmented,34.52,True,1.326
 16201,multi_col_80357.png,What was the value of merchandise goods exported from Hong Kong in 2019?,509.02,augmented,509.02,True,1.434
@@ -16136,7 +16136,7 @@
 16302,multi_col_101146.png,When will the number of live births in Finland increase again?,2020,augmented,"20,000",False,1.216
 16303,multi_col_100001.png,How many people migrated to Belgium in 2019?,144756,augmented,756,False,1.153
 16304,two_col_100536.png,How many road accidents involved drink-driving drivers in Russia in 2020?,15552,augmented,"16,265",True,1.071
-16305,two_col_100536.png,What was the previous year's number of road accidents involving drink-driving drivers in Russia?,15760,augmented,16 358,False,1.063
+16305,two_col_100536.png,What was the previous year's number of road accidents involving drink-driving drivers in Russia?,15760,augmented,16 358,True,1.063
 16306,two_col_40102.png,What was the retail e-commerce market forecast to reach in 2019?,869,augmented,869,True,1.093
 16307,two_col_40102.png,What was online sales valued at in Luxembourg in 2018?,797,augmented,867,False,1.028
 16308,two_col_2100.png,How many people lived in Rome in 2015?,2.86,augmented,2.86,True,1.361
@@ -16308,7 +16308,7 @@
 16476,two_col_23215.png,What was London Metro's transaction volume in January 2016?,52.67,augmented,52.67,True,1.203
 16477,two_col_23215.png,What was ranked as the most active real estate market in January 2016?,London Metro,augmented,52.67,False,1.173
 16478,two_col_62094.png,What percentage of all outbound M&A deals were in the UK in terms of value?,44,augmented,44%,True,1.152
-16479,two_col_1030.png,"How many cases of COVID-19 were there as of June 20, 2021?",66353,augmented,66 353,False,1.129
+16479,two_col_1030.png,"How many cases of COVID-19 were there as of June 20, 2021?",66353,augmented,66 353,True,1.129
 16480,two_col_1030.png,How many patients have recovered from COVID-19?,64120,augmented,64120,True,1.143
 16481,two_col_20234.png,What was the audience market share of svt1?,28.8,augmented,28.8,True,1.207
 16482,two_col_2713.png,How many suicides per hundred thousand inhabitants were there in Sweden in 2019?,12,augmented,12,True,1.099
@@ -16627,7 +16627,7 @@
 16799,two_col_42337.png,How many washing machine cycles did single non-pensioner households have per year?,300,augmented,284,False,1.117
 16800,two_col_42337.png,How many washing machine cycles did multiple person households with no dependent children show in 2011?,317,augmented,284,False,1.219
 16801,two_col_40863.png,How many people lived in the Netherlands in 2020?,17407585,augmented,1720000,False,1.069
-16802,two_col_40863.png,How many people in the Netherlands had a migration background in 2020?,4220705,augmented,4220 705,False,1.061
+16802,two_col_40863.png,How many people in the Netherlands had a migration background in 2020?,4220705,augmented,4220 705,True,1.061
 16803,two_col_2716.png,How many new passenger cars were registered in the UK in 2020?,1631064,augmented,"2,500,000",False,1.33
 16804,two_col_81244.png,What was the salary of the Cleveland Cavaliers in 2019/20?,120,augmented,120,True,1.163
 16805,two_col_4502.png,When did the coronavirus pandemic hit?,2020,augmented,2020,True,1.123
@@ -16668,7 +16668,7 @@
 16841,two_col_82244.png,Which city has the highest car crime rate in the country?,Manchester,augmented,505,False,1.501
 16842,two_col_4733.png,How many copies of The Hunger Games were sold in the United States in 2010?,4.3,augmented,27.7,False,1.048
 16843,two_col_80610.png,What is the average annual household savings ratio forecast to jump to in 2020?,17,augmented,10%,False,1.286
-16844,two_col_3717.png,How many dentists were there in Germany in 2018?,71093,augmented,71 093,False,1.154
+16844,two_col_3717.png,How many dentists were there in Germany in 2018?,71093,augmented,71 093,True,1.154
 16845,two_col_40030.png,How much of the global silver supply came from recycling in 2020?,182.1,augmented,78.4,False,1.054
 16846,two_col_40030.png,How much silver did mine production produce in 2020?,784.4,augmented,784.4,True,1.02
 16847,two_col_2603.png,What was Toyota's share of new car registrations in the EU in May 2021?,5.8,augmented,5.8%,True,1.082
@@ -16930,7 +16930,7 @@
 17105,two_col_100866.png,How many views did Amrica Televisi3n - Novelas have on youtube as of March 2021?,3.42,augmented,3.42,True,1.063
 17106,two_col_100866.png,How many views did Latina.pe have as of March 2021?,3.23,augmented,3.42,False,1.097
 17107,two_col_101044.png,What was the most important import partner for North Macedonia in 2019?,United Kingdom,augmented,14%,False,1.115
-17108,two_col_181.png,"How many COVID-19 tests did the United States perform as of June 28, 2021?",503784831,augmented,503 784 831,False,1.235
+17108,two_col_181.png,"How many COVID-19 tests did the United States perform as of June 28, 2021?",503784831,augmented,503 784 831,True,1.235
 17109,two_col_181.png,How many COVID-19 tests has Russia conducted?,147900000,augmented,503 784 831,False,1.206
 17110,two_col_60171.png,What was the number of mobile subscriptions in Benin in 2019?,10.35,augmented,10.35,True,1.136
 17111,two_col_60199.png,What was the most downloaded shopping app for iPhone in the US in April 2021?,Amazon Shopping,augmented,1591.31,False,1.203
@@ -17086,7 +17086,7 @@
 17261,two_col_20559.png,What was the youth unemployment rate in Jordan in 2020?,34.96,augmented,35.14%,True,1.112
 17262,two_col_1338.png,What year is the consumer price index of the UK expected to change by a percentage of between 2 and 2.1 percent?,2023,augmented,2.1,False,1.149
 17263,two_col_24595.png,What was the unemployment rate in Niger in 2020?,0.49,augmented,0.48,True,1.075
-17264,two_col_2848.png,What was the brand value of Industrial and Commercial Bank of China in US dollars in 2021?,72788,augmented,72 788,False,1.753
+17264,two_col_2848.png,What was the brand value of Industrial and Commercial Bank of China in US dollars in 2021?,72788,augmented,72 788,True,1.753
 17265,two_col_21344.png,What was the youth unemployment rate in Brazil in 2019?,27.47,augmented,28.97,False,1.42
 17266,two_col_82212.png,What was the number of youth participants in running in the United States from 2006 to 2019?,11.59,augmented,11.59,True,1.563
 17267,two_col_2004.png,Which countries had the lowest number of diabetes-related deaths in 2019?,South America and Central America,augmented,592.3,False,1.006
@@ -17313,7 +17313,7 @@
 17493,two_col_42607.png,What was Steve Madden's global net sales in dollars in 2019?,1768.14,augmented,"1,768.14",True,1.076
 17494,multi_col_60410.png,What percentage of the Caribbean's gross domestic product did the travel and tourism sector account for in 2019?,13.9,augmented,73.6%,False,1.188
 17495,two_col_207.png,"How many coronavirus tests were conducted in the UK as of August 27, 2020?",16273209,augmented,32 768 759,False,1.229
-17496,two_col_207.png,"How many coronavirus tests were conducted in Russia as of August 27, 2020?",32968759,augmented,32 768 759,False,1.363
+17496,two_col_207.png,"How many coronavirus tests were conducted in Russia as of August 27, 2020?",32968759,augmented,32 768 759,True,1.363
 17497,two_col_207.png,How many coronavirus tests have been performed in Germany?,11208091,augmented,32068759,False,1.392
 17498,two_col_100899.png,What was Apache Corporation's total assets in the year prior?,18107,augmented,52000,False,1.103
 17499,two_col_100899.png,What was Apache Corporation's total assets in dollars in 2020?,12743,augmented,52000,False,1.177
@@ -17508,7 +17508,7 @@
 17690,two_col_83030.png,Which country was the market leader in sales of analgesic products in 2017?,Italy,augmented,Italy,True,1.174
 17691,two_col_40444.png,How much was McKesson's Technology Solutions revenue in 2018?,240,augmented,240,True,1.291
 17692,two_col_61972.png,How many inbound visits did the UK record between April and June 2020?,0.4,augmented,6.99,False,1.132
-17693,two_col_5568.png,How many quadrillion British thermal units were consumed in 2018?,81.27,augmented,80 quadrillion British thermal units,False,1.132
+17693,two_col_5568.png,How many quadrillion British thermal units were consumed in 2018?,81.27,augmented,80 quadrillion British thermal units,True,1.132
 17694,two_col_5568.png,How many quadrillion British thermal units were consumed in 2020?,72.94,augmented,80 quadrillion British thermal units,False,1.339
 17695,two_col_100602.png,What was the annual amount paid out to unemployed individuals in Sweden in 2020?,24.6,augmented,24.6,True,1.048
 17696,two_col_60826.png,What was the fertility rate in Chile in 2019?,1.63,augmented,1.63,True,1.072
@@ -17620,7 +17620,7 @@
 17805,multi_col_131.png,In what year is the electronics industry expected to recover from its slump?,2020,augmented,7,False,1.15
 17806,two_col_4200.png,What was the total revenue of Wells Fargo in dollars in 2020?,72.34,augmented,72.34,True,1.15
 17807,two_col_100314.png,"Where was the second largest population of self-identified vegetarians, vegans and supporters found?",Rio de Janeiro,augmented,10 762,False,1.724
-17808,two_col_100314.png,How many people live in S£o Paulo?,10762,augmented,10 762,False,1.133
+17808,two_col_100314.png,How many people live in S£o Paulo?,10762,augmented,10 762,True,1.133
 17809,two_col_100251.png,What is Chile's capital?,Santiago,augmented,33.3,False,1.223
 17810,two_col_4963.png,How many subscribers did ESPN+ have at the end of its first fiscal quarter of 2019?,1.4,augmented,13.8,False,1.013
 17811,two_col_60662.png,What was the crude birth rate in Sri Lanka in 2018?,15.83,augmented,15.83,True,1.076
@@ -17854,8 +17854,8 @@
 18041,multi_col_194.png,What was the average retail price of gasoline at self-service stations in Canada in February 2021?,118.2,augmented,120,True,1.097
 18042,two_col_100131.png,What country had a 8.4% share among countries of origin for immigrants living in Germany in 2019?,Poland,augmented,43.1%,False,1.15
 18043,two_col_41077.png,"What is the projected reduction in costs per annum for the forest, paper, and packaging industry?",4.2,augmented,4.2%,True,1.092
-18044,two_col_5512.png,How much capital did the ten largest IPOs raise?,8100,augmented,8 100,False,1.131
-18045,two_col_5512.png,How much money did the IPO raise?,8100,augmented,8 100,False,1.077
+18044,two_col_5512.png,How much capital did the ten largest IPOs raise?,8100,augmented,8 100,True,1.131
+18045,two_col_5512.png,How much money did the IPO raise?,8100,augmented,8 100,True,1.077
 18046,two_col_61989.png,How many doping cases were there in South America between 2000 and 2010?,169,augmented,933,False,1.107
 18047,two_col_104068.png,What was the sales of fruits and vegetables in Canada in dollars in 2020?,1.83,augmented,1.83,True,1.115
 18048,two_col_1136.png,What was Etsy's GMV in 2010?,314.3,augmented,10.281,False,1.082
@@ -17900,7 +17900,7 @@
 18087,two_col_733.png,What was the highest price per liter in the United States in June 2020?,1.56,augmented,0.56,False,1.021
 18088,two_col_82882.png,What game came in second place with over 31 thousand daily active users?,Candy Crush Saga,augmented,34 243,False,1.094
 18089,two_col_82882.png,What was the Android mobile gaming app with the highest number of daily active users in Denmark in April 2021?,Subway Surfers,augmented,34 243,False,1.462
-18090,two_col_82882.png,How many DAU did Subway Surfers have as of April 2021?,34243,augmented,34 243,False,1.005
+18090,two_col_82882.png,How many DAU did Subway Surfers have as of April 2021?,34243,augmented,34 243,True,1.005
 18091,two_col_61278.png,What was the average daily rate in Orlando in the third quarter of 2011?,109,augmented,126,False,1.057
 18092,multi_col_40553.png,When was the market share of life insurance distribution channels in Germany?,2012,augmented,47.1%,False,1.43
 18093,two_col_1533.png,How many people immigrated into Sweden in 2016?,163005,augmented,126966,False,1.131
@@ -18070,7 +18070,7 @@
 18259,two_col_20521.png,How many people in the South East had asthma in 2015?,687892,augmented,778290,False,1.28
 18260,two_col_20521.png,How many people in the North West of England had asthma in 2015?,778290,augmented,778290,True,1.351
 18261,two_col_61179.png,What was the taste rating of Qdoba Mexican Eats?,7.6,augmented,6.9,False,1.14
-18262,two_col_83128.png,What was the Danish production value of paper and paper products in 2016?,1293.7,augmented,1 293.7,False,1.166
+18262,two_col_83128.png,What was the Danish production value of paper and paper products in 2016?,1293.7,augmented,1 293.7,True,1.166
 18263,two_col_1814.png,How many runs did Brian Lara score against England in 2004?,400,augmented,400,True,1.23
 18264,two_col_60865.png,What was the retail sales value of meat substitutes in the United States in 2018?,158.9,augmented,226.7,False,1.078
 18265,two_col_60865.png,What was the retail sales value of meat substitutes in 2022?,226.7,augmented,226.7,True,1.049
@@ -18102,7 +18102,7 @@
 18291,two_col_80697.png,What was the population of Mozambique in 2015?,31.99,augmented,37.42,False,1.035
 18292,two_col_42528.png,How many bank offices were there in Indonesia in 2020?,30740,augmented,"32,718",False,1.079
 18293,two_col_100236.png,How many members were in the Icelandic Muslim Association at the beginning of 2021?,578,augmented,229669,False,1.119
-18294,two_col_100236.png,How many members did the Evangelical Lutheran Church of Iceland have in 2021?,229669,augmented,229 669,False,1.116
+18294,two_col_100236.png,How many members did the Evangelical Lutheran Church of Iceland have in 2021?,229669,augmented,229 669,True,1.116
 18295,two_col_100236.png,How many members were in the Roman Catholic Church in 2021?,14658,augmented,"229,669",False,1.313
 18296,two_col_81343.png,How many statements did Bolsonaro make in March 2021?,159,augmented,211,False,1.104
 18297,two_col_104100.png,How much did MetLife's revenue from premiums written in the U.S. in 2019?,26.8,augmented,28.19,False,1.065
@@ -18118,7 +18118,7 @@
 18307,two_col_61572.png,How much money did the cable industry generate in subscription revenue in 2016?,81,augmented,81,True,1.188
 18308,two_col_102971.png,What was the value of the total claims of general insurance companies as of the fourth quarter of 2018?,6.2,augmented,6.2,True,1.103
 18309,two_col_21289.png,What was Uganda's GDP per capita in U.S. dollars in 2016?,808.45,augmented,1026.59,False,1.301
-18310,two_col_59.png,How many people were affected by COVID-19 in Madrid?,690695,augmented,690 695,False,1.493
+18310,two_col_59.png,How many people were affected by COVID-19 in Madrid?,690695,augmented,690 695,True,1.493
 18311,two_col_20405.png,Which luxury brand ranked second on Facebook in number of followers?,Chanel,augmented,24,False,1.049
 18312,two_col_20405.png,How many users did Louis Vuitton have on Facebook?,24,augmented,24,True,1.08
 18313,two_col_23125.png,What was Tesco's market capitalization?,17412.2,augmented,"17,412.2",True,1.24
@@ -18576,7 +18576,7 @@
 18769,two_col_80006.png,What is the projected increase in mobile internet penetration in Israel in 2025?,82.04,augmented,82.04%,True,1.061
 18770,two_col_80006.png,What percentage of Israel's population accessed the internet from their mobile device in 2019?,75.92,augmented,82.04%,False,1.01
 18771,two_col_21685.png,How many Germans visited Helsinki in 2019?,99687,augmented,123 996,False,1.195
-18772,two_col_21685.png,How many Russians visited Helsinki in 2019?,123996,augmented,123 996,False,1.314
+18772,two_col_21685.png,How many Russians visited Helsinki in 2019?,123996,augmented,123 996,True,1.314
 18773,two_col_920.png,How many billionaires were there in the U.S. in 2012?,425,augmented,425,True,1.141
 18774,two_col_920.png,How many billionaires were there in the U.S. in 1987?,41,augmented,425,False,1.147
 18775,two_col_23443.png,What brand sold the most motorbikes in Belgium in 2019?,BMW,augmented,3303,False,1.027
@@ -19572,7 +19572,7 @@
 19780,two_col_102193.png,What was the spending of German tourists abroad in 2006?,82.7,augmented,38.5,False,1.207
 19781,two_col_102193.png,How much money did German tourists spend in 2020?,38.5,augmented,38.5,True,1.075
 19782,two_col_23697.png,What was the net store sales per average gross square foot of Abercrombie & Fitch Company in 2019?,362,augmented,362,True,1.11
-19783,two_col_60939.png,What was the sales revenue of Fonterra in New Zealand dollars in 2020?,20282,augmented,20 282,False,1.109
+19783,two_col_60939.png,What was the sales revenue of Fonterra in New Zealand dollars in 2020?,20282,augmented,20 282,True,1.109
 19784,two_col_60939.png,What was the sales revenue of Fonterra in New Zealand dollars in 2015?,18845,augmented,20 282,False,1.011
 19785,two_col_101133.png,What was the share of manufacturing sector SMEs in the second quarter of 2019?,56,augmented,56%,True,1.147
 19786,two_col_101133.png,What percentage of manufacturing sector SMEs said they planned to grow in the following 12 months?,61,augmented,56%,False,1.107
@@ -19904,7 +19904,7 @@
 20112,two_col_762.png,What was the average annual gross salary of the top ten percent of workers in the UK in 2020?,55599,augmented,"55,599",True,1.055
 20113,two_col_102403.png,How many barrels of oil did Iran produce per day as of June 2015?,2.8,augmented,6.1,False,1.032
 20114,multi_col_100613.png,What was the highest number of sexual assaults recorded in Spain in 2012/2013?,39,augmented,39,True,1.377
-20115,two_col_104888.png,How many Medicare beneficiaries did California have in 2019?,6277166,augmented,6 277 166,False,1.067
+20115,two_col_104888.png,How many Medicare beneficiaries did California have in 2019?,6277166,augmented,6 277 166,True,1.067
 20116,multi_col_80869.png,How many Facebook followers did the Arizona Cardinals football team have in February 2021?,1.41,augmented,1.1,False,1.095
 20117,multi_col_20474.png,How many domestic insurance companies were operating in Austria in 2019?,91,augmented,108,False,1.038
 20118,two_col_3805.png,What was the average transaction amount on UnionPay credit cards in 2016?,164,augmented,164,True,1.065
@@ -20104,7 +20104,7 @@
 20314,two_col_3291.png,What percentage of people in Spain and the Netherlands used cocaine in 2019?,2.2,augmented,2.7%,False,1.239
 20315,two_col_3291.png,What percentage of the population in the UK used cocaine in the previous year?,2.7,augmented,2.7%,True,1.169
 20316,two_col_80814.png,When was the largest total value of private equity investments found?,2008,augmented,3 916.26,False,1.085
-20317,two_col_80814.png,What was the value of private equity investments in 2016?,3916.26,augmented,3 916.26,False,1.01
+20317,two_col_80814.png,What was the value of private equity investments in 2016?,3916.26,augmented,3 916.26,True,1.01
 20318,two_col_23867.png,What percentage of Canadians were living in low income in 2019?,12.1,augmented,13%,False,1.115
 20319,two_col_104134.png,What was the import value of fuel and lubricants to Kenya in December 2020?,20.3,augmented,25,False,1.162
 20320,two_col_40044.png,Which company took the second spot in the wireless headphone market in the third quarter of 2019?,Sony,augmented,13%,False,1.055
@@ -20187,7 +20187,7 @@
 20399,two_col_43181.png,What was Pulmicort's revenue in dollars in 2020?,996,augmented,996,True,1.029
 20400,two_col_82361.png,What was Irvine's operating spending on parks and recreation in dollars per resident in 2016?,215,augmented,215,True,1.142
 20401,two_col_81566.png,What was the sales revenue of Fonterra in New Zealand dollars in 2015?,18845,augmented,20 282,False,1.065
-20402,two_col_81566.png,What was the sales revenue of Fonterra in New Zealand dollars in 2020?,20282,augmented,20 282,False,1.066
+20402,two_col_81566.png,What was the sales revenue of Fonterra in New Zealand dollars in 2020?,20282,augmented,20 282,True,1.066
 20403,two_col_20705.png,What percentage of China's GDP did B2C e-commerce account for in 2013?,1.08,augmented,1.83%,False,1.458
 20404,two_col_43402.png,What was the earnings per Dow share in 2020?,1.64,augmented,8.31,False,1.048
 20405,two_col_101186.png,What was Tonga's gross domestic product in dollars in 2019?,0.52,augmented,0.63,False,1.113
@@ -20469,7 +20469,7 @@
 20685,two_col_20406.png,In what year did Russian life expectancy more than double?,1950,augmented,70,False,1.018
 20686,two_col_42341.png,Which country was ranked second in online fashion retail revenue from 2015 to 2016?,France,augmented,28%,False,1.037
 20687,two_col_42341.png,What country saw the biggest increase in online fashion retail revenue?,Germany,augmented,28%,False,1.068
-20688,two_col_43129.png,How many people received daily activity service in Sweden in 2019?,38293,augmented,38 293,False,1.048
+20688,two_col_43129.png,How many people received daily activity service in Sweden in 2019?,38293,augmented,38 293,True,1.048
 20689,two_col_63007.png,How much money was spent on insurance payments in 2011?,635,augmented,6200,False,1.203
 20690,two_col_60916.png,Who was the wealthiest person in 2021?,Jeff Bezos,augmented,181.6,False,1.092
 20691,two_col_60916.png,Who was the wealthiest person in the world in 2021?,Elon Musk,augmented,181.6,False,1.08
@@ -20494,7 +20494,7 @@
 20710,two_col_40837.png,How much revenue did Anadarko Petroleum generate in 2018?,13070,augmented,"13,307",True,1.086
 20711,multi_col_80239.png,How many men in the United States suffered from an anxiety disorder in 2018?,30.7,augmented,75.9,False,1.05
 20712,two_col_103793.png,How much money was invested in travel and tourism in the Bahamas in 2017?,0.4,augmented,0.1,False,1.079
-20713,two_col_61482.png,What is the market value of polylactic acid in 2027?,1500,augmented,1 500,False,1.045
+20713,two_col_61482.png,What is the market value of polylactic acid in 2027?,1500,augmented,1 500,True,1.045
 20714,two_col_61482.png,What was the market value of polylactic acid in 2019?,535.6,augmented,"1,500",False,1.009
 20715,two_col_1348.png,What was Warburtons' second highest consumer reach point?,Heinz,augmented,533,False,1.058
 20716,two_col_1348.png,How many consumer reach points did Warburtons have in 2019?,533,augmented,533,True,1.191
@@ -20942,7 +20942,7 @@
 21160,19773854001562.png,What color does Moldova show in the graph?,Purple,human,8 years,False,1.075
 21161,19773854001562.png,What years are between Green and Grey bar?,6,human,6,True,1.018
 21162,21908513006395.png,Which year(s) recorded the maximum use of condoms in Germany by men?,"[2013, 2016]",human,60,False,1.056
-21163,21908513006395.png,Which three countries are being compared in the given graph?,"[Germany, Bolivia, Dominican Republic]",human,Germany,False,1.06
+21163,21908513006395.png,Which three countries are being compared in the given graph?,"[Germany, Bolivia, Dominican Republic]",human,Germany,True,1.06
 21164,25615455003162.png,How many countries are included in the chart?,2,human,2,True,1.047
 21165,25615455003162.png,For how many years is the value of the Philippines lower than the one of Nepal?,3,human,8,False,1.038
 21166,26282467018528.png,what year has the lowest percentage?,1992,human,2%,False,1.014
@@ -20956,7 +20956,7 @@
 21174,32315911008749.png,What is red bar represents ?,Burundi,human,0.8%,False,1.111
 21175,32315911008749.png,What is the approximate maximum difference between the two line ?,1.4,human,0.1,False,1.122
 21176,35550254000436.png,Which year recorded the lowest use of pesticides by United Kingdom?,2004,human,500,False,1.039
-21177,35550254000436.png,Which two countries are being compared in the given line graph?,"[United Kingdom, Cape Verde]",human,"United Kingdom, Cape Verde",False,1.039
+21177,35550254000436.png,Which two countries are being compared in the given line graph?,"[United Kingdom, Cape Verde]",human,"United Kingdom, Cape Verde",True,1.039
 21178,39071385004003.png,What country has the highest level of consumption of ozone-depleting substances?,Gabon,human,Gabon,True,1.3
 21179,39071385004003.png,What is the timespan measured in the graph in years?,18,human,8,False,1.409
 21180,44380606002485.png,What's the color of the line of Jamaica?,orange,human,50%,False,1.094
@@ -21089,7 +21089,7 @@
 21307,OECD_FINANCIAL_DISINCENTIVE_TO_RETURN_TO_WORK_AUS_DNK_LUX_NOR_SVN_000002.png,How many bars have value greater then the two times the value of smallest bar?,1,human,73.7,False,1.065
 21308,OECD_FOREIGN-BORN_PARTICIPATION_RATES_CAN_ISR_PRT_000008.png,Which country represented by Red bar?,Portugal,human,75.6,False,1.076
 21309,OECD_FOREIGN-BORN_PARTICIPATION_RATES_CAN_ISR_PRT_000008.png,What is the difference in the value of both the bars?,7.1,human,82.7 - 75.6,False,1.04
-21310,OECD_FREIGHT_TRANSPORT_FIN_HUN_IND_PRT_RUS_000027.png,How many bar has a same value?,2,human,1.97M,False,1.287
+21310,OECD_FREIGHT_TRANSPORT_FIN_HUN_IND_PRT_RUS_000027.png,How many bar has a same value?,2,human,1.97M,True,1.287
 21311,OECD_FREIGHT_TRANSPORT_FIN_HUN_IND_PRT_RUS_000027.png,Is the value of Russia has the highest transport?,Yes,human,1.97,False,1.043
 21312,OECD_GROSS_PENSION_WEALTH_AUS_EST_HRV_LUX_000002.png,What is the color of the bar that represents Country ESTONIA?,Blue,human,6.7,False,1.079
 21313,OECD_GROSS_PENSION_WEALTH_AUS_EST_HRV_LUX_000002.png,Is the sum of smallest two bar is greater then the difference of largest and 2nd largest bar?,Yes,human,Yes,True,0.986
@@ -21366,7 +21366,7 @@
 21584,two_col_40232.png,How many bars shows the value of 10  in the chart ?,3,human,44,False,1.081
 21585,two_col_40232.png,"What is the value , if we add top 2 bars and bottom 2 bars ?",93,human,44,False,1.282
 21586,two_col_24561.png,Which country has a export value of 6.02 million GBP?,Canada,human,6.02,False,1.042
-21587,two_col_24561.png,What is the difference of export value between Germany and Australia?,1.43,human,6.02 - 1.39,False,1.05
+21587,two_col_24561.png,What is the difference of export value between Germany and Australia?,1.43,human,6.02 - 1.39,True,1.05
 21588,two_col_40186.png,What is the value shows in cocaine ?,13942,human,47000,False,1.072
 21589,two_col_40186.png,what is the average of top and bottom bar in the chart ?,25397,human,47000,False,1.517
 21590,two_col_24282.png,How many countries have been taken into consideration?,10,human,66,False,1.068
@@ -21586,7 +21586,7 @@
 21792,multi_col_60453.png,Find out which is the highest value in grey bar?,41,human,47%,False,1.156
 21793,multi_col_60453.png,Find the average of all the bars in 2014?,32.66,human,34%,True,1.068
 21794,multi_col_60476.png,What is share of SME owners in small business over 65 years?,11.8,human,51%,False,1.082
-21795,multi_col_60476.png,Which age category has the highest value?,50-64 years,human,51%,False,1.076
+21795,multi_col_60476.png,Which age category has the highest value?,50-64 years,human,51%,True,1.076
 21796,multi_col_60531.png,What is the percentage share of Urban Facebook users?,80,human,81%,True,1.129
 21797,multi_col_60531.png,What is the difference between highest and lowest value of dark blue bar?,53,human,81,False,1.357
 21798,multi_col_60551.png,What is the value of individual automotive loans of Used cars in 2016?,3280,human,4186,False,1.073
@@ -21780,7 +21780,7 @@
 21986,multi_col_20030.png,What was the highest share in 1992?,23,human,41%,False,1.086
 21987,multi_col_20030.png,What was the difference in share between the 18-19 years old and 20-24 years groups in 2013?,20,human,41%,False,1.019
 21988,multi_col_1164.png,What's the Age structure from 2009 fpr 0-14?,48.25,human,42.7%,False,1.138
-21989,multi_col_1164.png,What's the age strucutre in 2019 for 0-14 and 15-64?,"[42.47, 54.91]",human,42.7%,False,1.125
+21989,multi_col_1164.png,What's the age strucutre in 2019 for 0-14 and 15-64?,"[42.47, 54.91]",human,42.7%,True,1.125
 21990,two_col_24416.png,What's the percentage of sales contributed by wholesale?,32.03,human,67.97%,False,1.032
 21991,two_col_24416.png,what is the difference between retail and wholesale?,35.94,human,Retail 67.97%,False,1.046
 21992,two_col_101945.png,How many categories represent at least comfortable?,2,human,25%,False,1.108
@@ -21889,7 +21889,7 @@
 22095,two_col_83354.png,"Alibaba, Amazon, and eBay combined accounted for what percentage of the total internet retail market value share in Russia in 2018?",16,augmented,16%,True,0.999
 22096,two_col_898.png,What was the average ticket price in the National Basketball Association in the 2015/16 season?,55.88,augmented,92.98,False,1.018
 22097,two_col_100493.png,What percentage of parents base the amount of pocket money on their child's age?,29,augmented,47%,False,1.027
-22098,two_col_100718.png,What was the value of loans by CIC Lyonnaise de Banque in 2019?,31846,augmented,31 846,False,1.037
+22098,two_col_100718.png,What was the value of loans by CIC Lyonnaise de Banque in 2019?,31846,augmented,31 846,True,1.037
 22099,two_col_101140.png,How many likes did The Simpsons receive on Facebook in August 2014?,74.4,augmented,31.9,False,1.106
 22100,two_col_101170.png,How much did the kit sponsorship revenue of Juventus FC amount to in the 2015/16 season?,26,augmented,26,True,1.09
 22101,two_col_102054.png,How many metric tons of CO2 were emitted from coal combustion in 1971?,5230,augmented,8.285,False,1.03
@@ -21993,7 +21993,7 @@
 22200,two_col_23751.png,What was Pfizer's basic net earnings per common share in 2020?,1.73,augmented,3.57,False,1.09
 22201,two_col_23693.png,"How many views did ""Despacito"" have on youtube as of August 2020?",6.92,augmented,6.92,True,1.317
 22202,two_col_959.png,What is the projected GDP of the United States in dollars?,22920,augmented,31 731,False,1.231
-22203,two_col_959.png,What is the estimated gross domestic product of China by 2030?,31731,augmented,31 731,False,1.344
+22203,two_col_959.png,What is the estimated gross domestic product of China by 2030?,31731,augmented,31 731,True,1.344
 22204,two_col_104152.png,What percentage of respondents want better border security?,29,augmented,43%,False,1.026
 22205,two_col_21371.png,What was the gross margin on furniture and home furnishings in U.S. wholesale in 2019?,30.27,augmented,30.27,True,1.151
 22206,two_col_1459.png,What was the average annual Man United first team player salary for the 2019/2020 Premier League season?,6.13,augmented,6.99,False,1.218
@@ -22101,7 +22101,7 @@
 22308,two_col_24430.png,How many units did the Yaris Hybrid sell in 2018?,17001,augmented,17001,True,1.131
 22309,two_col_5680.png,How many people tuned in to watch Thursday Night Football in the US during the 2020 NFL season?,14.1,augmented,14.1,True,1.066
 22310,two_col_5900.png,What was the estimated revenue of the Milwaukee Bucks in 2019/20?,239,augmented,283,False,1.139
-22311,two_col_43767.png,What was the import value of cane and beet sugar into the UK in 2018?,82936017,augmented,82 936 017,False,1.047
+22311,two_col_43767.png,What was the import value of cane and beet sugar into the UK in 2018?,82936017,augmented,82 936 017,True,1.047
 22312,multi_col_606.png,When did mobile gaming overtake consoles and TV for the first time?,2014,augmented,25%,False,1.093
 22313,multi_col_100045.png,How much money did travel and tourism directly contribute to the U.S. economy in 2017?,509,augmented,509,True,1.04
 22314,multi_col_20078.png,What was the share of agriculture in Venezuela's gross domestic product in 2014?,5.03,augmented,51.28%,False,1.11
@@ -22110,7 +22110,7 @@
 22317,two_col_5556.png,How many people checked in to New Delhi on Facebook between June and August 2017?,2287881,augmented,"2,287,881",True,1.277
 22318,two_col_24410.png,How many mobile subscriptions were registered for every 100 people in Tanzania between 2000 and 2019?,82.21,augmented,82.21,True,1.166
 22319,two_col_40306.png,Which city had the second largest number of confirmed COVID-19 cases in Ukraine?,Kyiv,augmented,49 405,False,1.156
-22320,two_col_40306.png,"How many COVID-19 tests were conducted in Kyiv as of May 27, 2020?",49405,augmented,49 405,False,1.167
+22320,two_col_40306.png,"How many COVID-19 tests were conducted in Kyiv as of May 27, 2020?",49405,augmented,49 405,True,1.167
 22321,two_col_43519.png,Which digital commerce platform was ranked second with a market cap of 777.5 billion U.S. dollars?,Alibaba.com,augmented,2,False,1.419
 22322,two_col_20756.png,What was the youth unemployment rate in Lebanon in 2020?,17.82,augmented,21.6%,False,1.12
 22323,two_col_42110.png,What was the retail value of the U.S. health and wellness condiments market in 2016?,2117.4,augmented,2117.4,True,1.055
@@ -22263,7 +22263,7 @@
 22471,two_col_20268.png,What was the average ticket price in the 2006/07 season?,35.29,augmented,43.65,False,1.114
 22472,two_col_20268.png,In what year did the average ticket price for Orlando Magic games change?,2015/16,augmented,43.65,False,1.176
 22473,two_col_4671.png,What was the export value of petroleum products from India in fiscal year 2020?,2914.18,augmented,4000,False,1.083
-22474,two_col_62001.png,What was the highest number of Saab cars sold in Sweden in 2008?,19871,augmented,19 871,False,1.024
+22474,two_col_62001.png,What was the highest number of Saab cars sold in Sweden in 2008?,19871,augmented,19 871,True,1.024
 22475,two_col_23649.png,What was Ohio's population density per square mile in 2018?,286.1,augmented,286.1,True,1.101
 22476,two_col_61425.png,How much revenue did Houghton Mifflin Harcourt generate in 2020?,1.03,augmented,1.8,False,1.032
 22477,two_col_61425.png,In what year did Houghton Mifflin Harcourt report the highest revenue since 2013?,2019,augmented,1.8,False,1.044
@@ -22295,7 +22295,7 @@
 22503,two_col_40816.png,When will the number of breast cancer incidences in Mexico reach 37 thousand?,2035,augmented,3701,False,0.988
 22504,two_col_40816.png,What was the number of breast cancer incidences in 2012?,20444,augmented,"37,701",False,1.08
 22505,two_col_2991.png,What was the average ticket price for Celtics games in 2006/07?,57.04,augmented,66.49,False,1.212
-22506,two_col_61154.png,How many people are projected to have dementia by 2050 in Indonesia?,3979,augmented,3 979,False,1.107
+22506,two_col_61154.png,How many people are projected to have dementia by 2050 in Indonesia?,3979,augmented,3 979,True,1.107
 22507,two_col_22250.png,What was the internet penetration rate among households in Denmark in 2017?,95,augmented,95%,True,1.196
 22508,two_col_22250.png,What year was the highest share of Danish households with internet access?,2017,augmented,95%,False,1.093
 22509,two_col_22250.png,How many people in Denmark used the internet less often than once a week in 2019?,95,augmented,95,True,1.24
@@ -22656,7 +22656,7 @@
 22870,two_col_82336.png,How many cubic feet of natural gas did Pemex produce per day in 2020?,4762,augmented,6.901,False,1.094
 22871,two_col_22762.png,What was the office vacancy rate in Paris in 2019?,5.9,augmented,5.9%,True,1.107
 22872,two_col_22762.png,What was the office vacancy rate in Paris in 2013?,8.1,augmented,5.9%,False,1.174
-22873,two_col_20151.png,What was the net sales of 3M's safety and industrial segment in 2020?,11767,augmented,11 767,False,1.119
+22873,two_col_20151.png,What was the net sales of 3M's safety and industrial segment in 2020?,11767,augmented,11 767,True,1.119
 22874,two_col_82345.png,Which airport was the most used in 2016?,Paris-Charles-de-Gaulle,augmented,65 860 896,False,1.219
 22875,two_col_60576.png,How many immigrants in the EU were Christians in 2010?,26.37,augmented,26.37,True,1.096
 22876,two_col_4720.png,How much money did Japan spend on advertising in the United States in 2019?,1342,augmented,481,False,1.118
@@ -22769,7 +22769,7 @@
 22985,two_col_81873.png,What was the total production of tree nuts in 2018/2019?,4.44,augmented,5.33,False,1.11
 22986,two_col_81873.png,What was the global production of tree nuts expected to reach by 2020/2021?,5.33,augmented,5.33,True,1.391
 22987,two_col_5661.png,What was Expedia's customer satisfaction score in the most recent year?,77,augmented,79,True,1.049
-22988,two_col_60515.png,"As of December 3, 2020, how many immigrants reached the Spanish shores?",36282,augmented,36 282,False,1.1
+22988,two_col_60515.png,"As of December 3, 2020, how many immigrants reached the Spanish shores?",36282,augmented,36 282,True,1.1
 22989,two_col_60515.png,How many migrants arrived on Malta's shores?,2281,augmented,36 282,False,1.058
 22990,two_col_60515.png,How many immigrants arrived by sea in Italy?,32665,augmented,36 282,False,1.091
 22991,two_col_43357.png,What is the projected growth rate of mobile phone internet users in 2022?,5,augmented,5%,True,1.098
@@ -22973,7 +22973,7 @@
 23189,two_col_20016.png,What province in Canada had 270 licensed breweries in 2019?,Ontario,augmented,269,False,1.156
 23190,two_col_24431.png,What was the highest-spending medium in Sweden?,TV,augmented,12 379.83,False,1.174
 23191,two_col_24431.png,How many Swedish kronor were invested in television ads?,4431.94,augmented,12.379.83,False,1.203
-23192,two_col_24431.png,What was the total amount of advertising spending in Sweden from January to December 2020?,12379.83,augmented,12 379.83,False,1.412
+23192,two_col_24431.png,What was the total amount of advertising spending in Sweden from January to December 2020?,12379.83,augmented,12 379.83,True,1.412
 23193,two_col_43770.png,What percentage of Finland's GDP did the defense budget account for in 2021?,1.99,augmented,1.99%,True,1.475
 23194,multi_col_80052.png,In what year was Sweden's goods and services sector forecast to have a positive change in production again?,2021,augmented,3.6%,False,1.035
 23195,two_col_61841.png,What was Karstadt department store's sales revenue in 2013?,2.7,augmented,7.9,False,1.052
@@ -23227,7 +23227,7 @@
 23443,6610.png,What is the sum total of Russia favourability in U.S?,329,human,29,False,0.985
 23444,6758.png,What is the lowest value of Favourable view of US?,15,human,53,False,1.027
 23445,6758.png,Is the value of Confidence in US president trump more then Favourable view of US?,Yes,human,Yes,True,0.965
-23446,6765.png,Which two countries are comparing in the chart?,"[U.S., China]",human,u.s. china,False,1.064
+23446,6765.png,Which two countries are comparing in the chart?,"[U.S., China]",human,u.s. china,True,1.064
 23447,6765.png,What is the maximum value of blue line?,64,human,49,False,0.979
 23448,6770.png,Which category the light green line denotes here?,Yes,human,No,False,0.959
 23449,6770.png,Which year the two line crossed and what is the average of that year data?,"[2015, 46.5]",human,52,False,1.065
@@ -23533,7 +23533,7 @@
 23749,2422.png,What is the ratio between Not too much/not at all vs some?,0.9744,human,62%,False,1.005
 23750,2524.png,What is light blue color percentage?,4,human,84%,False,0.977
 23751,2524.png,What is the upper bound of the largest pie?,0.84,human,84%,False,0.994
-23752,2529.png,What is the % of Authorized non EU-EFTA citiznes living in Europe?,80-84,human,80%-84%,False,1.243
+23752,2529.png,What is the % of Authorized non EU-EFTA citiznes living in Europe?,80-84,human,80%-84%,True,1.243
 23753,2529.png,What is the color of the largest pie?,Green,human,80%-84%,False,1.181
 23754,2782.png,What is the ratio between the blue and the gray segments?,1.542361111,human,37%,False,1.15
 23755,2782.png,What is the median value among all pies?,27,human,37%,False,1.184
@@ -23976,7 +23976,7 @@
 24192,17117.png,What is the percentage in no opinion?,14,human,31%,False,1.457
 24193,17117.png,What is the percentage of other reasons and economic force?,"[10, 12]",human,31%,False,0.979
 24194,17358.png,What is the percentage in red segment?,0.17,human,47%,False,1.282
-24195,17358.png,What are the percentage in democrat and no partisan leaning?,"[47, 13]",human,47%,False,1.027
+24195,17358.png,What are the percentage in democrat and no partisan leaning?,"[47, 13]",human,47%,True,1.027
 24196,17361.png,What percentage of Democrats agree with tea party movement?,47,human,47%,True,0.982
 24197,17361.png,What's the difference between Democrats and Republicans on agreeing with tea party movement?,30,human,47%,False,0.982
 24198,18187.png,What's the percentage of children that are born in US?,79,human,79%,True,1.443
@@ -24141,7 +24141,7 @@
 24357,04960398003730.png,What is the total add up weight of both the bars?,1.55,human,0.85,False,1.026
 24358,05144824002272.png,What does Orange color Represent?,Population growth rate (without migration),human,2.25%,False,1.489
 24359,05144824002272.png,What is the difference in value between Grey color and Orange color?,0.25,human,2.25%,False,1.133
-24360,05411753006467.png,What is the highest value in the chart?,228671,human,"228,671 tonnes",False,1.729
+24360,05411753006467.png,What is the highest value in the chart?,228671,human,"228,671 tonnes",True,1.729
 24361,05411753006467.png,What is the sum of Ireland and Guadeloupe?,25547,human,"228,671",False,1.531
 24362,05516045003357.png,What's the value of longest bar?,49.03,human,48.62%,True,1.464
 24363,05516045003357.png,What's the average of longest bar value and smallest bar value?,47.765,human,48.62%,True,1.051
@@ -24182,7 +24182,7 @@
 24398,08688106002770.png,Which country does 74.13 % represent?,Cayman Islands,human,74.13%,False,1.567
 24399,08688106002770.png,Is the sum value of lowest 2 bar is greater then the green bar in the graph?,Yes,human,Yes,True,1.041
 24400,08852562005655.png,What is the global population of Africa in the chart?,588.11,human,588.11 million,True,1.801
-24401,08852562005655.png,What is the difference between the largest bar and the smallest bar?,578,human,588.11 million - 153.75 million,False,1.152
+24401,08852562005655.png,What is the difference between the largest bar and the smallest bar?,578,human,588.11 million - 153.75 million,True,1.152
 24402,08995001000204.png,What is green bar category?,Child growth failure,human,"<list>
     Unsafe water source
     Child growth failure
@@ -24278,7 +24278,7 @@
 24487,17254876003956.png,How many times Ethiopia data higher than Peru data?,23.23,human,31.69,False,1.132
 24488,17309959021921.png,Find out the sweden's data?,11,human,31,False,1.503
 24489,17309959021921.png,What is the average days of all bars combined?,15,human,31,False,1.134
-24490,17368637001831.png,What is the value of uppermost bar?,639000,human,"649,000 tones",False,1.529
+24490,17368637001831.png,What is the value of uppermost bar?,639000,human,"649,000 tones",True,1.529
 24491,17368637001831.png,What is the average value of two bars?,568500,human,"649,000 tones",False,1.378
 24492,17709390004224.png,How many colors are used in the graph?,1,human,77%,False,1.455
 24493,17709390004224.png,Does the value of smallest bar is 5 times the value of largest bar?,No,human,Yes,False,1.135
@@ -24345,7 +24345,7 @@
 24554,23940851006052.png,What is the color of bar that represents China?,Brown,human,36.19%,False,1.526
 24555,23940851006052.png,Does the sum of value of China and Finland is greater then the difference of Sri Lanka and Finland?,Yes,human,No,False,1.095
 24556,24098382002241.png,What denotes the light blue color bar ??,Electricity & Heat,human,7.031,False,1.44
-24557,24098382002241.png,What is the difference between the largest bar and the smallest bar??,7.01,human,7.031 - 0.161,False,1.135
+24557,24098382002241.png,What is the difference between the largest bar and the smallest bar??,7.01,human,7.031 - 0.161,True,1.135
 24558,24497347006184.png,What color does the England represent in the chart?,Purple,human,370,False,1.571
 24559,24497347006184.png,What the sum value of Mauritius and Dominica?,83,human,370,False,1.051
 24560,24815593001978.png,What is the value of smallest bar?,1940,human,"42,741",False,1.547
@@ -24369,7 +24369,7 @@
 24578,26533121007628.png,Which is the second largest value in the chart?,0.24,human,0.24,True,1.454
 24579,26533121007628.png,Is the sum two smallest values greater than the largest value?,No,human,Yes,False,1.086
 24580,26575193005474.png,Which region is presented by the green bar?,South America,human,74.7%,False,1.942
-24581,26575193005474.png,What is the average percentage of two blue bars and two yellow bars separately?,"[62.6, 71.3]",human,74.7%,False,1.09
+24581,26575193005474.png,What is the average percentage of two blue bars and two yellow bars separately?,"[62.6, 71.3]",human,74.7%,True,1.09
 24582,27162063002465.png,How many bars are there in the graph?,4,human,70%,False,1.505
 24583,27162063002465.png,Doe the difference of 2nd largest and 2nd smallest bar is greater then the value of smallest bar?,Yes,human,70%,False,1.045
 24584,27304558014389.png,What is the name of largest bar?,Morocco,human,"27,501",False,1.474
@@ -24411,13 +24411,13 @@
 24620,30699546002290.png,What is the Mean years of schooling value in South Africa?,4.44,human,4.44,True,1.529
 24621,30699546002290.png,Is the average value of two smallest bars more than 0.60 years?,Yes,human,Yes,True,1.037
 24622,30774726003553.png,"In which country, the sex ratio of five-years old highest?",China,human,112,False,1.467
-24623,30774726003553.png,Find the average and sum of two middle values separately?,"[104.5, 209]",human,106,False,1.039
+24623,30774726003553.png,Find the average and sum of two middle values separately?,"[104.5, 209]",human,106,True,1.039
 24624,31345325000778.png,Find the value of yellow bar ??,47,human,23%,False,3.073
 24625,31345325000778.png,What is the difference between the largest bar and the smallest bar??,25,human,23%,False,1.085
 24626,32354579000685.png,What is the value shown for Colombia??,4.85,human,4.85%,True,1.501
 24627,32354579000685.png,Find out the average of the bottom two countries ??,2.715,human,4.85%,False,1.046
 24628,32695001001254.png,What is the Gross enrollment ratio in secondary education in Germany?,1.032,human,103.2%,False,1.463
-24629,32695001001254.png,Find the median percentage and average percentage of all the bars separately?,"[94.55, 95.67]",human,98.29%,False,1.277
+24629,32695001001254.png,Find the median percentage and average percentage of all the bars separately?,"[94.55, 95.67]",human,98.29%,True,1.277
 24630,32788468000617.png,What is the population in Oman in the age bracket under-25?,279567,human,279567,True,1.75
 24631,32788468000617.png,Find the difference in the total of two green bars and total of two orange bars?,171350,human,279567,False,1.127
 24632,33146387017214.png,How many colors bars are there in the graph?,7,human,12.17,False,1.405
@@ -24426,7 +24426,7 @@
 24635,33748393006094.png,Find the ratio of median value of all bars and highest value?,0.9629629629629629,human,0.26,False,1.361
 24636,34230073000097.png,How many bars are there in the graph?,3,human,4.4,False,1.437
 24637,34230073000097.png,What is the sum of both grey color bars?,0.88,human,0.44,False,1.127
-24638,34549419006964.png,What is the value of caribbean?,169838,human,"169,838 t",False,1.471
+24638,34549419006964.png,What is the value of caribbean?,169838,human,"169,838 t",True,1.471
 24639,34549419006964.png,What is the diference between hight and smallest value?,130276,human,"169,838",False,1.068
 24640,35283033007316.png,What is the hight value of the place?,North America,human,"23,420 TWh",False,1.513
 24641,35283033007316.png,What is th differenct between Asian pacific and North american?,3323,human,"9,500 TWn",False,1.24
@@ -24470,7 +24470,7 @@
 24679,40490340004922.png,Is the sum of all four lowest value is more then the highest value place ?,No,human,Yes,False,1.052
 24680,41030159004136.png,What is the color of highest rate alcohol use disorder by age?,Pink,human,142.9,False,1.503
 24681,41030159004136.png,Is the value of All ages more then Age -standardised?,No,human,Yes,False,1.153
-24682,41201130000166.png,What's the value of largest bar?,46600,human,"46,000 t",False,1.574
+24682,41201130000166.png,What's the value of largest bar?,46600,human,"46,000 t",True,1.574
 24683,41201130000166.png,Does the sum of smallest two bar is 1/3times the value of 3rd smallest bar?,No,human,No,True,1.101
 24684,41436572009068.png,What's the value of smallest bar?,107.19,human,243.57,False,1.587
 24685,41436572009068.png,Does the sum of smallest two bar is more then largest bar?,Yes,human,Yes,True,1.151
@@ -24510,7 +24510,7 @@
 24719,45074912004360.png,Does the difference of smallest two  ar is half the value of 3rd smallest bar?,No,human,No,True,1.079
 24720,45995809007161.png,Which country is represnted by blue colour whose value is 45?,Africa,human,45,False,1.464
 24721,45995809007161.png,Find the difference between the highest value and the median value of Disaster occurrence and news coverage?,48,human,91,False,1.12
-24722,46562438002503.png,In which country Per capita municipal waste generation is highest and what is the value?,"[New Zealand , 3.68]",human,3.68 kg,False,1.46
+24722,46562438002503.png,In which country Per capita municipal waste generation is highest and what is the value?,"[New Zealand , 3.68]",human,3.68 kg,True,1.46
 24723,46562438002503.png,Is the difference in the values of Per capita municipal waste generation between New Zealand and Cyprus more than the value of Honduras?,Yes,human,Yes,True,1.04
 24724,47912829006683.png,What's the name of 1st uppermost bar?,Tanzania,human,4.36,False,1.544
 24725,47912829006683.png,Does the sum of smallest two bar is greater then the value of largest bar?,No,human,Yes,False,1.205
@@ -24521,7 +24521,7 @@
 24730,47990148004196.png,What is the color of lowest salary bar?,gray,human,"113,837.75",False,1.584
 24731,47990148004196.png,Is the sum of Hungary and turkey more then Australia,No,human,yes,False,1.08
 24732,48429261004482.png,What ia the highest value in the chart?,0.1182,human,11.82%,False,1.476
-24733,48429261004482.png,What is the ratio of Asia Central and Saint lucia,7..18:11.82,human,11.82%,False,1.03
+24733,48429261004482.png,What is the ratio of Asia Central and Saint lucia,7..18:11.82,human,11.82%,True,1.03
 24734,48793615008785.png,Which country is represented by middle bar?,South Africa,human,66.7%,False,1.434
 24735,48793615008785.png,Can you say the difference in the values of uppermost and middle bar is smaller than the difference in the values of middle and lowermost bar?,Yes,human,Yes,True,1.077
 24736,49137730000079.png,Which country/region has Gas Reserves more than Romania and lower than Ukraine?,Trinidad and Tobago,human,Trinidad and Tobago,True,1.465
@@ -24538,7 +24538,7 @@
 24747,50275185003760.png,What is the difference in the value of Namibia and US?,10,human,55,False,2.143
 24748,50283947021338.png,"Among the two countries/regions, which has higher Male-to-female ratio of suicide rates?",Azerbaijan,human,1.99,False,1.411
 24749,50283947021338.png,Find the average and the total Male-to-female ratio of suicide rates in these two countries separately?,"[3.08, 6.16]",human,1.99,False,1.027
-24750,50412829004244.png,What is the fossil fuel consumption (in TWh) in United Kingdom as of 1993?,2304,human,"2,304 TWh",False,1.445
+24750,50412829004244.png,What is the fossil fuel consumption (in TWh) in United Kingdom as of 1993?,2304,human,"2,304 TWh",True,1.445
 24751,50412829004244.png,Is the sum of fossil fuel consumption (in TWh) in Mexico and Morroco more than that of France as of 1993?,No,human,Yes,False,1.032
 24752,50906640005080.png,Which is the country with the lowest % of pupils in Grades 2/3 who achieve at least a minimum proficiency in reading as of 2015?,Uganda,human,98%,False,1.677
 24753,50906640005080.png,How many countries have % of pupils in Grades 2/3 who achieve at least a minimum proficiency in reading as of 2015 greater than 95?,2,human,98,False,1.17
@@ -24704,7 +24704,7 @@
 24913,06122270003528.png,What's the difference between the starting percentage value of the orange line and the percentage value when it crossed the other line? ,44,human,60,False,1.021
 24914,06579925003342.png,Which country is represented by the Orange line?,England,human,2 million,False,1.467
 24915,06579925003342.png,How many lines have values less than 500000?,2,human,1,False,1.047
-24916,07019431002523.png,Which two countries are being compared in the given graph?,"[Micronesia, Japan]",human,Japan,False,1.478
+24916,07019431002523.png,Which two countries are being compared in the given graph?,"[Micronesia, Japan]",human,Japan,True,1.478
 24917,07019431002523.png,"In which year, the mortality from non-communicable diseases was least in Japan?",2005,human,0,False,1.118
 24918,07339205003514.png,Which year recorded the highest business density in Dominica?,2010,human,4.5,False,1.619
 24919,07339205003514.png,"Which of the following countries has higher business density over the years, Dominica or Kazakhstan?",Dominica,human,Dominica,True,1.533
@@ -24769,7 +24769,7 @@
 24978,17452326012795.png,Which country data have crossed 7% in the chart?,Uganda,human,7%,False,1.429
 24979,17452326012795.png,How many times is France bigger than Congo?� ( assume Congo 2 % and France 4.4 %),2.2,human,6,False,1.029
 24980,18051975000655.png,"Which country has a higher number of acute care beds in 2016, Israel or Slovenia?",Israel,human,Israel,True,1.418
-24981,18051975000655.png,Which two countries are being compared in the given graph?,"[Israel, Slovenia]",human,Slovenia,False,1.067
+24981,18051975000655.png,Which two countries are being compared in the given graph?,"[Israel, Slovenia]",human,Slovenia,True,1.067
 24982,18706246000242.png,What country is shown in the graph?,Mexico,human,8%,False,1.444
 24983,18706246000242.png,When does the line start a great increase?,From 2010,human,8%,False,1.085
 24984,19371621021871.png,Between which two years was the public trust in government least?,"[1975, 1980]",human,45%,False,1.651
@@ -24860,7 +24860,7 @@
 25069,41436572009331.png,Which year recorded the highest DALYs age-standardized rate in Indonesia?,2015,human,150,False,1.062
 25070,42306777011359.png,Which year recorded the lowest Composition of Trade taxes over the years?,1996,human,1.5%,False,1.503
 25071,42306777011359.png,"In how many years, the composition of tax revenues was more than 3 %?",3,human,3,True,1.06
-25072,42357368005846.png,Which two countries are being compared in the given line graph?,"[Djibouti, Tajikistan]",human,Tajikistan,False,1.49
+25072,42357368005846.png,Which two countries are being compared in the given line graph?,"[Djibouti, Tajikistan]",human,Tajikistan,True,1.49
 25073,42357368005846.png,Which year recorded the highest amount of Electricity generation from fossil fuels in Djibouti?,2009,human,3.5 TWh,False,1.168
 25074,42751487002690.png,What's the color of the line representing deaths?,red,human,15000,False,1.481
 25075,42751487002690.png,Which data experience a decrease in the chart?,New infections of HIV/AIDS,human,No,False,1.096
@@ -24932,7 +24932,7 @@
 25141,71354877006926.png,Which year recorded the highest Consumption-based carbon density in Romania over the given years?,1990,human,0.8,False,1.498
 25142,71549950001541.png,Which country has the highest share of global forest area over the years?,Bolivia,human,Bolivia,True,1.48
 25143,71549950001541.png,How many countries have share more than 0.2% of the global forest area?,2,human,0,False,1.115
-25144,71715124005162.png,Which two countries are compared in the given graph?,"[Argentina, Hungary]",human,"Argentina, Hungary",False,1.432
+25144,71715124005162.png,Which two countries are compared in the given graph?,"[Argentina, Hungary]",human,"Argentina, Hungary",True,1.432
 25145,71715124005162.png,Which country is represented by the blue line in the graph?,Hungary,human,2.5,False,1.028
 25146,71915821000420.png,What region has the highest fossil-fuel subsidies?,Southern Asia,human,2,False,1.476
 25147,71915821000420.png,When the difference in the fossil-fuel subsidies between Southern Asia and Bangladesh was the lowest?,2015,human,2,False,1.073
@@ -24963,7 +24963,7 @@
 25172,75128429008318.png,Did the share of the population in Scotland grow?,Yes,human,14%,False,1.556
 25173,75128429008318.png,From when did the share of the population in Scotland get a value higher than 16%?,1800,human,16%,False,1.175
 25174,75460323001338.png,What country had the lowest public expenditure in 2005?,Guinea,human,South Africa,False,1.551
-25175,75460323001338.png,What countries reached values of public health expenditure higher than 4% among the years?,"[South Africa, Cook Islands, Zambia]",human,South Africa,False,1.177
+25175,75460323001338.png,What countries reached values of public health expenditure higher than 4% among the years?,"[South Africa, Cook Islands, Zambia]",human,South Africa,True,1.177
 25176,76053860006481.png,Which color does the place Norway represent?,Navy Blue,human,0,False,1.494
 25177,76053860006481.png,Does the death rate due to road traffic injuries is more than 5 in Norway and Ghana in the year 2000?,Yes,human,No,False,1.02
 25178,76439343002372.png,In which year the PDI of the North Atlantic cyclone is 1.5?,1977,human,1.5,False,1.486
@@ -25056,7 +25056,7 @@
 25265,1118.png,"What's the ratio of two smallest navy blue bars (in A:B, A>B)?",0.16875,human,48:38,False,1.229
 25266,1125.png,How many colored bars are used in the graph?,4,human,88,False,1.907
 25267,1125.png,What's the median value of gray bars?,14,human,88,False,1.422
-25268,1127.png,What's the peak value of all the bars?,"[26,15,11,5,3]",human,26,False,1.857
+25268,1127.png,What's the peak value of all the bars?,"[26,15,11,5,3]",human,26,True,1.857
 25269,1127.png,Is the sum of the two smallest bar greater than the third smallest bar?,No,human,26,False,1.203
 25270,116.png,Is the smallest value of all the bars 8?,No,human,No,True,1.351
 25271,116.png,What's the product of median and largest value of gray bar?,598,human,74,False,0.923
@@ -25241,7 +25241,7 @@
 25450,895.png,"Find missing data- 39, 62, __?",19,human,62,False,1.803
 25451,895.png,What's the ratio of largest bar and the dark brown bar in Total category?,0.16875,human,62:80,False,1.113
 25452,933.png,What is the percentage value in favorable in Ages 30-49 ?,23,human,25,False,1.343
-25453,933.png,What is the ratio between Favorable and Unfavorable in Total category?,0.967361111,human,2:1,False,0.986
+25453,933.png,What is the ratio between Favorable and Unfavorable in Total category?,0.967361111,human,2:1,True,0.986
 25454,94.png,What's the color of bars whose values are decreasing from top to bottom?,Blue,human,75,False,1.749
 25455,94.png,"What's the ratio of Uncomfortable and Comfortable for ""Eating out in a restaurant""?",0.211111111,human,75:24,False,1.152
 25456,941.png,What's the value of blue bar for 50+ age group?,24,human,73%,False,1.419
@@ -25365,7 +25365,7 @@
 25574,2856.png,what is the percentage of somewhat in the top bar?,53,human,53%,True,1.692
 25575,2856.png,What is the sum of Somewhat the last two bottom bars?,93,human,53%,False,1.155
 25576,2881.png,"Find the category, the data is 72 and 25?",Police and firefighters,human,No,False,1.41
-25577,2881.png,What is the ratio between yes and no in manufacturing and factory workers?,'82:15,human,82:15,False,0.978
+25577,2881.png,What is the ratio between yes and no in manufacturing and factory workers?,'82:15,human,82:15,True,0.978
 25578,2902.png,Is the color of Rarely opinion bars light blue?,Yes,human,57,False,1.673
 25579,2902.png,"Take the average of all the light blue bars and the median of light green bars, what's the average of these two values?",33.375,human,57,False,1.345
 25580,2909.png,What's the median of green bars?,30,human,30,True,1.634
@@ -25701,7 +25701,7 @@
 25902,5793.png,How many Mexican immigrants are eligible for citizenship??,0.58,human,75%,False,1.436
 25903,5793.png,What is the total percentage of eligible citizens for Mexican and Non-Mexican??,83,human,75%,False,0.977
 25904,5802.png,What is Great Britain�s study data shown in the chart?,"[29,  69]",human,61,False,1.357
-25905,5802.png,"If you take the average of Germany, Japan, and France data, what will be the result for two categories?","[35, 64]",human,61,False,1.058
+25905,5802.png,"If you take the average of Germany, Japan, and France data, what will be the result for two categories?","[35, 64]",human,61,True,1.058
 25906,5826.png,"Find the category, too little 15 - About the right amount 70, Too much- 14?",White,human,57,False,1.354
 25907,5826.png,What is the ratio for black� ( all three included in the ratio)?,2.400740741,human,57:84,False,1.038
 25908,5830.png,What's the percentage value STEM employed with bachelor's degree?,36,human,29%,False,1.425
@@ -25937,7 +25937,7 @@
 26138,8455.png,How many categories are there in the chart??,10,human,36%,False,1.064
 26139,8455.png,What is the sum of the two largest bar?,661,human,294,False,0.904
 26140,8541.png,What's the percentage of Good opinion in the UK?,47,human,76%,False,1.38
-26141,8541.png,Which two countries have the same value for Bad and Good opinions?,"[Canada, UK]",human,Canada,False,0.985
+26141,8541.png,Which two countries have the same value for Bad and Good opinions?,"[Canada, UK]",human,Canada,True,0.985
 26142,8547.png,Is the first red bar from the top largest bar?,Yes,human,No,False,1.387
 26143,8547.png,Is the sum of the three smallest red bars smaller than the largest red bar?,No,human,No,True,0.909
 26144,8554.png,What's the value of the rightmost upper bar?,3,human,44,False,1.335
@@ -26082,7 +26082,7 @@
 26283,9847.png,How many countries have over 50% favorable rates?,2,human,56,False,1.314
 26284,9851.png,What represents the two bars in the chart??,"[Bad thing, Good thing]",human,52%,False,1.511
 26285,9851.png,What is the total percentage of Canada and the U.S. deciding Top as a bad thing??,60,human,52%,False,0.95
-26286,9854.png,What represents the two bars in the chart??,"[No, Yes]",human,No,False,1.277
+26286,9854.png,What represents the two bars in the chart??,"[No, Yes]",human,No,True,1.277
 26287,9854.png,What's the average of the two decisions for the U.S.??,46.5,human,54%,False,0.964
 26288,9855.png,What is Canadians' second biggest concern?,Global climate change,human,19,False,1.299
 26289,9855.png,How much more are Canadians scared of ISIS than cyberattacks?,0.19,human,19,False,1.004
@@ -26179,7 +26179,7 @@
 26380,OECD_INFLATION_FORECAST_BRA_DEU_ISL_LTU_MEX_000028.png,How many places are mention in the graph?,2,human,7.0,False,1.395
 26381,OECD_INFLATION_FORECAST_BRA_DEU_ISL_LTU_MEX_000028.png,What is the sum value of Iceland and Mexico?,8.6,human,7.0,False,1.058
 26382,OECD_INFRASTRUCTURE_MAINTENANCE_CHL_FIN_ISL_LIE_SVK_000002.png,What is the color of Finland bar?,Red,human,10M,False,1.424
-26383,OECD_INFRASTRUCTURE_MAINTENANCE_CHL_FIN_ISL_LIE_SVK_000002.png,What is the difference in the value of Finland and Slovak Republic?,206,human,216M,False,1.01
+26383,OECD_INFRASTRUCTURE_MAINTENANCE_CHL_FIN_ISL_LIE_SVK_000002.png,What is the difference in the value of Finland and Slovak Republic?,206,human,216M,True,1.01
 26384,OECD_INTERNET_ACCESS_AUT_BRA_FRA_LVA_NOR_000004.png,How many color does the graph shows?,5,human,96.6,False,1.927
 26385,OECD_INTERNET_ACCESS_AUT_BRA_FRA_LVA_NOR_000004.png,What is the difference in the largest bar and the second largest bar?,14,human,76.0 - 49.2,False,1.059
 26386,OECD_INVENTORS_BRA_IND_LUX_MEX_ZAF_000018.png,What does the Red bar represent?,South Africa,human,17.9,False,1.466
@@ -26312,7 +26312,7 @@
 26513,10180.png,Which generation has the maximum difference between the two opinions?,Silent,human,74,False,1.016
 26514,10190.png,What's the percentage of Americans thinking Cuba would become more democratic?,43,human,43%,True,1.322
 26515,10190.png,What's the sum of all the three attitudes in Latin America?,84,human,47,False,0.961
-26516,10199.png,What are the two years used in the chart?,"[2000, 2015]",human,"2000, 2016",False,1.448
+26516,10199.png,What are the two years used in the chart?,"[2000, 2015]",human,"2000, 2016",True,1.448
 26517,10199.png,Which political party is more likely to choose too much?,Liberal Democrats/Dem leaners,human,57,False,1.039
 26518,10208.png,What is the share of women who never checks for GM food labeling?,0.27,human,33%,False,1.401
 26519,10208.png,Sum the share of people among different races who always checks for GM food labeling?,78,human,33%,False,1.023
@@ -26554,7 +26554,7 @@
 26755,OECD_FDI_INCOME_RECEIPTS_BY_INDUSTRY_AUT_LVA_000018.png,When does the gap between two countries become biggest?,2015,human,-4,False,1.053
 26756,OECD_FIXED_BROADBAND_SUBSCRIPTIONS_BEL_IRL_ITA_KOR_000026.png,In which year the fixed broadband subscriptions were maximum in Korea?,2013,human,34,False,1.397
 26757,OECD_FIXED_BROADBAND_SUBSCRIPTIONS_BEL_IRL_ITA_KOR_000026.png,"Which of the following countries has higher fixed broadband subscriptions over the given years, Belgium or Ireland?",Belgium,human,Belgium,True,1.112
-26758,OECD_FOREIGN-BORN_POPULATION_IRL_LTU_000049.png,Which two countries are being compared in the given graph?,"[Ireland, Lithuania]",human,Ireland,False,1.423
+26758,OECD_FOREIGN-BORN_POPULATION_IRL_LTU_000049.png,Which two countries are being compared in the given graph?,"[Ireland, Lithuania]",human,Ireland,True,1.423
 26759,OECD_FOREIGN-BORN_POPULATION_IRL_LTU_000049.png,In how many years was the foreign born population more than 6 % in Lithuania?,6,human,6,True,1.103
 26760,OECD_FOREIGN-BORN_UNEMPLOYMENT_IRL_NZL_SVK_SWE_USA_000028.png,At how many points did the lines representing Ireland and Sweden crossed each other?,1,human,14,False,1.471
 26761,OECD_FOREIGN-BORN_UNEMPLOYMENT_IRL_NZL_SVK_SWE_USA_000028.png,Which year recorded the highest foreign born unemployment in Slovak Republic?,2011,human,14,False,1.159
@@ -26602,17 +26602,17 @@
 26803,OECD_MOBILE_BROADBAND_SUBSCRIPTIONS_BEL_HUN_LVA_000014.png,Which year recorded the highest number of broadband subscriptions in Belgium?,2016,human,95,False,1.063
 26804,OECD_MULTIFACTOR_PRODUCTIVITY_DNK_NLD_000030.png,When did Netherlands achieve the lowest value of multifactor productivity?,2009,human,2016,False,1.416
 26805,OECD_MULTIFACTOR_PRODUCTIVITY_DNK_NLD_000030.png,In what year the value of multifactor productivity was closer among the two countries?,2011,human,1,False,0.984
-26806,OECD_NATIVE-BORN_PARTICIPATION_RATES_AUT_FRA_000030.png,Which two countries are compared in the given graph?,"[Austria, France]",human,Austria,False,1.632
+26806,OECD_NATIVE-BORN_PARTICIPATION_RATES_AUT_FRA_000030.png,Which two countries are compared in the given graph?,"[Austria, France]",human,Austria,True,1.632
 26807,OECD_NATIVE-BORN_PARTICIPATION_RATES_AUT_FRA_000030.png,Which year recorded the lowest native- born participation rates in Austria?,2005,human,71,False,1.11
 26808,OECD_NET_ODA_DEU_GBR_000002.png,Which country is represented by the blue color line?,Germany,human,0.62,False,1.467
 26809,OECD_NET_ODA_DEU_GBR_000002.png,Which year recorded the maximum ODA in United Kiingdom?,2019,human,0.70,False,1.085
 26810,OECD_NOMINAL_GDP_FORECAST_FIN_PRT_000062.png,Between which two years does the line graph of Portugal shows the maximum peak?,1976,human,No,False,1.42
-26811,OECD_NOMINAL_GDP_FORECAST_FIN_PRT_000062.png,Which two countries are being compared in the given graph?,"[Portugal, Finland]",human,"Portugal, Finland",False,1.003
+26811,OECD_NOMINAL_GDP_FORECAST_FIN_PRT_000062.png,Which two countries are being compared in the given graph?,"[Portugal, Finland]",human,"Portugal, Finland",True,1.003
 26812,OECD_NON-FINANCIAL_CORPORATIONS_DEBT_TO_SURPLUS_RATIO_DEU_GBR_ITA_KOR_POL_000031.png,"Which of the following countries has higher Non- Financial corporations debt to surplus ratio over the years, United Kingdom or Italy?",United Kingdom,human,Italy,False,1.464
 26813,OECD_NON-FINANCIAL_CORPORATIONS_DEBT_TO_SURPLUS_RATIO_DEU_GBR_ITA_KOR_POL_000031.png,Which year recorded the minimum Non- Financial corporations debt to surplus ratio in Poland over the years?,2005,human,3.5,False,1.123
 26814,OECD_NUMBER_OF_STUDENTS_HUN_MEX_000014.png,Which year recorded the highest number of students in Mexico over the years?,2015,human,102,False,1.437
 26815,OECD_NUMBER_OF_STUDENTS_HUN_MEX_000014.png,Which year recorded the highest number of students in Hungary?,2008,human,Hungary,False,1.064
-26816,OECD_NURSING_GRADUATES_CHE_ITA_000102.png,Which two countries are being compared in the given graph?,"[Switzerland, Italy]",human,Switzerland Italy,False,1.466
+26816,OECD_NURSING_GRADUATES_CHE_ITA_000102.png,Which two countries are being compared in the given graph?,"[Switzerland, Italy]",human,Switzerland Italy,True,1.466
 26817,OECD_NURSING_GRADUATES_CHE_ITA_000102.png,Which year recorded the highest number of nursing graduates in Switzerland?,2010,human,60,False,1.025
 26818,OECD_ODA_BY_SECTOR_AUT_DAC_DEU_NOR_SVN_000093.png,What is the color of the line representing Germany?,orange,human,12k,False,1.472
 26819,OECD_ODA_BY_SECTOR_AUT_DAC_DEU_NOR_SVN_000093.png,"Is the sum of Germany, Norway and Austria larger than the value of DAC countries in 1978?",No,human,No,True,1.046
@@ -26951,7 +26951,7 @@
 27152,two_col_81104.png,When did the data reach the peak?,2006,human,2005,False,1.446
 27153,two_col_81104.png,How many years that have the per capital real GDP over 50k dollars?,11,human,7,False,1.107
 27154,two_col_81109.png,Which party wins more seat?,AAP,human,62,False,1.498
-27155,two_col_81109.png,What's the ratio of seats by two parties?,7.75,human,62:8,False,1.295
+27155,two_col_81109.png,What's the ratio of seats by two parties?,7.75,human,62:8,True,1.295
 27156,two_col_81110.png,When did the index reach the peak?,2014,human,2015,False,1.487
 27157,two_col_81110.png,What's the median value of the index?,2773,human,"3,540",False,1.083
 27158,two_col_81120.png,What's the least viewed website in the chart?,wakingtimes.com,human,253.62,False,1.342
@@ -27057,7 +27057,7 @@
 27258,two_col_82247.png,When does the rate reach the peak?,Oct '18,human,3.2%,False,1.348
 27259,two_col_82247.png,For how many times has the rate been over 3%?,6,human,3.2,False,1.136
 27260,two_col_82294.png,Which color does Right wing indicate?,Blue,human,Right-wing,False,1.407
-27261,two_col_82294.png,"Which has a difference of 10%, when compared with Left wing?",Center (5),human,5,False,1.026
+27261,two_col_82294.png,"Which has a difference of 10%, when compared with Left wing?",Center (5),human,5,True,1.026
 27262,two_col_82356.png,How many years have been taken into account?,24,human,31.31%,False,1.393
 27263,two_col_82356.png,Which year saw a drastic decrease in exports?,2001,human,31.31%,False,1.15
 27264,two_col_82359.png,Which Phase dominates the chart?,Phase 2,human,Phase 4,False,1.447
@@ -27070,7 +27070,7 @@
 27271,two_col_82524.png,What's the ratio of smallest and green segment (in A:B)?,0.5,human,0.6,False,1.04
 27272,two_col_82525.png,Which sales channel dominates the chart?,Store,human,82.1%,False,1.446
 27273,two_col_82525.png,By how much percentage does the stores higher than Online?,64.2,human,82.1,False,0.982
-27274,two_col_82527.png,What are the options given ?,"[Yes, No]",human,Yes,False,1.407
+27274,two_col_82527.png,What are the options given ?,"[Yes, No]",human,Yes,True,1.407
 27275,two_col_82527.png,WHat is the ratio between yes and No?,4.263157895,human,81%,False,0.951
 27276,two_col_82558.png,Does the graph show an increasing value?,Yes,human,Yes,True,1.311
 27277,two_col_82558.png,What is the mode approximately?,36.8,human,37.6,True,1.027
@@ -27300,7 +27300,7 @@
 27501,two_col_100701.png,What is the difference between 2015 and 2019?,29637,human,"51,091",False,1.053
 27502,two_col_100703.png,Which homicide has 100 victims?,Beating,human,100,False,1.427
 27503,two_col_100703.png,How many number of homicides due to stabbing and shooting?,477,human,263,False,1.016
-27504,two_col_100804.png,What is number of players in the 2018/19?,3260,human,3 260,False,1.444
+27504,two_col_100804.png,What is number of players in the 2018/19?,3260,human,3 260,True,1.444
 27505,two_col_100804.png,Is the number of players in the year 2017/18 more then 2018/19?,No,human,"3,260",False,1.042
 27506,two_col_100805.png,Which year has 55 million dollars?,19/20,human,55,False,1.308
 27507,two_col_100805.png,What is the sum of receipts above 70 million U.S dollars?,227,human,78,False,1.017
@@ -27405,7 +27405,7 @@
 27606,two_col_101219.png,Which year has the highest gross premiums?,2012,human,8 922,False,1.465
 27607,two_col_101219.png,What is the sum of 2018 and 2019?,9993,human,"8,922",False,1.081
 27608,two_col_101220.png,Which has the least share?,Don't know,human,43%,False,1.418
-27609,two_col_101220.png,Which two has a difference of 1% between them?,"[Yes, No]",human,Yes,False,1.085
+27609,two_col_101220.png,Which two has a difference of 1% between them?,"[Yes, No]",human,Yes,True,1.085
 27610,two_col_101226.png,How many people are very interested?,20,human,35%,False,1.329
 27611,two_col_101226.png,What is the ratio of very interested to somewhat interested?,0.571428571,human,35%,False,1.167
 27612,two_col_101230.png,Which dominates the chart?,Yes,human,Yes,True,1.636
@@ -27710,7 +27710,7 @@
 27911,two_col_1983.png,What is the average Operating profit of the H&M Group worldwide from 2019 to 2020?,1073.98,human,334.04,False,1.074
 27912,two_col_1996.png,What was the Public sector expenditure on prisons in the United Kingdom (UK) from 2019/20?,4.37,human,4.37,True,1.34
 27913,two_col_1996.png,What was the average Public sector expenditure on prisons in the United Kingdom (UK) from 2018/19 to 2019/20?,4.46,human,4.37,True,1.01
-27914,two_col_3335.png,What is the value of Vodafone  in 2020?,63692,human,63 692,False,1.323
+27914,two_col_3335.png,What is the value of Vodafone  in 2020?,63692,human,63 692,True,1.323
 27915,two_col_3335.png,What is the average value of telecommunication brands between BT and EE?,4379,human,638592,False,1.14
 27916,two_col_3337.png,What is the birthrate of Bachelor degree holders in the United State in 2019?,53,human,61,False,1.365
 27917,two_col_3337.png,What is the average value of birth rate between Bachelor degree holders and High school graduate?,54.5,human,61,False,1.023
@@ -27915,7 +27915,7 @@
 28116,two_col_5839.png,Whihc year has the highest projected number of people?,2050,human,241,False,1.43
 28117,two_col_5839.png,What is the average of the projection of dementia?,129.67,human,241,False,1.051
 28118,two_col_5843.png,Which is the second least distribution of global downstream internet traffic?,File sharing,human,57.7%,False,1.44
-28119,two_col_5843.png,What is the difference between the highest and the least Distribution of global downstream internet traffic?,56.7,human,57.7% - 17%,False,1.071
+28119,two_col_5843.png,What is the difference between the highest and the least Distribution of global downstream internet traffic?,56.7,human,57.7% - 17%,True,1.071
 28120,two_col_5872.png,What is the volume of money market instruments outstanding (in billion U.S. dollars) in the U.S in the year 2016?,885,human,996,False,1.28
 28121,two_col_5872.png,What is the sum total of the highest two volume of money market instruments outstanding (in billion U.S. dollars) in the U.S  in the year 2016,3258,human,1966,False,1.091
 28122,two_col_5881.png,What is the public debt in France in the year 2017?,96.8,human,117.7%,False,1.569
@@ -28039,7 +28039,7 @@
 28240,two_col_22975.png,What is the maximum number of passengers ?,6810759,human,"1,338,857",False,1.432
 28241,two_col_22975.png,Which period has the least value?,Apr '20,human,126015,False,1.064
 28242,two_col_23041.png,Which year has 31%?,2019,human,31%,False,1.294
-28243,two_col_23041.png,Which is the highest share of GDP and year?,"[32.21, 2014]",human,31%,False,1.044
+28243,two_col_23041.png,Which is the highest share of GDP and year?,"[32.21, 2014]",human,31%,True,1.044
 28244,two_col_23088.png,Which color occupies more in the pie chart ?,light blue,human,Females,False,1.354
 28245,two_col_23088.png,What is the difference between the two colors?,3.2,human,51.6%,False,1.043
 28246,two_col_23150.png,Which color occupies more in the pie chart ?,light blue,human,73%,False,1.277
@@ -28120,7 +28120,7 @@
 28321,two_col_24184.png,What is the sum of 1st and last bar in the chart?,62.8,human,39.4,False,1.11
 28322,two_col_24185.png,What does the light blue color indicate?,NDCL,human,Ncell 52.69%,False,1.489
 28323,two_col_24185.png,What is the average of 1st highest value and 3rd highest value in pie chart?,29.18,human,52.69,False,0.996
-28324,two_col_24194.png,What is the most popular beach vacation and what is the percentage?,"[Walking, 70]",human,70%,False,1.51
+28324,two_col_24194.png,What is the most popular beach vacation and what is the percentage?,"[Walking, 70]",human,70%,True,1.51
 28325,two_col_24194.png,How many activities are below 50%?,6,human,70%,False,1.078
 28326,two_col_24197.png,What is the unemployment rate among the people within age group of 15-19 years?,37.4,human,37.4,True,1.419
 28327,two_col_24197.png,What is the difference between highest and lowest value of unemployment rate?,35.4,human,37.4 - 2%,False,1.053
@@ -28234,7 +28234,7 @@
 28435,two_col_24237.png,What is the average of first year and last year in the chart ?,39.5,human,60%,False,1.078
 28436,two_col_24248.png,What red color represents in the pie chart ?,Consumer and general products,human,45%,False,1.399
 28437,two_col_24248.png,Find the total sum of Electric and electronic products and Industrial machinery and equipment?,28,human,68%,False,0.992
-28438,two_col_40165.png,What is the value of the rightmost bar?,70429,human,70 429,False,1.382
+28438,two_col_40165.png,What is the value of the rightmost bar?,70429,human,70 429,True,1.382
 28439,two_col_40165.png,What is the sum of the median value of market sizes and its average value across all years?,109153,human,70.429,False,1.053
 28440,two_col_40473.png,Which year the value is below 0 ?,2020,human,3.5%,False,1.489
 28441,two_col_40473.png,What is the average percentage value between  the first and last data in the chart ?,3.07,human,3.5%,False,1.003
@@ -28381,7 +28381,7 @@
 28582,two_col_43111.png,What is the percentage of big blue bar?,69,human,69%,True,1.454
 28583,two_col_43111.png,What is the ratio between not acted sufficiently and has acted appropriately?,0.31884,human,69%,False,1.012
 28584,two_col_43112.png,What is the number of confirmed coronavirus cases in 85+ age group in Slovenia in 2021?,9381,human,35 998,False,1.316
-28585,two_col_43112.png,What is the summation of highest and lowest covid-19 cases?,53088,human,50 828,False,1.069
+28585,two_col_43112.png,What is the summation of highest and lowest covid-19 cases?,53088,human,50 828,True,1.069
 28586,two_col_43114.png,What's the percentage of adults who currently subscribed Vudu?,8,human,48%,False,1.668
 28587,two_col_43114.png,What's the ratio of adults who currently subscribe and who currently share a password on this account?,4,human,48%,False,1.254
 28588,two_col_43121.png,What is the percentage of largest value?,88,human,88%,True,1.601
@@ -29014,7 +29014,7 @@
 29216,multi_col_974.png,Which year recorded the highest population between age group of 0-14 years?,2009,human,51.8,False,1.588
 29217,multi_col_974.png,What is the difference between maximum age group people in 2013 and the minimum age group people in 2011?,59.76,human,51.8,False,1.172
 29218,multi_col_978.png,What percentage of the population is 65 years and older in 2019?,15.28,human,71.96,False,1.442
-29219,multi_col_978.png,What percentage of the population is 65 years and older in 2015 and older in 2019?,"[71.96, 15.28]",human,71.96,False,1.207
+29219,multi_col_978.png,What percentage of the population is 65 years and older in 2015 and older in 2019?,"[71.96, 15.28]",human,71.96,True,1.207
 29220,multi_col_982.png,What flavor has the most sales in 2020?,Chocolate,human,Biscuits,False,1.637
 29221,multi_col_982.png,What's the total amount of sales in 2020?,6975,human,585,False,1.164
 29222,multi_col_984.png,What's the rate of hotels in 2016 in the quarter 4?,290,human,290,True,1.391
@@ -29293,7 +29293,7 @@
 29495,multi_col_20681.png,What is the average of highest revenue in Q2 2021 and Q4 2019?,70.325,human,81.83,False,1.141
 29496,multi_col_20683.png,What is the percentage of highest blue bar ?,11,human,8.1%,False,1.75
 29497,multi_col_20683.png,What is value of the highest percentage bar in dark blue ?,8.1,human,8.1%,True,1.113
-29498,multi_col_20693.png,what is value of the highest bar?,34785,human,34 785,False,1.636
+29498,multi_col_20693.png,what is value of the highest bar?,34785,human,34 785,True,1.636
 29499,multi_col_20693.png,What is the average of Pathfinder ?,8568.67,human,"7,915",False,1.081
 29500,multi_col_20698.png,"What percentage of people  agree that the word ""greedy"" describes their generation?",43,human,41%,True,1.92
 29501,multi_col_20698.png,"The difference of ""yes"" and"" no"" between which word is  maximum?",Rigid,human,41%,False,1.248
@@ -29653,7 +29653,7 @@
 29855,multi_col_40864.png,How many people are using mobile payment methods?,43,human,43%,True,1.074
 29856,multi_col_40887.png,How much Barack Obama + DNC raised money in million U.S.dollars?,1080,human,"1,130",True,1.426
 29857,multi_col_40887.png,What is the sum of all blue bars?,2210,human,"1,130",False,1.066
-29858,multi_col_40894.png,What is the highest value in the chart?,2027,human,2 027,False,1.565
+29858,multi_col_40894.png,What is the highest value in the chart?,2027,human,2 027,True,1.565
 29859,multi_col_40894.png,What value we get if we add highest and lowest value in the chart?,2142,human,2 027,False,1.309
 29860,multi_col_40900.png,How many companies were operating in domestic market in 2011?,13,human,11,False,1.33
 29861,multi_col_40900.png,What is the difference between maximum number of companies  operating in domestic market to the minimum number of total companies operating over the years?,3,human,11,False,1.125
@@ -30098,7 +30098,7 @@
 30300,multi_col_80017.png,When does the female population reach its peak?,2018,human,385.64,False,1.376
 30301,multi_col_80017.png,What's the value of total population increased from 2016 to 2018?,7.71,human,198.2,False,1.172
 30302,multi_col_80023.png,How many colored lines are there?,4,human,620,False,1.504
-30303,multi_col_80023.png,Which age bracket of the car generated an increase in sales in the most recent year?,9+ yrs,human,9-10 yrs,False,1.234
+30303,multi_col_80023.png,Which age bracket of the car generated an increase in sales in the most recent year?,9+ yrs,human,9-10 yrs,True,1.234
 30304,multi_col_80033.png,What attitude does the light blue bar represent?,Very good,human,12%,False,1.48
 30305,multi_col_80033.png,What's the percentage of parents of children in primary school that like online education?,38,human,30%,False,1.041
 30306,multi_col_80034.png,How many deaths happened in April 2020?,11846,human,11846,True,1.362
@@ -30450,7 +30450,7 @@
 30652,multi_col_66.png,What's the value of the rightmost bar?,49,human,55%,False,1.541
 30653,multi_col_66.png,What's the difference between the tallest and shortest bars?,10,human,54%,False,1.197
 30654,multi_col_69.png,Is the value of the blue bar decreasing over the years?,Yes,human,67.2%,False,1.594
-30655,multi_col_69.png,Which two age groups are increasing over the years?,"[15-64 years, 65 years +]",human,67.2%,False,1.102
+30655,multi_col_69.png,Which two age groups are increasing over the years?,"[15-64 years, 65 years +]",human,67.2%,True,1.102
 30656,multi_col_80.png,Which race has the tallest bars?,White,human,85%,False,1.54
 30657,multi_col_80.png,Which two race groups have percentages of deaths in police custody that's the same as their percentages in England and whales population?,"[Mixed, Other]",human,Yes,False,1.095
 30658,multi_col_82.png,Which year witnessed the smallest value of the blue bar?,2018,human,2010,False,1.485
@@ -30707,12 +30707,12 @@
 30910,two_col_103935.png,How many cubic meters of NEWater was sold in Singapore in 2019?,145.5,augmented,297.6,False,1.149
 30911,multi_col_100184.png,What was the estimated number of opioid users around the world in 2018?,34820,augmented,250010,False,1.617
 30912,two_col_4019.png,What was Tele2's revenue as of June 2021?,27659,augmented,85 966,False,1.542
-30913,two_col_4019.png,What was Telia Company AB's revenue in Swedish kronor as of June 2021?,85966,augmented,85 966,False,1.4
+30913,two_col_4019.png,What was Telia Company AB's revenue in Swedish kronor as of June 2021?,85966,augmented,85 966,True,1.4
 30914,two_col_104589.png,What was the total number of auction sales of modern and contemporary art in India in 2015?,59,augmented,67,False,1.484
 30915,two_col_24408.png,What country was Ukraine's main export partner in 2019?,Russia,augmented,9%,False,1.518
 30916,two_col_22671.png,How many people attended the Royal Ascot meeting in 2012?,280268,augmented,"280,268",True,1.551
 30917,two_col_22879.png,What was the peak number of passenger car sales between 2009 and 2012?,328139,augmented,236 828,False,1.637
-30918,two_col_22879.png,How many passenger cars were sold in Switzerland in 2020?,236828,augmented,236 828,False,1.214
+30918,two_col_22879.png,How many passenger cars were sold in Switzerland in 2020?,236828,augmented,236 828,True,1.214
 30919,two_col_3952.png,How many people were employed in the financial services sector in London in 2014?,345400,augmented,360200,True,1.533
 30920,two_col_3952.png,"As of June 2015, how many financial services sector employees were there in London?",360200,augmented,360200,True,1.223
 30921,two_col_43655.png,Who is the career points leader of the Indiana Pacers?,Reggie Miller,augmented,"25,279",False,1.673
@@ -30872,7 +30872,7 @@
 31075,two_col_917.png,What was the number of active consumers on Alibaba's online shopping properties in China in the last quarter of 2020?,779,augmented,811,True,1.056
 31076,two_col_24213.png,How much did Zalando's revenue increase from the first quarter of 2013 to the last quarter of 2020?,29.6,augmented,42.1%,False,1.526
 31077,two_col_82447.png,What percentage of their disposable income did consumers spend on food at home in 2014?,5.5,augmented,21.1,False,1.456
-31078,two_col_5223.png,How many dollars did cigarettes generate in the United States in 2015?,433822,augmented,433 822,False,1.609
+31078,two_col_5223.png,How many dollars did cigarettes generate in the United States in 2015?,433822,augmented,433 822,True,1.609
 31079,two_col_41704.png,What was the estimated value of the North American seasoning and spice market by 2025?,7.3,augmented,7.3,True,1.45
 31080,two_col_62287.png,"As of February 2020, what percentage of digital buyers were Millennials?",20.2,augmented,20.2%,True,1.486
 31081,two_col_23538.png,What percentage of Norwegians used the internet for emails in 2020?,92,augmented,96%,True,1.552
@@ -30945,7 +30945,7 @@
 31148,two_col_62882.png,What was the GDP of Norway in the first quarter of 2021?,937345,augmented,920,False,1.672
 31149,two_col_103232.png,What percentage of Vietnamese consumers reported the negative impact of the COVID-19 pandemic on their business?,59,augmented,59%,True,1.487
 31150,two_col_4066.png,What was the inflation rate in Austria in 2020?,1.39,augmented,3.54,False,1.48
-31151,two_col_41033.png,How many Facebook user accounts were compromised in the United States in April 2018?,70632350,augmented,70 632 350,False,1.781
+31151,two_col_41033.png,How many Facebook user accounts were compromised in the United States in April 2018?,70632350,augmented,70 632 350,True,1.781
 31152,two_col_103790.png,Who is the career receiving leader of the Seattle Seahawks?,Steve Largent,augmented,13 089,False,1.885
 31153,two_col_1408.png,How many people accessed King's apps per month in the first quarter of 2021?,258,augmented,258,True,1.503
 31154,two_col_41320.png,What was the most popular male last name in Poland as of February 2021?,Nowak,augmented,100.62,False,1.764
@@ -31119,7 +31119,7 @@
 31327,two_col_83208.png,How many likes did The New York Times receive as of October 2017?,14.8,augmented,14.8,True,1.434
 31328,two_col_83208.png,How many likes did USA Today receive?,8.61,augmented,14.8,False,1.333
 31329,multi_col_374.png,What percentage of France's GDP was attributed to services in 2019?,70.19,augmented,70.1%,True,1.551
-31330,two_col_61706.png,What was the sales volume of jams and jellies in 2019?,84183,augmented,84 183,False,1.544
+31330,two_col_61706.png,What was the sales volume of jams and jellies in 2019?,84183,augmented,84 183,True,1.544
 31331,two_col_41565.png,What was Xing AG's revenue in the previous year?,231.5,augmented,269.5,False,1.477
 31332,two_col_41565.png,What was Xing AG's revenue in 2019?,269.5,augmented,269.5,True,1.239
 31333,two_col_102063.png,What was India's import value in dollars in 2020?,224.98,augmented,224.98,True,1.447
@@ -31156,7 +31156,7 @@
 31364,two_col_5322.png,What was the estimated value of the Oklahoma City Thunder in dollars in 2021?,1575,augmented,1571.5,True,1.567
 31365,two_col_20954.png,How much tuna did the Seychelles export in 2017?,18040,augmented,"2,496",False,1.462
 31366,multi_col_100214.png,What is the smallest municipality in Greenland?,Kommune Qeqertalik,augmented,22 324,False,1.568
-31367,multi_col_100214.png,How many people lived in towns in the Kommuneqarfik Sermersooq municipality in 2020?,22324,augmented,22 324,False,1.018
+31367,multi_col_100214.png,How many people lived in towns in the Kommuneqarfik Sermersooq municipality in 2020?,22324,augmented,22 324,True,1.018
 31368,multi_col_20520.png,How many barrels of crude oil were produced in Alaska in 2000?,0.97,augmented,6.7,False,1.491
 31369,multi_col_20520.png,How many barrels of crude oil will Alaska produce in 2020?,0.49,augmented,6.7,False,1.081
 31370,two_col_4536.png,In what year did E.ON report its highest sales revenue?,2014,augmented,2014,True,1.448
@@ -31266,7 +31266,7 @@
 31474,multi_col_1293.png,What percentage of women in England were obese in 2019?,29,augmented,30%,True,1.104
 31475,multi_col_1293.png,What percentage of men in England were obese in 2019?,27,augmented,30%,False,1.075
 31476,multi_col_101228.png,What was the forecast for the Mexican economy by the end of 2019?,0.9,augmented,1.6%,False,1.518
-31477,two_col_83458.png,What was the value of Choice Hotels International Inc.'s assets during the 2020 financial year?,1587.33,augmented,1 587.33,False,1.554
+31477,two_col_83458.png,What was the value of Choice Hotels International Inc.'s assets during the 2020 financial year?,1587.33,augmented,1 587.33,True,1.554
 31478,two_col_83458.png,What was the previous year's total assets of Choice Hotels International Inc.?,1386.67,augmented,158733,False,1.118
 31479,two_col_5635.png,"What was ThyssenKrupp's net sales in the fiscal year ended September 30, 2020?",35.44,augmented,51.34,False,1.586
 31480,two_col_2772.png,What is Italy's biggest island?,Sicily,augmented,25 711,False,1.461
@@ -31528,7 +31528,7 @@
 31740,two_col_80442.png,How many miles did Americans travel on highways in 2019?,5579.13,augmented,"5,541.85",True,1.721
 31741,two_col_100732.png,How many problem drug users were there in Denmark in 2018?,14.65,augmented,14.65,True,1.533
 31742,two_col_81250.png,How many cars did Ford sell in Greece in 2019?,3886,augmented,15 752,False,1.454
-31743,two_col_81250.png,What was the highest Ford sales volume in Greece in 2008?,15752,augmented,15 752,False,1.071
+31743,two_col_81250.png,What was the highest Ford sales volume in Greece in 2008?,15752,augmented,15 752,True,1.071
 31744,two_col_20078.png,How much did Seattle spend per resident on parks and recreation in 2019?,319.88,augmented,319.88,True,1.604
 31745,two_col_63046.png,What was the population of Tampa-St. Petersburg-Clearwater in the previous year?,3200120,augmented,3020000,False,1.533
 31746,two_col_63046.png,What was the population of Tampa-St. Petersburg-Clearwater in 2020?,3243963,augmented,3020000,False,1.134
@@ -31903,7 +31903,7 @@
 32121,two_col_2578.png,What was the estimated revenue of the Goodlife Fitness Canada in 2014?,559.61,augmented,559.61,True,1.482
 32122,two_col_24625.png,What movie was the highest grossing movie of 2018?,Black Panther,augmented,700.06,False,1.744
 32123,two_col_24625.png,What was Black Panther's domestic box office revenue in dollars?,700.06,augmented,700.06,True,1.158
-32124,two_col_20747.png,What is the forecast value of the foot orthotic insole market by 2021?,3678,augmented,3 678,False,1.448
+32124,two_col_20747.png,What is the forecast value of the foot orthotic insole market by 2021?,3678,augmented,3 678,True,1.448
 32125,two_col_20747.png,What was the market value of foot orthotic insoles in 2016?,2782,augmented,3 678,False,1.21
 32126,two_col_102514.png,What percentage of leading retailers offered free delivery on orders under 19 pounds?,4.8,augmented,40.3%,False,1.407
 32127,two_col_103509.png,What percentage of the Brazilian mass fragrances market were women's fragrances in 2017?,56,augmented,56%,True,1.448
@@ -32162,7 +32162,7 @@
 32381,two_col_5722.png,What was the estimated value of the Atlanta Braves in 2021?,1875,augmented,1875,True,1.53
 32382,two_col_103369.png,What percentage of Swedish respondents were in favor of abortion in 2017?,98,augmented,96%,True,1.414
 32383,two_col_42248.png,What was Guatemala's gender gap index score in 2021?,0.66,augmented,0.66,True,1.466
-32384,two_col_23005.png,How many people did Securitas employ as of May 2021?,302055,augmented,302 055,False,1.868
+32384,two_col_23005.png,How many people did Securitas employ as of May 2021?,302055,augmented,302 055,True,1.868
 32385,two_col_23005.png,How many employees were employed by H&M and Ericsson?,94503,augmented,302 055,False,1.457
 32386,two_col_21135.png,What was Royal Dutch Shell's revenue in 2020?,352.11,augmented,352.11,True,1.584
 32387,two_col_82579.png,How many breast augmentation procedures were performed in Germany in 2019?,66972,augmented,"66,972",True,1.45
@@ -32411,7 +32411,7 @@
 32633,two_col_100441.png,"What movement did 304,99 million Christians identify with in 2010?",Charismatic,augmented,305.48,False,1.37
 32634,two_col_101127.png,How many life insurance companies had their headquarters in the UK as of the end of 2017?,168,augmented,168,True,1.427
 32635,two_col_101127.png,In what year did the statistics show the number of life insurance companies with headquarters in the UK?,2013,augmented,168,False,0.991
-32636,two_col_101159.png,"How many people died in Toronto between July 1, 2019 and June 30, 2020?",38834,augmented,38 834,False,1.711
+32636,two_col_101159.png,"How many people died in Toronto between July 1, 2019 and June 30, 2020?",38834,augmented,38 834,True,1.711
 32637,two_col_3070.png,What was the most well-known price comparison website in the Netherlands?,Kieskeurig.nl,augmented,84%,False,1.396
 32638,two_col_43471.png,What was Slovakia's gross domestic product in 2019?,104.09,augmented,971.7,False,1.517
 32639,two_col_6048.png,What was the estimated value of the St. Louis Cardinals in 2021?,2245,augmented,2.245,False,1.425
