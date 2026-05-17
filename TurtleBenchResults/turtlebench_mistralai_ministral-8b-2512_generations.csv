@@ -1,4 +1,4 @@
-﻿task_id,question_id,image_path,query_text,ground_truth_code,model_response,code_generation_time,VisualEval_Result,VisualEval_IoU,VisualEval_Reason
+﻿task_id,question_id,image_path,query_text,ground_truth_code,model_response,code_generation_time,VisualEval_Result,VisualEval_IoU,VisualEval_Reason,LLM_Judge_Result,LLM_Judge_Reasoning,EvalMethod
 1,q4,..\Datasets\TurtleBench\Tasks\1\image\1.png,"recreates the given shape + its horizontal and vertical diameters.
 
 Constraint - Use these variables strictly:
@@ -26,7 +26,7 @@ t.goto(100, 0)
 t.penup()
 t.goto(0, -100)
 t.pendown()
-t.goto(0, 100)",2.18,False,0.8632,visual_iou=0.863; vars=['radius']
+t.goto(0, 100)",2.18,False,0.8632,visual_iou=0.863; vars=['radius'],False,"the model code draws a circle with a cross inside, while the ground truth code draws a complex path of arcs and lines.",llm_after_visual_false
 1,q1,..\Datasets\TurtleBench\Tasks\1\image\1.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -37,7 +37,7 @@ t.penup()
 t.goto(0, -100)
 t.pendown()
 
-t.circle(radius)",0.71,True,1.0,visual_iou=1.000; vars=['radius']
+t.circle(radius)",0.71,True,1.0,visual_iou=1.000; vars=['radius'],True,visual_iou=1.000; vars=['radius'],visual
 1,q3,..\Datasets\TurtleBench\Tasks\1\image\1.png,"divides the shape into four equal pieces and draws the upper left and bottom right quarters.
 
 Constraint - Use these variables strictly:
@@ -58,7 +58,7 @@ for _ in range(2):
     t.penup()
     t.goto(0, -100)
     t.right(90)
-    t.pendown()",0.95,False,0.0048,visual_iou=0.005; vars=['radius']
+    t.pendown()",0.95,False,0.0048,visual_iou=0.005; vars=['radius'],False,"the model code draws two overlapping arcs from the same origin, while the ground truth code draws a sequence of four alternating segments.",llm_after_visual_false
 1,q2,..\Datasets\TurtleBench\Tasks\1\image\1.png,"creates the upper semicircle in the given shape.
 
 Constraint - Use these variables strictly:
@@ -74,7 +74,7 @@ for i in range(180):
     angle = math.radians(i)
     x = radius * math.cos(angle)
     y = radius * math.sin(angle)
-    t.goto(x, y)",0.96,False,0.0021,visual_iou=0.002; vars=['radius']
+    t.goto(x, y)",0.96,False,0.0021,visual_iou=0.002; vars=['radius'],False,"the model code draws a semicircle centered at the origin, while the ground truth code draws a semicircle offset from the origin by the radius.",llm_after_visual_false
 2,q4,..\Datasets\TurtleBench\Tasks\2\image\2.png,"in the given shape connects the midpoints of each side.
 
 Constraint - Use these variables strictly:
@@ -103,7 +103,7 @@ t.pendown()
 
 for _ in range(3):
     t.forward(triangle_side/2)
-    t.left(120)",1.37,False,0.5274,visual_iou=0.527; vars=['triangle_side']
+    t.left(120)",1.37,False,0.5274,visual_iou=0.527; vars=['triangle_side'],True,both snippets draw two nested equilateral triangles of the same relative sizes.,llm_after_visual_false
 2,q1,..\Datasets\TurtleBench\Tasks\2\image\2.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -117,7 +117,7 @@ t.goto(0, -100)
 t.pendown()
 for _ in range(3):
     t.forward(triangle_side)
-    t.left(120)",1.14,True,1.0,visual_iou=1.000; vars=['triangle_side']
+    t.left(120)",1.14,True,1.0,visual_iou=1.000; vars=['triangle_side'],True,visual_iou=1.000; vars=['triangle_side'],visual
 2,q3,..\Datasets\TurtleBench\Tasks\2\image\2.png,"recreates the same shape upside down.
 
 Constraint - Use these variables strictly:
@@ -135,7 +135,7 @@ t.begin_fill()
 for _ in range(3):
     t.forward(triangle_side)
     t.left(120)
-t.end_fill()",0.93,False,0.0055,visual_iou=0.005; vars=['triangle_side']
+t.end_fill()",0.93,False,0.0055,visual_iou=0.005; vars=['triangle_side'],True,both draw an equilateral triangle of the same side length.,llm_after_visual_false
 2,q2,..\Datasets\TurtleBench\Tasks\2\image\2.png,"removes the bottom side of the given shape.
 
 Constraint - Use these variables strictly:
@@ -149,7 +149,7 @@ t.goto(-100, -100)
 t.pendown()
 t.goto(0, 100)
 t.goto(100, -100)
-t.penup()",0.8,False,0.0494,visual_iou=0.049; vars=['triangle_side']
+t.penup()",0.8,False,0.0494,visual_iou=0.049; vars=['triangle_side'],False,"the model draws a triangle with a base, while the ground truth draws a triangle with a specific heading and side length.",llm_after_visual_false
 3,q10,..\Datasets\TurtleBench\Tasks\3\image\3.png,"in the given shape connects the midpoints of each side of the square.
 
 Constraint - Use these variables strictly:
@@ -195,7 +195,7 @@ t.goto(0, 100)
 t.penup()
 t.goto(0, 100)
 t.pendown()
-t.goto(-100, 0)",4.43,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(-100, 0)",4.43,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with internal lines, while the ground truth code draws a square with a rotated square inside it.",llm_after_visual_false
 3,q9,..\Datasets\TurtleBench\Tasks\3\image\3.png,"in the given shape, adds four smaller squares to divide the larger square into four equal pieces.
 
 Constraint - Use these variables strictly:
@@ -230,7 +230,7 @@ t.forward(square_side)
 
 t.penup()
 t.goto(0, 0)
-t.pendown()",1.38,False,0.1335,visual_iou=0.134; vars=['square_side']
+t.pendown()",1.38,False,0.1335,visual_iou=0.134; vars=['square_side'],False,"the model code draws a square divided by a cross, while the ground truth code draws four separate squares arranged in a larger square.",llm_after_visual_false
 3,q8,..\Datasets\TurtleBench\Tasks\3\image\3.png,"creates the given shape + its diagonals.
 
 Constraint - Use these variables strictly:
@@ -268,7 +268,7 @@ t.goto(100, -100)
 t.penup()
 t.goto(100, 100)
 t.pendown()
-t.goto(-100, -100)",1.39,False,0.8732,visual_iou=0.873; vars=['square_side']
+t.goto(-100, -100)",1.39,False,0.8732,visual_iou=0.873; vars=['square_side'],False,"the model code draws a square with two diagonals, while the ground truth code draws a square with only one diagonal and an extra line segment.",llm_after_visual_false
 3,q6,..\Datasets\TurtleBench\Tasks\3\image\3.png,"creates the given shape + its diagonals and removes the sides on the left and right.
 
 Constraint - Use these variables strictly:
@@ -315,7 +315,7 @@ t.goto(-100, -100)
 t.penup()
 t.goto(-100, 100)
 t.pendown()
-t.goto(-100, -100)",1.88,False,0.6185,visual_iou=0.619; vars=['square_side']
+t.goto(-100, -100)",1.88,False,0.6185,visual_iou=0.619; vars=['square_side'],False,"the ground truth code draws a square with only two diagonal lines, whereas the model code draws a square with two diagonals and one vertical side.",llm_after_visual_false
 3,q7,..\Datasets\TurtleBench\Tasks\3\image\3.png,"creates the given shape without its sides on the left and right.
 
 Constraint - Use these variables strictly:
@@ -336,7 +336,7 @@ t.forward(square_side)
 t.left(90)
 t.forward(square_side)
 t.left(90)
-t.forward(square_side)",1.22,False,0.4183,visual_iou=0.418; vars=['square_side']
+t.forward(square_side)",1.22,False,0.4183,visual_iou=0.418; vars=['square_side'],False,"the model code draws a solid square, while the ground truth code draws a dashed square with gaps on two sides.",llm_after_visual_false
 3,q5,..\Datasets\TurtleBench\Tasks\3\image\3.png,"recreates the same shape rotated by 45 degrees.
 
 Constraint - Use these variables strictly:
@@ -353,7 +353,7 @@ t.setheading(45)
 
 for _ in range(4):
     t.forward(square_side)
-    t.left(90)",1.39,False,0.9048,visual_iou=0.905; vars=['square_side']
+    t.left(90)",1.39,False,0.9048,visual_iou=0.905; vars=['square_side'],False,"the model code draws a square counter-clockwise, while the ground truth code draws a square clockwise.",llm_after_visual_false
 3,q4,..\Datasets\TurtleBench\Tasks\3\image\3.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -370,7 +370,7 @@ t.begin_fill()
 for _ in range(4):
     t.forward(square_side)
     t.left(90)
-t.end_fill()",1.32,False,0.8396,visual_iou=0.840; vars=['square_side']
+t.end_fill()",1.32,False,0.8396,visual_iou=0.840; vars=['square_side'],True,"both draw a square of the same size, regardless of the direction of the turns.",llm_after_visual_false
 3,q1,..\Datasets\TurtleBench\Tasks\3\image\3.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -389,7 +389,7 @@ t.begin_fill()
 for _ in range(4):
     t.forward(square_side)
     t.left(90)
-t.end_fill()",1.04,False,0.8396,visual_iou=0.840; vars=['square_side']
+t.end_fill()",1.04,False,0.8396,visual_iou=0.840; vars=['square_side'],True,"both draw a square of the same size, regardless of the direction of the turns.",llm_after_visual_false
 3,q3,..\Datasets\TurtleBench\Tasks\3\image\3.png,"removes the bottom side of the shape.
 
 Constraint - Use these variables strictly:
@@ -410,7 +410,7 @@ t.left(90)
 t.penup()
 t.goto(-100, 0)
 t.pendown()
-t.forward(square_side)",0.93,False,0.134,visual_iou=0.134; vars=['square_side']
+t.forward(square_side)",0.93,False,0.134,visual_iou=0.134; vars=['square_side'],False,"the model code draws two separate segments (a U-shape and a line), while the ground truth draws three sides of a square.",llm_after_visual_false
 3,q2,..\Datasets\TurtleBench\Tasks\3\image\3.png,"removes the bottom side of the shape and substitutes it with a semicircle its diameter equals a side of the square and its curved edge is at the top.
 
 Constraint - Use these variables strictly:
@@ -444,7 +444,7 @@ t.end_fill()
 t.left(90)
 t.forward(square_side / 2)
 t.left(90)
-t.forward(square_side)",1.48,False,0.1384,visual_iou=0.138; vars=['square_side']
+t.forward(square_side)",1.48,False,0.1384,visual_iou=0.138; vars=['square_side'],False,"the model code draws a square with an extra line segment and a filled semicircle, while the ground truth draws an open-topped square with a semicircle.",llm_after_visual_false
 4,q5,..\Datasets\TurtleBench\Tasks\4\image\4.png,"removes the sides of the pentagon and only draws its diagonals.
 
 Constraint - Use these variables strictly:
@@ -480,7 +480,7 @@ for i in range(5):
     t.penup()
     t.goto(x1, y1)
     t.pendown()
-    t.goto(x2, y2)",1.9,False,0.0,gt_exec_error: name 'cos' is not defined
+    t.goto(x2, y2)",1.9,False,0.0,gt_exec_error: name 'cos' is not defined,False,"the model code draws a pentagon with a distorted vertex and an internal star, while the ground truth draws a regular pentagon.",llm_after_visual_false
 4,q4,..\Datasets\TurtleBench\Tasks\4\image\4.png,"creates the given shape without the two sides at the top.
 
 Constraint - Use these variables strictly:
@@ -511,7 +511,7 @@ t.forward(pentagon_side)
 t.left(360/5)
 
 t.forward(pentagon_side)
-t.left(360/5)",1.11,False,0.0,gt_exec_error: name 'cos' is not defined
+t.left(360/5)",1.11,False,0.0,gt_exec_error: name 'cos' is not defined,False,"the model code draws an incomplete pentagon (4 sides), while the ground truth draws a pentagram and a decagon.",llm_after_visual_false
 4,q1,..\Datasets\TurtleBench\Tasks\4\image\4.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -530,7 +530,7 @@ angle = 144
 
 for _ in range(5):
     t.forward(pentagon_side)
-    t.left(angle)",1.02,False,0.0079,visual_iou=0.008; vars=['pentagon_side']
+    t.left(angle)",1.02,False,0.0079,visual_iou=0.008; vars=['pentagon_side'],False,"the model code draws a pentagram (star), while the ground truth code draws a regular pentagon.",llm_after_visual_false
 4,q3,..\Datasets\TurtleBench\Tasks\4\image\4.png,"creates the given shape without the two sides at the top.
 
 Constraint - Use these variables strictly:
@@ -556,7 +556,7 @@ t.forward(pentagon_side)
 t.left(360/5)
 t.forward(pentagon_side)
 t.left(360/5)
-t.forward(pentagon_side)",1.24,False,0.0049,visual_iou=0.005; vars=['pentagon_side']
+t.forward(pentagon_side)",1.24,False,0.0049,visual_iou=0.005; vars=['pentagon_side'],False,the model code draws a star (pentagram) while the ground truth code draws a regular pentagon.,llm_after_visual_false
 4,q2,..\Datasets\TurtleBench\Tasks\4\image\4.png,"recreates the same shape upside down.
 
 Constraint - Use these variables strictly:
@@ -572,7 +572,7 @@ t.pendown()
 
 for _ in range(5):
     t.forward(pentagon_side)
-    t.left(360 / 5)",0.82,False,0.0142,visual_iou=0.014; vars=['pentagon_side']
+    t.left(360 / 5)",0.82,False,0.0142,visual_iou=0.014; vars=['pentagon_side'],True,both draw a regular pentagon using the same exterior angle of 72 degrees.,llm_after_visual_false
 5,q1,..\Datasets\TurtleBench\Tasks\5\image\5.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -625,7 +625,7 @@ t.right(120)
 t.forward(large_triangle_side / 2)
 t.right(60)
 t.forward(large_triangle_side / 2)
-t.right(120)",2.02,False,0.0066,"visual_iou=0.007; vars=['large_triangle_side', 'small_triangle_side']"
+t.right(120)",2.02,False,0.0066,"visual_iou=0.007; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws a collection of disconnected triangles and lines, while the ground truth draws a specific geometric pattern of three triangles connected by lines.",llm_after_visual_false
 5,q3,..\Datasets\TurtleBench\Tasks\5\image\5.png,"creates the same shape but with the larger triangle removed.
 
 Constraint - Use these variables strictly:
@@ -678,7 +678,7 @@ def draw_shape():
     t.goto(-small_triangle_side/2, -large_triangle_side/2)
     t.goto(0, -large_triangle_side/2)
 
-draw_shape()",1.96,False,0.0124,"visual_iou=0.012; vars=['large_triangle_side', 'small_triangle_side']"
+draw_shape()",1.96,False,0.0124,"visual_iou=0.012; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws two triangles and a complex set of internal lines, while the ground truth code draws three small triangles arranged in a larger triangular pattern.",llm_after_visual_false
 5,q2,..\Datasets\TurtleBench\Tasks\5\image\5.png,"creates the given shape without the smaller triangles.
 
 Constraint - Use these variables strictly:
@@ -712,7 +712,7 @@ t.forward(large_triangle_side / 2)
 t.left(120)
 t.forward(large_triangle_side / 2)
 t.left(120)
-t.forward(large_triangle_side / 2)",4.02,False,0.0055,"visual_iou=0.006; vars=['large_triangle_side', 'small_triangle_side']"
+t.forward(large_triangle_side / 2)",4.02,False,0.0055,"visual_iou=0.006; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws two separate triangles, while the ground truth code draws only one.",llm_after_visual_false
 6,q5,..\Datasets\TurtleBench\Tasks\6\image\6.png,"creates the given shape but with both triangles upside down.
 
 Constraint - Use these variables strictly:
@@ -748,7 +748,7 @@ t.begin_fill()
 t.goto(triangle_side, -height)
 t.goto(triangle_side/2, height)
 t.goto(triangle_side/2 - triangle_side, -height)
-t.end_fill()",1.48,False,0.0079,visual_iou=0.008; vars=['triangle_side']
+t.end_fill()",1.48,False,0.0079,visual_iou=0.008; vars=['triangle_side'],False,"the model code draws two overlapping triangles, while the ground truth code draws two triangles sharing a single vertex.",llm_after_visual_false
 6,q4,..\Datasets\TurtleBench\Tasks\6\image\6.png,"creates the given shape but with the left triangle upside down while keeping its base fixed.
 
 Constraint - Use these variables strictly:
@@ -779,7 +779,7 @@ t.goto(-100, -100)
 t.goto(-100 + triangle_side / 2, 100)
 t.goto(100, -100)
 t.goto(100 + triangle_side / 2, 100)
-t.goto(-100 + triangle_side / 2, 100)",2.7,False,0.0102,visual_iou=0.010; vars=['triangle_side']
+t.goto(-100 + triangle_side / 2, 100)",2.7,False,0.0102,visual_iou=0.010; vars=['triangle_side'],False,"the model code draws two distinct triangles connected at a vertex, while the ground truth draws two overlapping equilateral triangles forming a Star of David.",llm_after_visual_false
 6,q1,..\Datasets\TurtleBench\Tasks\6\image\6.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -828,7 +828,7 @@ t.forward(triangle_side)
 t.left(120)
 t.forward(triangle_side)
 t.left(120)
-t.forward(triangle_side)",1.67,False,0.0093,visual_iou=0.009; vars=['triangle_side']
+t.forward(triangle_side)",1.67,False,0.0093,visual_iou=0.009; vars=['triangle_side'],False,"the model code draws three overlapping triangles, while the ground truth code draws only two.",llm_after_visual_false
 6,q3,..\Datasets\TurtleBench\Tasks\6\image\6.png,"creates the given shape with one of the triangles removed.
 
 Constraint - Use these variables strictly:
@@ -859,7 +859,7 @@ draw_triangle(-100, -100)
 t.penup()
 t.goto(0, -100)
 t.pendown()
-draw_triangle(100, -100)",1.48,False,0.0057,visual_iou=0.006; vars=['triangle_side']
+draw_triangle(100, -100)",1.48,False,0.0057,visual_iou=0.006; vars=['triangle_side'],False,the model code draws two triangles while the ground truth code draws only one.,llm_after_visual_false
 6,q2,..\Datasets\TurtleBench\Tasks\6\image\6.png,"fills the gap between the triangles in the given shape with a new triangle by adding only a new line to the shape.
 
 Constraint - Use these variables strictly:
@@ -910,7 +910,7 @@ t.begin_fill()
 t.goto(100, -100)
 t.goto(0, 100)
 t.goto(200, -100)
-t.end_fill()",1.84,False,0.021,visual_iou=0.021; vars=['triangle_side']
+t.end_fill()",1.84,False,0.021,visual_iou=0.021; vars=['triangle_side'],False,"the model code draws three distinct shapes (two triangles and a complex polygon), while the ground truth code draws three overlapping equilateral triangles rotated around a common point.",llm_after_visual_false
 7,q1,..\Datasets\TurtleBench\Tasks\7\image\7.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -943,7 +943,7 @@ t.pendown()
 # Draw the triangle part
 for _ in range(3):
     t.forward(triangle_side)
-    t.left(120)",1.3,False,0.0926,visual_iou=0.093; vars=['triangle_side']
+    t.left(120)",1.3,False,0.0926,visual_iou=0.093; vars=['triangle_side'],False,the square and triangle are drawn with different relative orientations and connection points.,llm_after_visual_false
 7,q3,..\Datasets\TurtleBench\Tasks\7\image\7.png,"creates the same shape but with the triangle on top of the square, as its base lays over the top side of the square.
 
 Constraint - Use these variables strictly:
@@ -978,7 +978,7 @@ t.forward(100)
 t.left(120)
 t.forward(100)
 t.left(120)
-t.forward(100)",1.55,False,0.2223,visual_iou=0.222; vars=['triangle_side']
+t.forward(100)",1.55,False,0.2223,visual_iou=0.222; vars=['triangle_side'],False,"the model draws a square and a triangle, while the ground truth draws a triangle and a square of different relative orientations and positions.",llm_after_visual_false
 7,q2,..\Datasets\TurtleBench\Tasks\7\image\7.png,"creates the same shape, with the triangle inside the square as the left side of the triangle lays over the left side of the square.
 
 Constraint - Use these variables strictly:
@@ -1014,7 +1014,7 @@ t.left(120)
 t.forward(100)
 t.left(120)
 t.forward(100)
-t.left(60)",1.21,False,0.0469,visual_iou=0.047; vars=['triangle_side']
+t.left(60)",1.21,False,0.0469,visual_iou=0.047; vars=['triangle_side'],False,"the model code draws a square and a triangle separately, while the ground truth code draws a triangle and a square sharing a side.",llm_after_visual_false
 8,q1,..\Datasets\TurtleBench\Tasks\8\image\8.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1055,7 +1055,7 @@ t.begin_fill()
 for _ in range(4):
     t.forward(triangle_side)
     t.left(90)
-t.end_fill()",1.39,False,0.0094,visual_iou=0.009; vars=['triangle_side']
+t.end_fill()",1.39,False,0.0094,visual_iou=0.009; vars=['triangle_side'],False,"the model code draws a square and a diamond, while the ground truth code draws a complex arrangement of multiple triangles.",llm_after_visual_false
 8,q3,..\Datasets\TurtleBench\Tasks\8\image\8.png,"creates the given shape with the square removed.
 
 Constraint - Use these variables strictly:
@@ -1126,7 +1126,7 @@ t.forward(triangle_side/2)
 t.left(45)
 t.forward(square_side/2)
 t.left(135)
-t.forward(triangle_side/2)",4.6,False,0.0155,visual_iou=0.015; vars=['triangle_side']
+t.forward(triangle_side/2)",4.6,False,0.0155,visual_iou=0.015; vars=['triangle_side'],False,"the model code draws squares and complex polygons, while the ground truth code draws a rhombus-based star pattern.",llm_after_visual_false
 8,q2,..\Datasets\TurtleBench\Tasks\8\image\8.png,"creates the given shape without the two triangles on top and bottom.
 
 Constraint - Use these variables strictly:
@@ -1196,7 +1196,7 @@ t.forward(triangle_side * math.sqrt(2) / 2)
 t.left(90)
 t.forward(triangle_side * math.sqrt(2) / 2)
 t.left(90)
-t.forward(triangle_side * math.sqrt(2) / 2)",2.43,False,0.0353,visual_iou=0.035; vars=['triangle_side']
+t.forward(triangle_side * math.sqrt(2) / 2)",2.43,False,0.0353,visual_iou=0.035; vars=['triangle_side'],False,"the model code draws two triangles and two squares of different sizes, while the ground truth draws a different arrangement of two triangles and lines.",llm_after_visual_false
 9,q1,..\Datasets\TurtleBench\Tasks\9\image\9.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1227,7 +1227,7 @@ t.goto(0, 0)
 t.pendown()
 
 t.left(90)
-t.circle(semicircle_radius, 180)",3.03,False,0.0999,visual_iou=0.100; vars=['semicircle_radius']
+t.circle(semicircle_radius, 180)",3.03,False,0.0999,visual_iou=0.100; vars=['semicircle_radius'],False,"the shapes consist of different geometric primitives and paths, resulting in entirely different figures.",llm_after_visual_false
 9,q3,..\Datasets\TurtleBench\Tasks\9\image\9.png,"adds two semicircles to the existing semicircles to make them a complete circle.
 
 Constraint - Use these variables strictly:
@@ -1259,7 +1259,7 @@ t.penup()
 t.goto(semicircle_radius, 0)
 t.pendown()
 
-t.circle(semicircle_radius, 180)",1.31,False,0.0319,visual_iou=0.032; vars=['semicircle_radius']
+t.circle(semicircle_radius, 180)",1.31,False,0.0319,visual_iou=0.032; vars=['semicircle_radius'],False,"the model code draws four semicircles forming a clover-like shape, while the ground truth code draws two overlapping full circles and a line.",llm_after_visual_false
 9,q2,..\Datasets\TurtleBench\Tasks\9\image\9.png,"creates the given shape without the upper semicircle and its diameter.
 
 Constraint - Use these variables strictly:
@@ -1279,7 +1279,7 @@ t.penup()
 t.goto(0, 0)
 t.pendown()
 
-t.goto(0, semicircle_radius * 2)",1.11,False,0.0056,visual_iou=0.006; vars=['semicircle_radius']
+t.goto(0, semicircle_radius * 2)",1.11,False,0.0056,visual_iou=0.006; vars=['semicircle_radius'],True,both draw a semicircle followed by a perpendicular line of the same length starting from the semicircle's center.,llm_after_visual_false
 10,q4,..\Datasets\TurtleBench\Tasks\10\image\10.png,"in the given shape, adds a new circle that circumscribes the squares.
 
 Constraint - Use these variables strictly:
@@ -1323,7 +1323,7 @@ t.goto(0, 0)
 t.pendown()
 
 circumradius = math.sqrt(2) * circle_radius
-t.circle(circumradius)",1.51,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.circle(circumradius)",1.51,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square and two circles, while the ground truth code draws a square and two circles with different relative positioning and orientations.",llm_after_visual_false
 10,q1,..\Datasets\TurtleBench\Tasks\10\image\10.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1356,7 +1356,7 @@ t.forward(200)
 t.left(90)
 t.forward(200)
 t.left(90)
-t.penup()",1.42,False,0.0699,visual_iou=0.070; vars=['circle_radius']
+t.penup()",1.42,False,0.0699,visual_iou=0.070; vars=['circle_radius'],False,"the square in the model code has a side length of 200, while the square in the ground truth code has a side length of 2 * circle_radius.",llm_after_visual_false
 10,q3,..\Datasets\TurtleBench\Tasks\10\image\10.png,"in the given shape, draws two diameters of the circle that parallel the sides of the square.
 
 Constraint - Use these variables strictly:
@@ -1397,7 +1397,7 @@ t.goto(100, 0)
 t.penup()
 t.goto(0, -100)
 t.pendown()
-t.goto(0, 100)",1.21,False,0.0543,visual_iou=0.054; vars=['circle_radius']
+t.goto(0, 100)",1.21,False,0.0543,visual_iou=0.054; vars=['circle_radius'],False,"the model draws a circle with a cross inside, while the ground truth draws a circle and a complex overlapping polygon/line structure.",llm_after_visual_false
 10,q2,..\Datasets\TurtleBench\Tasks\10\image\10.png,"in the given shape, draws two diameters of the circle that exactly lay over the diagonals of the square.
 
 Constraint - Use these variables strictly:
@@ -1448,7 +1448,7 @@ t.pendown()
 t.goto(100, -100)
 t.goto(100, 100)
 t.goto(-100, 100)
-t.goto(-100, -100)",3.51,False,0.0563,visual_iou=0.056; vars=['circle_radius']
+t.goto(-100, -100)",3.51,False,0.0563,visual_iou=0.056; vars=['circle_radius'],False,"the model code draws a square and a circle, while the ground truth code draws a complex path of arcs and lines.",llm_after_visual_false
 11,q4,..\Datasets\TurtleBench\Tasks\11\image\11.png,"in the given shape, removes the upper triangle.
 
 Constraint - Use these variables strictly:
@@ -1520,7 +1520,7 @@ t.left(120)
 t.forward(large_triangle_side)
 t.left(120)
 t.forward(large_triangle_side / 2)
-t.end_fill()",2.62,False,0.0102,visual_iou=0.010; vars=['large_triangle_side']
+t.end_fill()",2.62,False,0.0102,visual_iou=0.010; vars=['large_triangle_side'],False,"the model code draws a series of overlapping filled triangles, while the ground truth code draws a completely different set of lines and polygons.",llm_after_visual_false
 11,q1,..\Datasets\TurtleBench\Tasks\11\image\11.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1564,7 +1564,7 @@ t.speed(0)
 t.penup()
 t.goto(0, -large_triangle_side * math.sqrt(3)/6)
 t.pendown()
-draw_triangles(t, large_triangle_side)",1.82,False,0.0093,visual_iou=0.009; vars=['large_triangle_side']
+draw_triangles(t, large_triangle_side)",1.82,False,0.0093,visual_iou=0.009; vars=['large_triangle_side'],False,"the two snippets use different turn directions (left vs right) and different starting orientations, resulting in triangles pointing in different directions.",llm_after_visual_false
 11,q3,..\Datasets\TurtleBench\Tasks\11\image\11.png,"creates the given shape upside down.
 
 Constraint - Use these variables strictly:
@@ -1612,7 +1612,7 @@ t.penup()
 t.goto(0, -100)
 t.pendown()
 t.left(60)
-draw_triangles(t, large_triangle_side)",2.25,False,0.0076,visual_iou=0.008; vars=['large_triangle_side']
+draw_triangles(t, large_triangle_side)",2.25,False,0.0076,visual_iou=0.008; vars=['large_triangle_side'],False,"the two snippets use different turning directions (left vs. right) and relative positioning logic, resulting in different spatial arrangements of the triangles.",llm_after_visual_false
 11,q2,..\Datasets\TurtleBench\Tasks\11\image\11.png,"in the given shape, removes the smallest triangle in the middle.
 
 Constraint - Use these variables strictly:
@@ -1663,7 +1663,7 @@ t.forward(large_triangle_side / 2)
 t.left(120)
 t.forward(large_triangle_side)
 t.left(120)
-t.end_fill()",5.02,False,0.0767,visual_iou=0.077; vars=['large_triangle_side']
+t.end_fill()",5.02,False,0.0767,visual_iou=0.077; vars=['large_triangle_side'],False,the model code draws a recursive fractal pattern while the ground truth code draws two overlapping triangles.,llm_after_visual_false
 12,q1,..\Datasets\TurtleBench\Tasks\12\image\12.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1707,7 +1707,7 @@ t.pendown()
 
 t.goto(100, -100)
 t.goto(0, 100)
-t.goto(-100, -100)",1.49,False,0.4216,visual_iou=0.422; vars=['square_side']
+t.goto(-100, -100)",1.49,False,0.4216,visual_iou=0.422; vars=['square_side'],False,"the model draws a square with a triangle on top, while the ground truth draws a square with different internal lines.",llm_after_visual_false
 13,q1,..\Datasets\TurtleBench\Tasks\13\image\13.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -1739,7 +1739,7 @@ t.pendown()
 for _ in range(4):
     t.forward(radius)
     t.backward(radius)
-    t.right(90)",1.15,False,0.0954,visual_iou=0.095; vars=['radius']
+    t.right(90)",1.15,False,0.0954,visual_iou=0.095; vars=['radius'],False,"the model code draws a complex flower-like pattern of eight circles and a cross, while the ground truth code draws a different set of lines and a single circle.",llm_after_visual_false
 13,q3,..\Datasets\TurtleBench\Tasks\13\image\13.png,"in the given shape, slices the circle into 6 equal pieces.
 
 Constraint - Use these variables strictly:
@@ -1776,7 +1776,7 @@ for i in range(6):
     t.circle(radius, steps=1)
     t.left(60)
 
-t.hideturtle()",1.55,False,0.0117,visual_iou=0.012; vars=['radius']
+t.hideturtle()",1.55,False,0.0117,visual_iou=0.012; vars=['radius'],False,"the model code draws a complex geometric pattern and a circle, while the ground truth code draws a different star-like shape and a circle.",llm_after_visual_false
 13,q2,..\Datasets\TurtleBench\Tasks\13\image\13.png,"in the given shape, slices the circle into 16 equal pieces.
 
 Constraint - Use these variables strictly:
@@ -1811,7 +1811,7 @@ for i in range(16):
     angle = math.radians(i * 360 / 16)
     t.setheading(angle * 180 / math.pi + 90)
     t.forward(radius)
-    t.backward(radius)",1.64,False,0.0839,visual_iou=0.084; vars=['radius']
+    t.backward(radius)",1.64,False,0.0839,visual_iou=0.084; vars=['radius'],False,"the model code draws a star-like pattern of lines, while the ground truth code draws a different star pattern plus a circle.",llm_after_visual_false
 14,q5,..\Datasets\TurtleBench\Tasks\14\image\14.png,"in the given shape removes the largest square but keeps the smaller squares and the triangle.
 
 Constraint - Use these variables strictly:
@@ -1870,7 +1870,7 @@ def draw_shape():
     t.penup()
     t.goto(-75, -75)
     t.pendown()
-    t.goto(75, 75)",2.14,False,0.0,gt_exec_error: name 'triangle_sides' is not defined
+    t.goto(75, 75)",2.14,False,0.0,gt_exec_error: name 'triangle_sides' is not defined,False,"the model code draws a specific geometric composition involving squares and a triangle, while the ground truth code draws a completely different set of polygons.",llm_after_visual_false
 14,q4,..\Datasets\TurtleBench\Tasks\14\image\14.png,"in the given shape, substitutes the squares with regular hexagons that each share a side with the corresponding sides of the right triangles.
 
 Constraint - Use these variables strictly:
@@ -1933,7 +1933,7 @@ def draw_shape():
     t.pendown()
     t.begin_fill()
     draw_hexagon(t, triangle_sides[1])
-    t.end_fill()",2.4,False,0.0,gt_exec_error: name 'triangle_sides' is not defined
+    t.end_fill()",2.4,False,0.0,gt_exec_error: name 'triangle_sides' is not defined,False,"the model code draws a triangle and two hexagons, while the ground truth code draws a triangle and three hexagons.",llm_after_visual_false
 14,q1,..\Datasets\TurtleBench\Tasks\14\image\14.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -2009,7 +2009,7 @@ def setup():
     t.speed(0)
     draw_shape()
 
-setup()",2.67,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+setup()",2.67,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,"the model code draws three separate squares connected by lines, while the ground truth code draws three squares sharing vertices in a different geometric configuration.",llm_after_visual_false
 14,q3,..\Datasets\TurtleBench\Tasks\14\image\14.png,"in the given shape, substitutes the squares with regular pentagons that each share a side with the corresponding sides of the right triangles.
 
 Constraint - Use these variables strictly:
@@ -2083,7 +2083,7 @@ def draw_shape(t):
     draw_pentagon(t, triangle_sides[2])
     t.end_fill()
 
-triangle_sides = [90, 120, 150]",3.58,False,0.0,gt_exec_error: name 'triangle_sides' is not defined
+triangle_sides = [90, 120, 150]",3.58,False,0.0,gt_exec_error: name 'triangle_sides' is not defined,False,"The model code draws two distinct triangles and two pentagons, while the ground truth code draws a different sequence of polygons and lines with different geometric logic.",llm_after_visual_false
 14,q2,..\Datasets\TurtleBench\Tasks\14\image\14.png,"in the given shape, substitutes the squares with equilateral triangles that each share a side with the corresponding sides of the right triangles.
 
 Constraint - Use these variables strictly:
@@ -2151,7 +2151,7 @@ def draw_shape(t):
 
 t.reset()
 t.speed(0)
-draw_shape(t)",2.91,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset'
+draw_shape(t)",2.91,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset',False,"the model code draws three separate triangles and specific connecting lines, while the ground truth code draws a different sequence of polygons with distinct connecting paths.",llm_after_visual_false
 15,q4,..\Datasets\TurtleBench\Tasks\15\image\15.png,"in the given shape removes all horizontal small squares but keeps all the other small squares.
 
 Constraint - Use these variables strictly:
@@ -2355,7 +2355,7 @@ def draw_lines():
 
 draw_lines()
 
-t.hideturtle()",11.08,False,0.0741,visual_iou=0.074; vars=['large_square_side']
+t.hideturtle()",11.08,False,0.0741,visual_iou=0.074; vars=['large_square_side'],False,the two snippets draw entirely different geometric patterns (a complex square-based grid versus a rotated square pattern).,llm_after_visual_false
 15,q1,..\Datasets\TurtleBench\Tasks\15\image\15.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -2471,7 +2471,7 @@ def reset_turtle():
     t.clear()
 
 reset_turtle()
-draw_shape()",5.11,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'clear'
+draw_shape()",5.11,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'clear',False,"the model code draws a complex geometric pattern with squares, diamonds, and intersecting lines, while the ground truth code draws a series of rotated squares forming a star-like polygon.",llm_after_visual_false
 15,q3,..\Datasets\TurtleBench\Tasks\15\image\15.png,"increases the number of small squares from 8 to 12 by following the same pattern of rotations.
 
 Constraint - Use these variables strictly:
@@ -2537,7 +2537,7 @@ large_square_side = 200
 t.hideturtle()
 t.screen.tracer(0, 0)
 draw_complex_shape(t)
-t.screen.update()",3.29,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'screen'
+t.screen.update()",3.29,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'screen',False,"the model code draws a complex composite of squares and lines, while the ground truth code only draws a simple ring of squares.",llm_after_visual_false
 15,q2,..\Datasets\TurtleBench\Tasks\15\image\15.png,"in the given shape removes all small squares that look like diamonds but keeps all the other squares.
 
 Constraint - Use these variables strictly:
@@ -2610,7 +2610,7 @@ def draw_remaining_lines():
 
 draw_large_square()
 draw_diagonal_lines()
-draw_remaining_lines()",3.08,False,0.1168,visual_iou=0.117; vars=['large_square_side']
+draw_remaining_lines()",3.08,False,0.1168,visual_iou=0.117; vars=['large_square_side'],False,"the model code draws a square with internal lines, while the ground truth code draws four smaller squares arranged in a larger square pattern.",llm_after_visual_false
 16,q4,..\Datasets\TurtleBench\Tasks\16\image\16.png,"in the given shape, removes the second smallest triangle, the fourth smallest triangle, the sixth smallest triangle, and the eighth smallest triangle.
 
 Constraint - Use these variables strictly:
@@ -2746,7 +2746,7 @@ def setup():
 smallest_triangle_legs = 20
 setup()
 draw_shape()
-t.update()",5.64,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset'
+t.update()",5.64,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset',False,the model code draws equilateral triangles while the ground truth code draws right isosceles triangles.,llm_after_visual_false
 16,q1,..\Datasets\TurtleBench\Tasks\16\image\16.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -2832,7 +2832,7 @@ def draw_shape():
     t.forward(200)
 
 smallest_triangle_legs = 20
-draw_shape()",7.26,False,0.0,gt_exec_error: name 'sqrt' is not defined
+draw_shape()",7.26,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a complex set of triangles and lines, while the ground truth code draws a series of nested right isosceles triangles.",llm_after_visual_false
 16,q3,..\Datasets\TurtleBench\Tasks\16\image\16.png,"in the given shape, removes the smallest triangle, the third smallest triangle, the fifth smallest triangle, and the seventh smallest triangle.
 
 Constraint - Use these variables strictly:
@@ -2930,7 +2930,7 @@ def setup_turtle():
     t.width(2)
     draw_shape()
 
-setup_turtle()",8.99,False,0.0,gt_exec_error: name 'sqrt' is not defined
+setup_turtle()",8.99,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a complex polygon with internal lines and specific triangle subtractions, while the ground truth code draws a series of right isosceles triangles.",llm_after_visual_false
 16,q2,..\Datasets\TurtleBench\Tasks\16\image\16.png,"in the given shape removes the two largest triangles but keeps the rest.
 
 Constraint - Use these variables strictly:
@@ -3056,7 +3056,7 @@ def remove_largest_triangles():
     t.pendown()
     t.goto(150, 50)
 
-remove_largest_triangles()",5.56,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'clear'
+remove_largest_triangles()",5.56,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'clear',False,"the model code draws a complex arrangement of triangles and lines, while the ground truth code draws a series of right isosceles triangles.",llm_after_visual_false
 17,q1,..\Datasets\TurtleBench\Tasks\17\image\17.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -3071,7 +3071,7 @@ t.pendown()
 
 for _ in range(4):
     t.circle(semicircle_radius, 90)
-    t.left(90)",0.97,False,0.0333,visual_iou=0.033; vars=['semicircle_radius']
+    t.left(90)",0.97,False,0.0333,visual_iou=0.033; vars=['semicircle_radius'],False,"the model code draws a closed square-like shape with 90-degree arcs, while the ground truth draws four 180-degree semicircles.",llm_after_visual_false
 18,q5,..\Datasets\TurtleBench\Tasks\18\image\18.png,"rotates the whole shape 60 degrees to the left.
 
 Constraint - Use these variables strictly:
@@ -16191,7 +16191,7 @@ for _ in range(3):
     t.left(120)
 t.end_fill()
 
-t.penup",538.03,False,0.0109,visual_iou=0.011; vars=['triangle_side']
+t.penup",538.03,False,0.0109,visual_iou=0.011; vars=['triangle_side'],False,"the model code draws a large number of overlapping triangles (a complex pattern), while the ground truth code draws only three triangles arranged in a specific orientation.",llm_after_visual_false
 18,q4,..\Datasets\TurtleBench\Tasks\18\image\18.png,"rotates the whole shape 120 degrees to the left.
 
 Constraint - Use these variables strictly:
@@ -16234,7 +16234,7 @@ t.goto(0, 0)
 t.left(120)
 t.pendown()
 
-draw_triangle()",4.2,False,0.0082,visual_iou=0.008; vars=['triangle_side']
+draw_triangle()",4.2,False,0.0082,visual_iou=0.008; vars=['triangle_side'],False,"the model code draws three triangles at different locations, while the ground truth code draws three triangles overlapping at the same origin.",llm_after_visual_false
 18,q1,..\Datasets\TurtleBench\Tasks\18\image\18.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -16283,7 +16283,7 @@ t.penup()
 t.goto(-50, 0)
 t.pendown()
 
-t.forward(100)",1.82,False,0.0129,visual_iou=0.013; vars=['triangle_side']
+t.forward(100)",1.82,False,0.0129,visual_iou=0.013; vars=['triangle_side'],False,"the model code draws two separate triangles and a line, while the ground truth code draws a single triangle (or overlapping triangles) at one location.",llm_after_visual_false
 18,q3,..\Datasets\TurtleBench\Tasks\18\image\18.png,"in the given shape removes the upper triangle.
 
 Constraint - Use these variables strictly:
@@ -16327,7 +16327,7 @@ t.penup()
 t.goto(-50, 0)
 t.pendown()
 
-t.forward(triangle_side)",1.68,False,0.0066,visual_iou=0.007; vars=['triangle_side']
+t.forward(triangle_side)",1.68,False,0.0066,visual_iou=0.007; vars=['triangle_side'],False,"the model code draws two filled triangles and a line, while the ground truth code draws two unfilled triangles.",llm_after_visual_false
 18,q2,..\Datasets\TurtleBench\Tasks\18\image\18.png,"in the given shape fills the gaps between the triangles with new triangles of the same size.
 
 Constraint - Use these variables strictly:
@@ -16380,7 +16380,7 @@ def draw_complex_shape():
     t.pendown()
     draw_triangle(triangle_side / 2, 0, 0)
 
-draw_complex_shape()",3.12,False,0.0403,visual_iou=0.040; vars=['triangle_side']
+draw_complex_shape()",3.12,False,0.0403,visual_iou=0.040; vars=['triangle_side'],False,"the model code draws a complex arrangement of triangles of varying sizes, while the ground truth code draws a simple hexagram (Star of David) pattern.",llm_after_visual_false
 19,q4,..\Datasets\TurtleBench\Tasks\19\image\19.png,"in the given shape, rotates the upper pentagon by 180 degrees to the left around its bottom vertex but keeps the others at the same position and orientation.
 
 Constraint - Use these variables strictly:
@@ -16460,7 +16460,7 @@ def main():
     draw_shape(t)
     draw_lines(t)
 
-main()",4.39,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset'
+main()",4.39,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'reset',False,"the model code draws multiple overlapping pentagons and specific connecting lines, while the ground truth code draws only three pentagons in a different configuration.",llm_after_visual_false
 19,q1,..\Datasets\TurtleBench\Tasks\19\image\19.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -16506,7 +16506,7 @@ pentagon_side = 100
 t.hideturtle()
 t.tracer(0, 0)
 draw_shape()
-t.update()",2.7,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'tracer'
+t.update()",2.7,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'tracer',False,"the model code draws three separate pentagons in different locations, while the ground truth code draws three pentagons sharing a common center point.",llm_after_visual_false
 19,q3,..\Datasets\TurtleBench\Tasks\19\image\19.png,"creates the given shape upside down.
 
 Constraint - Use these variables strictly:
@@ -16557,7 +16557,7 @@ def draw_shape(t):
     draw_pentagon(t, pentagon_side)
 
 t.speed(0)
-draw_shape(t)",2.94,False,0.023,visual_iou=0.023; vars=['pentagon_side']
+draw_shape(t)",2.94,False,0.023,visual_iou=0.023; vars=['pentagon_side'],False,"the model code draws three distinct pentagons at different locations, while the ground truth code draws three pentagons sharing a common vertex.",llm_after_visual_false
 19,q2,..\Datasets\TurtleBench\Tasks\19\image\19.png,"in the given shape removes the upper pentagon.
 
 Constraint - Use these variables strictly:
@@ -16611,7 +16611,7 @@ def draw_shape():
         t.backward(pentagon_side * math.sin(math.pi / 5))
         t.left(72)
 
-draw_shape()",2.38,False,0.0146,visual_iou=0.015; vars=['pentagon_side']
+draw_shape()",2.38,False,0.0146,visual_iou=0.015; vars=['pentagon_side'],False,"the model code draws a complex pentagonal structure with internal lines, while the ground truth code draws two overlapping pentagons.",llm_after_visual_false
 20,q1,..\Datasets\TurtleBench\Tasks\20\image\20.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -16631,7 +16631,7 @@ def draw_star(size):
         t.forward(size)
         t.right(144)
 
-draw_star(star_side)",1.41,False,0.0288,visual_iou=0.029; vars=['star_side']
+draw_star(star_side)",1.41,False,0.0288,visual_iou=0.029; vars=['star_side'],False,"the model draws a 5-pointed star, while the ground truth draws an 8-sided polygon.",llm_after_visual_false
 20,q3,..\Datasets\TurtleBench\Tasks\20\image\20.png,"duplicates the given shape and places the new shape adjacent to the existing one where a pair of corresponding vertices from each star touches one another.
 
 Constraint - Use these variables strictly:
@@ -16663,7 +16663,7 @@ t.right(36)
 t.forward(star_side * math.sin(math.radians(36)))
 t.left(36)
 
-draw_star(star_side)",1.31,False,0.044,visual_iou=0.044; vars=['star_side']
+draw_star(star_side)",1.31,False,0.044,visual_iou=0.044; vars=['star_side'],False,"the model code draws two 5-pointed stars, while the ground truth code draws two 8-sided polygons.",llm_after_visual_false
 20,q2,..\Datasets\TurtleBench\Tasks\20\image\20.png,"in the given shape removes the two squares in the middle.
 
 Constraint - Use these variables strictly:
@@ -27477,7 +27477,7 @@ for _ in range(5):
     t.forward(half_side)
     t.right(18)
     t.penup()
-    t.forward(half_side * math",451.02,False,0.0,"model_exec_error: '(' was never closed (<string>, line 10806)"
+    t.forward(half_side * math",451.02,False,0.0,"model_exec_error: '(' was never closed (<string>, line 10806)",False,"the model code draws a star, while the ground truth code draws an octagon-like shape.",llm_after_visual_false
 21,q1,..\Datasets\TurtleBench\Tasks\21\image\21.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -27510,7 +27510,7 @@ t.speed(0)
 t.left(90)
 draw_branch(root_length, angles_between_branches, 3)
 t.right(90)
-t.backward(root_length)",1.45,False,0.014,"visual_iou=0.014; vars=['angles_between_branches', 'root_length']"
+t.backward(root_length)",1.45,False,0.014,"visual_iou=0.014; vars=['angles_between_branches', 'root_length']",False,"the model code draws a multi-branching fractal tree with 3 branches per node, while the ground truth draws a binary tree.",llm_after_visual_false
 22,q1,..\Datasets\TurtleBench\Tasks\22\image\22.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -27534,7 +27534,7 @@ for _ in range(5):
 
 t.forward(side)
 t.right(90)
-t.forward(side)",1.0,False,0.0402,visual_iou=0.040; vars=['side']
+t.forward(side)",1.0,False,0.0402,visual_iou=0.040; vars=['side'],False,the model code draws a complex staircase pattern while the ground truth code draws a simple zig-zag line.,llm_after_visual_false
 22,q3,..\Datasets\TurtleBench\Tasks\22\image\22.png,"removes the upper step in the given shape.
 
 Constraint - Use these variables strictly:
@@ -27562,7 +27562,7 @@ t.forward(side * 2)
 t.right(90)
 t.forward(side)
 t.left(90)
-t.forward(side * 2)",1.71,False,0.088,visual_iou=0.088; vars=['side']
+t.forward(side * 2)",1.71,False,0.088,visual_iou=0.088; vars=['side'],False,the model code draws a complex zig-zag path while the ground truth code draws a simple staircase-like shape.,llm_after_visual_false
 22,q2,..\Datasets\TurtleBench\Tasks\22\image\22.png,"in the given shape adds an ascending staircase to the right of the existing one of a similar length.
 
 Constraint - Use these variables strictly:
@@ -27601,7 +27601,7 @@ for _ in range(5):
     t.left(90)
     t.forward(side)
     t.right(90)
-    t.forward(side)",3.79,False,0.0065,visual_iou=0.007; vars=['side']
+    t.forward(side)",3.79,False,0.0065,visual_iou=0.007; vars=['side'],False,"the model code draws two separate stair-step patterns, while the ground truth code draws a single continuous zigzag path.",llm_after_visual_false
 23,q1,..\Datasets\TurtleBench\Tasks\23\image\23.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -27631,7 +27631,7 @@ def draw_spike():
 
 for _ in range(8):
     draw_spike()
-    t.left(45)",1.54,False,0.0038,visual_iou=0.004; vars=['side']
+    t.left(45)",1.54,False,0.0038,visual_iou=0.004; vars=['side'],False,the model code draws an 8-pointed star pattern while the ground truth code draws a simple zig-zag line.,llm_after_visual_false
 24,q4,..\Datasets\TurtleBench\Tasks\24\image\24.png,"in the given shape replaces the larger triangle with a square of a similar side length.
 
 Constraint - Use these variables strictly:
@@ -27671,7 +27671,7 @@ t.begin_fill()
 t.goto(0, 50)
 t.goto(small_triangle_side, -50)
 t.goto(0, -50)
-t.end_fill()",2.42,False,0.6441,"visual_iou=0.644; vars=['large_triangle_side', 'small_triangle_side']"
+t.end_fill()",2.42,False,0.6441,"visual_iou=0.644; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws a square and a triangle, while the ground truth code draws a triangle and a square with different orientations and relative positioning.",llm_after_visual_false
 24,q1,..\Datasets\TurtleBench\Tasks\24\image\24.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -27706,7 +27706,7 @@ t.forward(large_triangle_side/2)
 t.right(60)
 t.forward(small_triangle_side/2 * math.sin(math.radians(60)))
 t.pendown()
-draw_triangle(small_triangle_side)",1.55,False,0.007,"visual_iou=0.007; vars=['large_triangle_side', 'small_triangle_side']"
+draw_triangle(small_triangle_side)",1.55,False,0.007,"visual_iou=0.007; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws two triangles of different sizes, while the ground truth code draws two triangles of different sizes in a different relative orientation and sequence.",llm_after_visual_false
 24,q3,..\Datasets\TurtleBench\Tasks\24\image\24.png,"in the given shape replaces the smaller triangle with a square of a similar side length.
 
 Constraint - Use these variables strictly:
@@ -27746,7 +27746,7 @@ t.begin_fill()
 for _ in range(4):
     t.forward(small_triangle_side)
     t.left(90)
-t.end_fill()",1.59,False,0.4007,"visual_iou=0.401; vars=['large_triangle_side', 'small_triangle_side']"
+t.end_fill()",1.59,False,0.4007,"visual_iou=0.401; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws a triangle and a square, while the ground truth code draws a triangle and a square with different orientations and relative positioning.",llm_after_visual_false
 24,q2,..\Datasets\TurtleBench\Tasks\24\image\24.png,"adds two triangles to the right of the existing shape to make it vertically symmetrical.
 
 Constraint - Use these variables strictly:
@@ -27790,7 +27790,7 @@ def draw_small_triangle(x_offset):
 
 draw_large_triangle()
 draw_small_triangle(0)
-draw_small_triangle(150)",1.49,False,0.6698,"visual_iou=0.670; vars=['large_triangle_side', 'small_triangle_side']"
+draw_small_triangle(150)",1.49,False,0.6698,"visual_iou=0.670; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws three triangles in a row, while the ground truth code draws four overlapping triangles of different sizes and orientations.",llm_after_visual_false
 25,q4,..\Datasets\TurtleBench\Tasks\25\image\25.png,"in the given shape reflects the middle triangle over the common base of the triangles.
 
 Constraint - Use these variables strictly:
@@ -27843,7 +27843,7 @@ t.goto(150, -50)
 t.goto(150 - triangle_side/2, -50 + height)
 t.goto(150 + triangle_side/2, -50 + height)
 t.goto(150, -50)
-t.end_fill()",2.49,False,0.0163,visual_iou=0.016; vars=['triangle_side']
+t.end_fill()",2.49,False,0.0163,visual_iou=0.016; vars=['triangle_side'],False,"the model code draws three distinct triangles, while the ground truth code draws a complex sequence of lines and polygons that do not match the model's output.",llm_after_visual_false
 25,q1,..\Datasets\TurtleBench\Tasks\25\image\25.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -27883,7 +27883,7 @@ t.forward(triangle_side)
 t.right(60)
 t.pendown()
 
-draw_triangle()",3.12,False,0.005,visual_iou=0.005; vars=['triangle_side']
+draw_triangle()",3.12,False,0.005,visual_iou=0.005; vars=['triangle_side'],False,"the model code draws three triangles in a row, while the ground truth code draws a different pattern of overlapping polygons.",llm_after_visual_false
 25,q3,..\Datasets\TurtleBench\Tasks\25\image\25.png,"in the given shape draws a circle that the base line of the triangles is its diameter.
 
 Constraint - Use these variables strictly:
@@ -27960,7 +27960,7 @@ t.penup()
 t.goto(0, 0)
 t.pendown()
 
-t.circle(radius)",2.45,False,0.017,visual_iou=0.017; vars=['triangle_side']
+t.circle(radius)",2.45,False,0.017,visual_iou=0.017; vars=['triangle_side'],False,"the model code draws multiple overlapping triangles and circles at different coordinates, while the ground truth code draws a different pattern of polygons and a single circle.",llm_after_visual_false
 25,q2,..\Datasets\TurtleBench\Tasks\25\image\25.png,"in the given shape adds three triangles to make a horizontally symmetrical shape.
 
 Constraint - Use these variables strictly:
@@ -28017,7 +28017,7 @@ t.goto(triangle_side, height)
 t.goto(2 * triangle_side, 0)
 t.goto(triangle_side, -height)
 t.goto(0, 0)
-t.end_fill()",2.51,False,0.0293,visual_iou=0.029; vars=['triangle_side']
+t.end_fill()",2.51,False,0.0293,visual_iou=0.029; vars=['triangle_side'],False,"the model code draws three overlapping rhombi (diamonds), while the ground truth code draws a complex pattern of triangles and lines.",llm_after_visual_false
 26,q1,..\Datasets\TurtleBench\Tasks\26\image\26.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -28048,7 +28048,7 @@ t.left(90)
 t.forward(100)
 t.left(90)
 t.forward(100)
-t.end_fill()",1.29,False,0.9013,visual_iou=0.901; vars=['small_square_side']
+t.end_fill()",1.29,False,0.9013,visual_iou=0.901; vars=['small_square_side'],False,"the model code draws a specific L-shaped polygon, while the ground truth code draws a series of squares based on variable inputs.",llm_after_visual_false
 26,q3,..\Datasets\TurtleBench\Tasks\26\image\26.png,"shifts the squares in the center upward by a distance equal to its side length.
 
 Constraint - Use these variables strictly:
@@ -28124,7 +28124,7 @@ t.forward(small_square_side)
 t.left(90)
 t.forward(small_square_side)
 t.left(90)
-t.end_fill()",3.08,True,0.9718,visual_iou=0.972; vars=['small_square_side']
+t.end_fill()",3.08,True,0.9718,visual_iou=0.972; vars=['small_square_side'],True,visual_iou=0.972; vars=['small_square_side'],visual
 26,q2,..\Datasets\TurtleBench\Tasks\26\image\26.png,"removes the squares on the left and the right.
 
 Constraint - Use these variables strictly:
@@ -28154,7 +28154,7 @@ t.forward(small_square_side)
 t.left(90)
 t.forward(small_square_side)
 t.left(90)
-t.end_fill()",1.47,False,0.1894,visual_iou=0.189; vars=['small_square_side']
+t.end_fill()",1.47,False,0.1894,visual_iou=0.189; vars=['small_square_side'],False,"the model code draws a rectangle (100x200), while the ground truth code draws a square (100x100).",llm_after_visual_false
 27,q4,..\Datasets\TurtleBench\Tasks\27\image\27.png,"in the given shape removes the quarter circles on the top and the bottom of the square.
 
 Constraint - Use these variables strictly:
@@ -37679,7 +37679,7 @@ t.circle(100, 180)
 t.penup()
 t.goto(0, 100)
 t.pendown()
-t.circle",444.36,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.circle",444.36,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a complex, repetitive pattern of overlapping circles and a square, while the ground truth code draws a simple square and two arcs.",llm_after_visual_false
 27,q1,..\Datasets\TurtleBench\Tasks\27\image\27.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -37709,7 +37709,7 @@ t.penup()
 t.goto(0, 0)
 t.pendown()
 
-t.circle(square_side / math.sqrt(2) * 2)",1.37,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.circle(square_side / math.sqrt(2) * 2)",1.37,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square and a circle centered at the origin, while the ground truth code draws a square and a circle centered at the square's midpoint.",llm_after_visual_false
 27,q3,..\Datasets\TurtleBench\Tasks\27\image\27.png,"in the given shape removes the quarter circles on the left and the right of the square.
 
 Constraint - Use these variables strictly:
@@ -51480,7 +51480,7 @@ t.goto(0, 0)
 t.pendown()
 
 t.penup()
-t.goto(",744.68,False,0.0,"model_exec_error: '(' was never closed (<string>, line 13755)"
+t.goto(",744.68,False,0.0,"model_exec_error: '(' was never closed (<string>, line 13755)",False,"The model code draws a complex, repetitive set of overlapping circles and a square, while the ground truth code draws a square and a few specific arcs.",llm_after_visual_false
 27,q2,..\Datasets\TurtleBench\Tasks\27\image\27.png,"in the given shape, slices the bigger square into 4 smaller equal squares.
 
 Constraint - Use these variables strictly:
@@ -51530,7 +51530,7 @@ t.goto(0, square_side / 2)
 t.penup()
 t.goto(-square_side / 2, 0)
 t.pendown()
-t.goto(square_side / 2, 0)",2.07,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(square_side / 2, 0)",2.07,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a circle circumscribing a square with internal crosshairs, while the ground truth draws four small squares and a different circle.",llm_after_visual_false
 28,q1,..\Datasets\TurtleBench\Tasks\28\image\28.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51569,7 +51569,7 @@ t.goto(100, -100)
 t.penup()
 t.goto(-100, -100)
 t.pendown()
-t.goto(100, 100)",1.37,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(100, 100)",1.37,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with two diagonals, while the ground truth code draws a square with a different set of internal lines.",llm_after_visual_false
 29,q1,..\Datasets\TurtleBench\Tasks\29\image\29.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51598,7 +51598,7 @@ t.end_fill()
 t.penup()
 t.goto(-100, 100)
 t.pendown()
-t.goto(100, -100)",1.14,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(100, -100)",1.14,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square and a diagonal line, while the ground truth draws a square and a different set of lines.",llm_after_visual_false
 30,q1,..\Datasets\TurtleBench\Tasks\30\image\30.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51626,7 +51626,7 @@ t.end_fill()
 t.penup()
 t.goto(-square_side/2, -square_side/2)
 t.pendown()
-t.goto(square_side/2, square_side/2)",1.38,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(square_side/2, square_side/2)",1.38,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with a diagonal, while the ground truth code draws a square with an additional line segment extending outside the square.",llm_after_visual_false
 30,q2,..\Datasets\TurtleBench\Tasks\30\image\30.png,"in the given shape removes the triangle on the bottom.
 
 Constraint - Use these variables strictly:
@@ -51649,7 +51649,7 @@ t.forward(square_side/math.sqrt(2))
 t.left(135)
 t.forward(square_side/math.sqrt(2))
 t.left(90)
-t.forward(square_side/math.sqrt(2))",1.13,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.forward(square_side/math.sqrt(2))",1.13,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with a triangle attached to one side, while the ground truth code draws a simple triangle.",llm_after_visual_false
 31,q1,..\Datasets\TurtleBench\Tasks\31\image\31.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51693,7 +51693,7 @@ t.forward(square_side/2)
 t.left(90)
 t.forward(square_side)
 t.left(90)
-t.end_fill()",2.3,False,0.1513,visual_iou=0.151; vars=['square_side']
+t.end_fill()",2.3,False,0.1513,visual_iou=0.151; vars=['square_side'],False,"the model code draws two overlapping squares of different sizes, while the ground truth code draws two identical squares sharing a side.",llm_after_visual_false
 31,q2,..\Datasets\TurtleBench\Tasks\31\image\31.png,"adds two squares to the existing shape to make it horizontally and vertically symmetrical.
 
 Constraint - Use these variables strictly:
@@ -51754,7 +51754,7 @@ t.forward(square_side)
 t.left(90)
 t.forward(square_side)
 t.left(90)
-t.end_fill()",1.86,False,0.2958,visual_iou=0.296; vars=['square_side']
+t.end_fill()",1.86,False,0.2958,visual_iou=0.296; vars=['square_side'],False,"the model code draws three overlapping squares, while the ground truth code draws four squares rotated around a central point.",llm_after_visual_false
 32,q1,..\Datasets\TurtleBench\Tasks\32\image\32.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51785,7 +51785,7 @@ t.right(90)
 t.forward(radius)
 t.left(90)
 t.circle(radius/2, 180)
-t.circle(radius/2, 180)",1.21,False,0.6635,visual_iou=0.664; vars=['radius']
+t.circle(radius/2, 180)",1.21,False,0.6635,visual_iou=0.664; vars=['radius'],False,"the model code draws three distinct circles and a line, while the ground truth draws two circles and a line.",llm_after_visual_false
 33,q1,..\Datasets\TurtleBench\Tasks\33\image\33.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51821,7 +51821,7 @@ draw_shape()
 t.penup()
 t.goto(0, 50)
 t.pendown()
-draw_shape()",1.96,False,0.0,gt_exec_error: name 'sqrt' is not defined
+draw_shape()",1.96,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws two complex geometric patterns composed of octagonal segments, while the ground truth code draws two squares and two circles.",llm_after_visual_false
 34,q1,..\Datasets\TurtleBench\Tasks\34\image\34.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51856,7 +51856,7 @@ t.penup()
 t.goto(0, -side/4)
 t.pendown()
 t.right(90)
-draw_rectangle(side/2, side)",1.57,False,0.0285,visual_iou=0.029; vars=['side']
+draw_rectangle(side/2, side)",1.57,False,0.0285,visual_iou=0.029; vars=['side'],False,"the model code draws a cross shape composed of three rectangles, while the ground truth code draws a complex staircase-like pattern.",llm_after_visual_false
 35,q1,..\Datasets\TurtleBench\Tasks\35\image\35.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51894,7 +51894,7 @@ t.circle(triangle_side/2, 180)
 t.penup()
 t.goto(-triangle_side/2, 0)
 t.pendown()
-t.goto(triangle_side/2, 0)",2.07,False,0.0061,visual_iou=0.006; vars=['triangle_side']
+t.goto(triangle_side/2, 0)",2.07,False,0.0061,visual_iou=0.006; vars=['triangle_side'],False,"the model code draws a filled triangle and a semicircle, while the ground truth draws an unfilled triangle and a semicircle in the opposite orientation.",llm_after_visual_false
 36,q1,..\Datasets\TurtleBench\Tasks\36\image\36.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51919,7 +51919,7 @@ t.pendown()
 
 t.begin_fill()
 t.circle(small_circle_radius)
-t.end_fill()",1.4,False,0.0374,"visual_iou=0.037; vars=['large_circle_radius', 'small_circle_radius']"
+t.end_fill()",1.4,False,0.0374,"visual_iou=0.037; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two separate circles at different locations, while the ground truth code draws two circles tangent to each other.",llm_after_visual_false
 36,q3,..\Datasets\TurtleBench\Tasks\36\image\36.png,"in the given shape inserts the smaller circle on top of the larger circle.
 
 Constraint - Use these variables strictly:
@@ -51938,7 +51938,7 @@ t.circle(large_circle_radius)
 t.penup()
 t.goto(0, 150)
 t.pendown()
-t.circle(small_circle_radius)",1.4,False,0.0427,"visual_iou=0.043; vars=['large_circle_radius', 'small_circle_radius']"
+t.circle(small_circle_radius)",1.4,False,0.0427,"visual_iou=0.043; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two separate circles, while the ground truth code draws a single circle and a second circle starting from a different position.",llm_after_visual_false
 36,q2,..\Datasets\TurtleBench\Tasks\36\image\36.png,"in the given shape inserts a circle of an equal size to the smaller circle on the left of the bigger circle to make a vertically symmetrical shape.
 
 Constraint - Use these variables strictly:
@@ -51966,7 +51966,7 @@ t.circle(small_circle_radius)
 t.penup()
 t.goto(-200, 0)
 t.pendown()
-t.circle(small_circle_radius)",1.2,False,0.0301,"visual_iou=0.030; vars=['large_circle_radius', 'small_circle_radius']"
+t.circle(small_circle_radius)",1.2,False,0.0301,"visual_iou=0.030; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws three separate circles, while the ground truth code draws a complex overlapping pattern of circles and arcs.",llm_after_visual_false
 37,q1,..\Datasets\TurtleBench\Tasks\37\image\37.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -51988,7 +51988,7 @@ t.left(90)
 t.circle(semicircle_radius, 180)
 t.right(90)
 
-t.forward(half_lines_length)",0.92,False,0.0067,"visual_iou=0.007; vars=['half_lines_length', 'semicircle_radius']"
+t.forward(half_lines_length)",0.92,False,0.0067,"visual_iou=0.007; vars=['half_lines_length', 'semicircle_radius']",True,"both draw a line, a semicircle, and a line in a continuous path, resulting in the same geometry.",llm_after_visual_false
 38,q1,..\Datasets\TurtleBench\Tasks\38\image\38.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52005,7 +52005,7 @@ for r in circles_radi:
     t.circle(r)
     t.penup()
     t.goto(0, -r)
-    t.pendown()",0.89,False,0.0,model_exec_error: name 'circles_radi' is not defined
+    t.pendown()",0.89,False,0.0,model_exec_error: name 'circles_radi' is not defined,False,"the model code draws circles centered at different vertical positions, while the ground truth draws them all from the same origin.",llm_after_visual_false
 39,q1,..\Datasets\TurtleBench\Tasks\39\image\39.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52026,7 +52026,7 @@ for r in circles_radi:
     t.circle(r)
     t.penup()
     t.goto(0, -100)
-    t.pendown()",1.28,False,0.0,model_exec_error: name 'circles_radi' is not defined
+    t.pendown()",1.28,False,0.0,model_exec_error: name 'circles_radi' is not defined,False,"the model code draws all circles from the same center point, while the ground truth code shifts the center point between each circle.",llm_after_visual_false
 39,q3,..\Datasets\TurtleBench\Tasks\39\image\39.png,"recreates the given shape without the smallest circle.
 
 Constraint - Use these variables strictly:
@@ -52044,7 +52044,7 @@ t.goto(0, -100)
 t.pendown()
 
 for r in circles_radi[1:]:
-    t.circle(r)",0.99,False,0.0,model_exec_error: name 'circles_radi' is not defined
+    t.circle(r)",0.99,False,0.0,model_exec_error: name 'circles_radi' is not defined,False,the ground truth code includes additional movement and spacing between circles that the model code lacks.,llm_after_visual_false
 39,q2,..\Datasets\TurtleBench\Tasks\39\image\39.png,"recreates the given shape without the second largest circle.
 
 Constraint - Use these variables strictly:
@@ -52074,7 +52074,7 @@ t.penup()
 t.goto(0, -circles_radi[2])
 t.pendown()
 
-t.circle(circles_radi[2])",1.17,False,0.0,model_exec_error: name 'circles_radi' is not defined
+t.circle(circles_radi[2])",1.17,False,0.0,model_exec_error: name 'circles_radi' is not defined,False,the model code draws circles at different positions than the ground truth code.,llm_after_visual_false
 40,q1,..\Datasets\TurtleBench\Tasks\40\image\40.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52113,7 +52113,7 @@ t.circle(small_semicircle_radius, 180)
 
 # Move back to the starting position
 t.penup()
-t.goto(-large_semicircle_radius, 0)",1.86,False,0.0041,visual_iou=0.004; vars=['large_semicircle_radius']
+t.goto(-large_semicircle_radius, 0)",1.86,False,0.0041,visual_iou=0.004; vars=['large_semicircle_radius'],True,both draw a large semicircle with two smaller semicircles nested inside along the diameter.,llm_after_visual_false
 40,q2,..\Datasets\TurtleBench\Tasks\40\image\40.png,"in the given shape, replaces semicircles with complete circles to make the shape horizontally and vertically symmetric.
 
 Constraint - Use these variables strictly:
@@ -52157,7 +52157,7 @@ t.goto(-60, -120)
 t.pendown()
 
 # Draw the bottom small circle
-t.circle(60)",1.56,False,0.0378,visual_iou=0.038; vars=['large_semicircle_radius']
+t.circle(60)",1.56,False,0.0378,visual_iou=0.038; vars=['large_semicircle_radius'],False,"the model code draws four distinct circles, while the ground truth code draws a completely different set of arcs and circles.",llm_after_visual_false
 41,q1,..\Datasets\TurtleBench\Tasks\41\image\41.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52218,7 +52218,7 @@ t.goto(-triangle_side/4, triangle_side/2)
 t.goto(triangle_side/4, triangle_side/2)
 
 t.penup()
-t.goto(0, 0)",2.87,False,0.0108,"visual_iou=0.011; vars=['semicircle_radius', 'triangle_side']"
+t.goto(0, 0)",2.87,False,0.0108,"visual_iou=0.011; vars=['semicircle_radius', 'triangle_side']",False,"the model code draws a complex assembly of triangles and multiple semicircles, while the ground truth code draws a single closed triangular-like path with integrated arcs.",llm_after_visual_false
 41,q2,..\Datasets\TurtleBench\Tasks\41\image\41.png,"recreates the given shape with semicircles inverted.
 
 Constraint - Use these variables strictly:
@@ -52261,7 +52261,7 @@ t.penup()
 t.goto(0, -triangle_side * math.sqrt(3)/2 + semicircle_radius)
 t.pendown()
 t.setheading(90)
-t.circle(semicircle_radius, 180)",2.19,False,0.1086,"visual_iou=0.109; vars=['semicircle_radius', 'triangle_side']"
+t.circle(semicircle_radius, 180)",2.19,False,0.1086,"visual_iou=0.109; vars=['semicircle_radius', 'triangle_side']",False,"the model code draws a triangle with three separate semicircles, while the ground truth code draws a complex path with three semicircles integrated into the sides of a triangle.",llm_after_visual_false
 42,q1,..\Datasets\TurtleBench\Tasks\42\image\42.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52300,7 +52300,7 @@ t.goto(-triangle_side/2, -triangle_side/2 * math.sqrt(3)/2 + semicircle_radius)
 t.pendown()
 
 t.setheading(180)
-t.circle(semicircle_radius, 180)",1.56,False,0.009,"visual_iou=0.009; vars=['semicircle_radius', 'triangle_side']"
+t.circle(semicircle_radius, 180)",1.56,False,0.009,"visual_iou=0.009; vars=['semicircle_radius', 'triangle_side']",False,the model code draws a full circle (two semicircles) while the ground truth code draws only one semicircle as part of a different perimeter path.,llm_after_visual_false
 42,q2,..\Datasets\TurtleBench\Tasks\42\image\42.png,"creates the given shape with the semicircle inverted.
 
 Constraint - Use these variables strictly:
@@ -52330,7 +52330,7 @@ t.pendown()
 
 t.begin_fill()
 t.circle(semicircle_radius, 180)
-t.end_fill()",1.25,False,0.0063,"visual_iou=0.006; vars=['semicircle_radius', 'triangle_side']"
+t.end_fill()",1.25,False,0.0063,"visual_iou=0.006; vars=['semicircle_radius', 'triangle_side']",False,"the model code draws an equilateral triangle with a semicircle, while the ground truth code draws a different shape involving a semicircle and two sides of a triangle.",llm_after_visual_false
 43,q1,..\Datasets\TurtleBench\Tasks\43\image\43.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52388,7 +52388,7 @@ def draw_shape():
     t.forward(square_side)
     t.left(90)
 
-draw_shape()",2.42,False,0.0479,"visual_iou=0.048; vars=['semicircle_radius', 'square_side']"
+draw_shape()",2.42,False,0.0479,"visual_iou=0.048; vars=['semicircle_radius', 'square_side']",False,"the model code draws a square with four internal semicircles, while the ground truth code draws a square with four semicircular indentations on its perimeter.",llm_after_visual_false
 43,q2,..\Datasets\TurtleBench\Tasks\43\image\43.png,"creates the given shape but reflects each semicircle across the side of the square on which it is.
 
 Constraint - Use these variables strictly:
@@ -52438,7 +52438,7 @@ t.forward(square_side)
 t.left(90)
 t.forward(square_side)
 t.left(90)
-t.penup()",2.3,False,0.0121,"visual_iou=0.012; vars=['semicircle_radius', 'square_side']"
+t.penup()",2.3,False,0.0121,"visual_iou=0.012; vars=['semicircle_radius', 'square_side']",False,"the model code draws a square with four semicircles attached to the sides, while the ground truth code draws a different geometric pattern with semicircles embedded in the segments.",llm_after_visual_false
 44,q1,..\Datasets\TurtleBench\Tasks\44\image\44.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52456,7 +52456,7 @@ t.pendown()
 for _ in range(3):
     t.circle(semicircle_radius, 90)
     t.circle(semicircle_radius, -90)
-    t.forward(semicircle_radius * math.sqrt(2))",0.89,False,0.006,visual_iou=0.006; vars=['semicircle_radius']
+    t.forward(semicircle_radius * math.sqrt(2))",0.89,False,0.006,visual_iou=0.006; vars=['semicircle_radius'],False,"the model code draws a sequence of arcs and straight lines, while the ground truth code draws a series of overlapping semicircles.",llm_after_visual_false
 44,q2,..\Datasets\TurtleBench\Tasks\44\image\44.png,"creates the same shape without the two semicircles on top and at the bottom.
 
 Constraint - Use these variables strictly:
@@ -52475,7 +52475,7 @@ for _ in range(2):
     t.circle(semicircle_radius, 180)
     t.forward(2 * semicircle_radius)
     t.circle(semicircle_radius, 180)
-    t.forward(2 * semicircle_radius)",0.92,False,0.0245,visual_iou=0.025; vars=['semicircle_radius']
+    t.forward(2 * semicircle_radius)",0.92,False,0.0245,visual_iou=0.025; vars=['semicircle_radius'],False,"the model code draws a closed loop of four semicircles, while the ground truth code draws a single semicircle traced back and forth.",llm_after_visual_false
 45,q4,..\Datasets\TurtleBench\Tasks\45\image\45.png,"es the given shape + the diagonals of all of the smaller squares.
 
 Constraint - Use these variables strictly:
@@ -52530,7 +52530,7 @@ t.goto(150, -150)
 t.penup()
 t.goto(150, 150)
 t.pendown()
-t.goto(-150, -150)",2.22,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(-150, -150)",2.22,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"The model code draws a single large square with specific internal diagonals, while the ground truth code draws four overlapping squares rotated around a center point.",llm_after_visual_false
 45,q1,..\Datasets\TurtleBench\Tasks\45\image\45.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52563,7 +52563,7 @@ t.forward(small_square_side)
 t.left(90)
 t.forward(small_square_side)
 t.left(90)
-t.forward(small_square_side)",1.38,False,0.5845,visual_iou=0.585; vars=['small_square_side']
+t.forward(small_square_side)",1.38,False,0.5845,visual_iou=0.585; vars=['small_square_side'],False,"the model draws two overlapping squares, while the ground truth draws four squares rotated around a central point.",llm_after_visual_false
 45,q3,..\Datasets\TurtleBench\Tasks\45\image\45.png,"es the given shape + the diagonals of the larger square.
 
 Constraint - Use these variables strictly:
@@ -52671,7 +52671,7 @@ t.goto(150, -150)
 t.penup()
 t.goto(150, 150)
 t.pendown()
-t.goto(-150, -150)",3.93,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto(-150, -150)",3.93,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a large square with four smaller squares and two diagonals, while the ground truth code draws a different pattern of squares and lines.",llm_after_visual_false
 45,q2,..\Datasets\TurtleBench\Tasks\45\image\45.png,"in the given shape removes the small square on the top right.
 
 Constraint - Use these variables strictly:
@@ -52728,7 +52728,7 @@ for _ in range(2):
     t.left(90)
     t.forward(200)
     t.left(90)
-t.end_fill()",2.79,False,0.1607,visual_iou=0.161; vars=['small_square_side']
+t.end_fill()",2.79,False,0.1607,visual_iou=0.161; vars=['small_square_side'],False,"the model code draws a series of rectangles forming a complex composite shape, while the ground truth code draws a series of squares rotated around a point.",llm_after_visual_false
 46,q1,..\Datasets\TurtleBench\Tasks\46\image\46.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52763,7 +52763,7 @@ t.circle(circle_radius)
 t.penup()
 t.goto(line_segment/2, line_segment/2)
 t.pendown()
-t.circle(circle_radius)",1.79,False,0.0207,"visual_iou=0.021; vars=['circle_radius', 'line_segment']"
+t.circle(circle_radius)",1.79,False,0.0207,"visual_iou=0.021; vars=['circle_radius', 'line_segment']",False,"the model code draws four circles at different positions and orientations, while the ground truth code draws only three circles.",llm_after_visual_false
 46,q2,..\Datasets\TurtleBench\Tasks\46\image\46.png,"creates the given shape upside down.
 
 Constraint - Use these variables strictly:
@@ -52808,7 +52808,7 @@ t.circle(circle_radius)
 t.penup()
 t.goto(0, -50 - line_segment/2)
 t.pendown()
-t.circle(circle_radius)",2.35,False,0.0108,"visual_iou=0.011; vars=['circle_radius', 'line_segment']"
+t.circle(circle_radius)",2.35,False,0.0108,"visual_iou=0.011; vars=['circle_radius', 'line_segment']",False,"the model code draws six circles in different locations, while the ground truth code draws only three.",llm_after_visual_false
 47,q1,..\Datasets\TurtleBench\Tasks\47\image\47.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -52852,7 +52852,7 @@ t.right(45)
 draw_branch(line_segment)
 t.left(90)
 t.forward(square_side)
-draw_square()",1.35,False,0.0115,"visual_iou=0.011; vars=['line_segment', 'square_side']"
+draw_square()",1.35,False,0.0115,"visual_iou=0.011; vars=['line_segment', 'square_side']",False,"the model code draws a complex branching structure with squares at different orientations, while the ground truth draws three squares arranged in a rotational symmetry around a central point.",llm_after_visual_false
 47,q2,..\Datasets\TurtleBench\Tasks\47\image\47.png,"creates the given shape upside down.
 
 Constraint - Use these variables strictly:
@@ -52892,7 +52892,7 @@ t.forward(square_side)
 t.right(90)
 t.forward(line_segment)
 t.left(45)
-t.forward(line_segment)",1.39,False,0.0173,"visual_iou=0.017; vars=['line_segment', 'square_side']"
+t.forward(line_segment)",1.39,False,0.0173,"visual_iou=0.017; vars=['line_segment', 'square_side']",False,"the model code draws a complex path with varying angles, while the ground truth code draws three squares sharing a common vertex.",llm_after_visual_false
 48,q4,..\Datasets\TurtleBench\Tasks\48\image\48.png,"creates the same shape and also inserts the diagonal of the second smallest square from top left to bottom right.
 
 Constraint - Use these variables strictly:
@@ -52944,7 +52944,7 @@ t.goto(-200 + squares_sides[2] + squares_sides[0], -200 + squares_sides[3])
 
 t.penup()
 t.goto(-200 + squares_sides[2], -200 + squares_sides[3] - squares_sides[1] + squares_sides[0])
-t.pendown()",2.88,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.pendown()",2.88,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"the model code draws four squares in a specific arrangement, while the ground truth code draws four separate squares and an additional diagonal line.",llm_after_visual_false
 48,q1,..\Datasets\TurtleBench\Tasks\48\image\48.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53004,7 +53004,7 @@ t.forward(squares_sides[2] - squares_sides[1])
 t.left(90)
 t.forward(squares_sides[1] - squares_sides[0])
 t.left(90)
-t.forward(squares_sides[0])",3.2,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.forward(squares_sides[0])",3.2,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"the model code draws a complex geometric pattern of connected segments, while the ground truth code draws four separate squares.",llm_after_visual_false
 48,q3,..\Datasets\TurtleBench\Tasks\48\image\48.png,"creates the same shape and also inserts the diagonal of the largest square from top left to bottom right.
 
 Constraint - Use these variables strictly:
@@ -53047,7 +53047,7 @@ t.goto(0, -160)
 t.penup()
 t.goto(-160, 160)
 t.pendown()
-t.goto(0, 0)",1.61,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.goto(0, 0)",1.61,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"the model code draws a series of squares and diagonal lines, while the ground truth code draws a series of squares and a single diagonal line.",llm_after_visual_false
 48,q2,..\Datasets\TurtleBench\Tasks\48\image\48.png,"creates the same shape upside down.
 
 Constraint - Use these variables strictly:
@@ -53082,7 +53082,7 @@ t.forward(squares_sides[1])
 t.left(90)
 t.forward(squares_sides[0])
 t.left(90)
-t.forward(squares_sides[1])",1.48,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.forward(squares_sides[1])",1.48,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"the model code draws a sequence of rectangles, while the ground truth code draws four separate squares.",llm_after_visual_false
 49,q1,..\Datasets\TurtleBench\Tasks\49\image\49.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53131,7 +53131,7 @@ t.penup()
 t.goto(0, 80)
 t.pendown()
 
-t.circle(small_circle_radius)",1.97,False,0.0457,visual_iou=0.046; vars=['small_circle_radius']
+t.circle(small_circle_radius)",1.97,False,0.0457,visual_iou=0.046; vars=['small_circle_radius'],False,"the model code draws multiple sets of concentric circles at different origins, while the ground truth draws a completely different pattern of circles and arcs.",llm_after_visual_false
 49,q3,..\Datasets\TurtleBench\Tasks\49\image\49.png,"in the given shape removes the small circles on top and the bottom.
 
 Constraint - Use these variables strictly:
@@ -53196,7 +53196,7 @@ t.pendown()
 
 for i in range(4):
     t.circle(120)
-    t.left(90)",2.21,False,0.0209,visual_iou=0.021; vars=['small_circle_radius']
+    t.left(90)",2.21,False,0.0209,visual_iou=0.021; vars=['small_circle_radius'],False,"the model code draws multiple large circles and many small circles at various offsets, while the ground truth code draws a much simpler, different geometric pattern.",llm_after_visual_false
 49,q2,..\Datasets\TurtleBench\Tasks\49\image\49.png,"in the given shape removes the small circles on the left and the right.
 
 Constraint - Use these variables strictly:
@@ -53246,7 +53246,7 @@ t.circle(small_circle_radius)
 t.left(90)
 t.circle(small_circle_radius)
 t.left(90)
-t.circle(small_circle_radius)",9.03,False,0.0275,visual_iou=0.027; vars=['small_circle_radius']
+t.circle(small_circle_radius)",9.03,False,0.0275,visual_iou=0.027; vars=['small_circle_radius'],False,"the model code draws multiple overlapping circles and complex patterns, while the ground truth code draws a much simpler figure consisting of only two circles and a semicircle.",llm_after_visual_false
 50,q1,..\Datasets\TurtleBench\Tasks\50\image\50.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53271,7 +53271,7 @@ def draw_circle(angle):
 
 for i in range(4):
     draw_circle(i * 90)
-    t.right(90)",1.16,False,0.0076,visual_iou=0.008; vars=['small_circle_radius']
+    t.right(90)",1.16,False,0.0076,visual_iou=0.008; vars=['small_circle_radius'],False,"the model code draws four circles centered at different points, while the ground truth draws four circles centered at the same point plus an extra arc.",llm_after_visual_false
 50,q3,..\Datasets\TurtleBench\Tasks\50\image\50.png,"in the given shape removes the small circles on the left and the right.
 
 Constraint - Use these variables strictly:
@@ -53332,7 +53332,7 @@ t.pendown()
 t.left(90)
 t.circle(small_circle_radius, 180)
 t.right(180)
-t.circle(small_circle_radius, 180)",2.35,False,0.0074,visual_iou=0.007; vars=['small_circle_radius']
+t.circle(small_circle_radius, 180)",2.35,False,0.0074,visual_iou=0.007; vars=['small_circle_radius'],False,"the model code draws two full circles and additional arcs/lines, while the ground truth draws only a partial shape.",llm_after_visual_false
 50,q2,..\Datasets\TurtleBench\Tasks\50\image\50.png,"in the given shape circumscribes all the circles in a larger circle.
 
 Constraint - Use these variables strictly:
@@ -53369,7 +53369,7 @@ draw_circle(0, large_circle_radius)
 draw_circle(-large_circle_radius, 0)
 draw_circle(0, -large_circle_radius)
 
-draw_large_circle()",1.54,False,0.0484,visual_iou=0.048; vars=['small_circle_radius']
+draw_large_circle()",1.54,False,0.0484,visual_iou=0.048; vars=['small_circle_radius'],False,"the model code draws a large central circle with four surrounding circles, while the ground truth code draws a completely different geometric pattern.",llm_after_visual_false
 51,q1,..\Datasets\TurtleBench\Tasks\51\image\51.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53416,7 +53416,7 @@ def draw_shape():
         t.left(22.5)
 
 small_circle_radius = 100
-draw_shape()",2.71,False,0.1723,visual_iou=0.172; vars=['small_circle_radius']
+draw_shape()",2.71,False,0.1723,visual_iou=0.172; vars=['small_circle_radius'],False,"the model code draws multiple sets of circles in a flower-like pattern, while the ground truth code draws a hexagonal pattern and two distinct arcs.",llm_after_visual_false
 52,q1,..\Datasets\TurtleBench\Tasks\52\image\52.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53459,7 +53459,7 @@ draw_square(square_side * math.sqrt(2)/2)
 t.penup()
 t.goto(0, 0)
 t.pendown()
-draw_diamond(square_side * math.sqrt(2)/2)",2.18,False,0.0,gt_exec_error: name 'sqrt' is not defined
+draw_diamond(square_side * math.sqrt(2)/2)",2.18,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws multiple distinct squares and diamonds, while the ground truth code draws a single complex geometric pattern.",llm_after_visual_false
 52,q2,..\Datasets\TurtleBench\Tasks\52\image\52.png,"in the given shape removes all the right isosceles triangles.
 
 Constraint - Use these variables strictly:
@@ -53520,7 +53520,7 @@ draw_square()
 draw_diagonals()
 remove_right_triangles()
 
-t.hideturtle()",2.86,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.hideturtle()",2.86,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with diagonals and a diamond, while the ground truth code draws an octagon.",llm_after_visual_false
 53,q1,..\Datasets\TurtleBench\Tasks\53\image\53.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53539,7 +53539,7 @@ t.begin_fill()
 t.circle(radius, 180)
 t.left(90)
 t.circle(radius, 90)
-t.end_fill()",0.78,False,0.0045,visual_iou=0.004; vars=['radius']
+t.end_fill()",0.78,False,0.0045,visual_iou=0.004; vars=['radius'],False,"the model code draws a semi-circle and a quarter-circle arc, while the ground truth draws a 270-degree arc followed by two straight lines.",llm_after_visual_false
 53,q2,..\Datasets\TurtleBench\Tasks\53\image\53.png,"divides the given shape into three equal pieces.
 
 Constraint - Use these variables strictly:
@@ -53581,7 +53581,7 @@ t.begin_fill()
 t.circle(radius, 120)
 t.left(120)
 t.circle(radius, 60)
-t.end_fill()",1.28,False,0.0168,visual_iou=0.017; vars=['radius']
+t.end_fill()",1.28,False,0.0168,visual_iou=0.017; vars=['radius'],False,the model code draws complex overlapping circular sectors while the ground truth draws a simple arc and line segments.,llm_after_visual_false
 54,q1,..\Datasets\TurtleBench\Tasks\54\image\54.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53665,7 +53665,7 @@ draw_hexagonal_grid()
 draw_hexagon_lines()
 
 t.penup()
-t.goto(0, 0)",6.07,False,0.0308,visual_iou=0.031; vars=['small_hexagon_side']
+t.goto(0, 0)",6.07,False,0.0308,visual_iou=0.031; vars=['small_hexagon_side'],False,"the model code draws a complex grid of hexagons and intersecting lines, while the ground truth code draws a single hexagon rotated six times.",llm_after_visual_false
 54,q3,..\Datasets\TurtleBench\Tasks\54\image\54.png,"circumscribes the whole shape in a circle.
 
 Constraint - Use these variables strictly:
@@ -53713,7 +53713,7 @@ def draw_hexagonal_grid():
         t.forward(small_hexagon_side * 1.5 * math.sin(math.radians(60)))
         t.left(60)
 
-draw_hexagonal_grid()",2.06,False,0.0222,visual_iou=0.022; vars=['small_hexagon_side']
+draw_hexagonal_grid()",2.06,False,0.0222,visual_iou=0.022; vars=['small_hexagon_side'],False,"The model code draws a complex 3x3 grid of hexagons and a circle, while the ground truth draws a flower-like pattern of six hexagons and a different circle.",llm_after_visual_false
 54,q2,..\Datasets\TurtleBench\Tasks\54\image\54.png,"e given shapes removes the diamonds that have at least one common side with the larger hexagon.
 
 Constraint - Use these variables strictly:
@@ -53874,7 +53874,7 @@ def draw_hexagon_without_adjacent_diamonds():
 
 draw_hexagon_without_adjacent_diamonds()
 
-t.hideturtle()",8.99,False,0.0192,visual_iou=0.019; vars=['small_hexagon_side']
+t.hideturtle()",8.99,False,0.0192,visual_iou=0.019; vars=['small_hexagon_side'],False,"the model code draws a hexagon with three specific diamonds, while the ground truth code draws a complex pattern of six overlapping rhombi/hexagons.",llm_after_visual_false
 55,q1,..\Datasets\TurtleBench\Tasks\55\image\55.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -53905,7 +53905,7 @@ t.speed(0)
 t.penup()
 t.goto(0, -pentagon_side * 0.5)
 t.pendown()
-draw_shape(t)",2.31,False,0.028,visual_iou=0.028; vars=['pentagon_side']
+draw_shape(t)",2.31,False,0.028,visual_iou=0.028; vars=['pentagon_side'],False,"the model code draws a complex pattern with additional lines and movements, while the ground truth code draws five simple pentagons sharing a common center.",llm_after_visual_false
 55,q3,..\Datasets\TurtleBench\Tasks\55\image\55.png,"creates the given shape without the two pentagons at the bottom.
 
 Constraint - Use these variables strictly:
@@ -53984,7 +53984,7 @@ def draw_top_pentagons():
 
 draw_top_pentagons()
 
-t.hideturtle()",2.71,False,0.0343,visual_iou=0.034; vars=['pentagon_side']
+t.hideturtle()",2.71,False,0.0343,visual_iou=0.034; vars=['pentagon_side'],True,both snippets draw a sequence of three pentagons arranged in a partial pentagram-like pattern.,llm_after_visual_false
 55,q2,..\Datasets\TurtleBench\Tasks\55\image\55.png,"creates the given shape without the three pentagons at the top.
 
 Constraint - Use these variables strictly:
@@ -54022,7 +54022,7 @@ def draw_shape():
         draw_pentagon(pentagon_side)
         t.right(120)
 
-draw_shape()",1.37,False,0.0175,visual_iou=0.018; vars=['pentagon_side']
+draw_shape()",1.37,False,0.0175,visual_iou=0.018; vars=['pentagon_side'],False,"the model code draws a complex pattern of five pentagons, while the ground truth code draws only two pentagons.",llm_after_visual_false
 56,q1,..\Datasets\TurtleBench\Tasks\56\image\56.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54063,7 +54063,7 @@ def draw_shape(t):
     t.pendown()
     draw_hexagon(t, hexagon_side)
 
-draw_shape(t)",1.76,False,0.0513,visual_iou=0.051; vars=['hexagon_side']
+draw_shape(t)",1.76,False,0.0513,visual_iou=0.051; vars=['hexagon_side'],False,"the model code draws four separate hexagons in a cross pattern, while the ground truth code draws three overlapping hexagons rotating around a single center point.",llm_after_visual_false
 56,q3,..\Datasets\TurtleBench\Tasks\56\image\56.png,"creates the given shape without the hexagon on the left.
 
 Constraint - Use these variables strictly:
@@ -54108,7 +54108,7 @@ t.begin_fill()
 for _ in range(6):
     t.forward(hexagon_side)
     t.left(120)
-t.end_fill()",1.83,False,0.0066,visual_iou=0.007; vars=['hexagon_side']
+t.end_fill()",1.83,False,0.0066,visual_iou=0.007; vars=['hexagon_side'],False,"the model code draws a hexagon, a triangle, and a degenerate shape, while the ground truth draws two hexagons.",llm_after_visual_false
 56,q2,..\Datasets\TurtleBench\Tasks\56\image\56.png,"creates the given shape without the hexagon at the bottom.
 
 Constraint - Use these variables strictly:
@@ -54143,7 +54143,7 @@ t.penup()
 t.goto(-50, hexagon_side * math.sin(math.radians(30)))
 t.pendown()
 
-draw_hexagon(-50, hexagon_side * math.sin(math.radians(30)))",2.47,False,0.0863,visual_iou=0.086; vars=['hexagon_side']
+draw_hexagon(-50, hexagon_side * math.sin(math.radians(30)))",2.47,False,0.0863,visual_iou=0.086; vars=['hexagon_side'],False,"the model code draws two separate hexagons side-by-side, while the ground truth code draws two hexagons sharing a vertex or overlapping at an angle.",llm_after_visual_false
 57,q1,..\Datasets\TurtleBench\Tasks\57\image\57.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54180,7 +54180,7 @@ t.left(60)
 draw_triangle(small_triangle_side)
 t.backward(small_triangle_side)
 t.right(60)
-draw_triangle(small_triangle_side)",1.23,False,0.0106,"visual_iou=0.011; vars=['large_triangle_side', 'small_triangle_side']"
+draw_triangle(small_triangle_side)",1.23,False,0.0106,"visual_iou=0.011; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws a complex fractal-like structure with smaller triangles, while the ground truth code draws two large triangles connected by a line segment.",llm_after_visual_false
 57,q3,..\Datasets\TurtleBench\Tasks\57\image\57.png,"in the given shape fills in the gap between the large triangles with a small triangle.
 
 Constraint - Use these variables strictly:
@@ -54239,7 +54239,7 @@ def draw_filled_shape():
     # Draw the second large triangle
     draw_triangle(t, large_triangle_side)
 
-draw_filled_shape()",1.75,False,0.0081,"visual_iou=0.008; vars=['large_triangle_side', 'small_triangle_side']"
+draw_filled_shape()",1.75,False,0.0081,"visual_iou=0.008; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws two large triangles and one small triangle, while the ground truth code draws a different arrangement of three triangles with different relative positioning.",llm_after_visual_false
 57,q2,..\Datasets\TurtleBench\Tasks\57\image\57.png,"in the given shape slides the two large triangles apart horizontally so that the small triangle in the middle disappears, but they still touch at a single point.
 
 Constraint - Use these variables strictly:
@@ -54270,7 +54270,7 @@ draw_triangle(large_triangle_side)
 t.penup()
 t.goto(large_triangle_side/2, -large_triangle_side*math.sqrt(3)/2)
 t.pendown()
-draw_triangle(large_triangle_side)",1.18,False,0.9341,"visual_iou=0.934; vars=['large_triangle_side', 'small_triangle_side']"
+draw_triangle(large_triangle_side)",1.18,False,0.9341,"visual_iou=0.934; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws two separate triangles, while the ground truth code draws two triangles connected by a line segment.",llm_after_visual_false
 58,q6,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape and also inserts the horizontal diameter of the left circle and the vertical diameter of the right circle.
 
 Constraint - Use these variables strictly:
@@ -54336,7 +54336,7 @@ t.penup()
 t.goto(0, 100)
 t.pendown()
 
-t.goto(0, -100)",2.97,False,0.0172,visual_iou=0.017; vars=['circle_radius']
+t.goto(0, -100)",2.97,False,0.0172,visual_iou=0.017; vars=['circle_radius'],False,"The model code draws two circles and several intersecting lines, while the ground truth code draws a complex path involving arcs and lines that do not match the geometry of the model code.",llm_after_visual_false
 58,q7,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape and also inserts the horizontal diameter of the right circle.
 
 Constraint - Use these variables strictly:
@@ -54375,7 +54375,7 @@ t.penup()
 t.goto(50, 0)
 t.pendown()
 
-t.goto(150, 0)",1.8,False,0.6099,visual_iou=0.610; vars=['circle_radius']
+t.goto(150, 0)",1.8,False,0.6099,visual_iou=0.610; vars=['circle_radius'],False,"the model code draws two separate circles and a line, while the ground truth draws a complex path of arcs and lines.",llm_after_visual_false
 58,q5,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape without the left semicircle of the right circle and the right semicircle of the left circle.
 
 Constraint - Use these variables strictly:
@@ -54415,7 +54415,7 @@ t.pendown()
 
 t.begin_fill()
 t.circle(circle_radius, 180)
-t.end_fill()",1.79,False,0.0075,visual_iou=0.008; vars=['circle_radius']
+t.end_fill()",1.79,False,0.0075,visual_iou=0.008; vars=['circle_radius'],False,"the model draws three distinct circles/arcs at different locations, while the ground truth draws a continuous path of two connected semicircles.",llm_after_visual_false
 58,q4,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape and also inserts the horizontal and vertical diameters of each circle.
 
 Constraint - Use these variables strictly:
@@ -54457,7 +54457,7 @@ draw_circle_with_diameters(100, 0)
 t.penup()
 t.goto(-100, 0)
 t.pendown()
-t.goto(100, 0)",1.66,False,0.0179,visual_iou=0.018; vars=['circle_radius']
+t.goto(100, 0)",1.66,False,0.0179,visual_iou=0.018; vars=['circle_radius'],False,"the model code draws two circles with internal crosshairs, while the ground truth code draws a complex path of lines and arcs.",llm_after_visual_false
 58,q1,..\Datasets\TurtleBench\Tasks\58\image\58.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54505,7 +54505,7 @@ t.right(90)
 t.forward(circle_radius * 2)
 t.right(90)
 t.forward(circle_radius)
-t.left(90)",1.44,False,0.0218,visual_iou=0.022; vars=['circle_radius']
+t.left(90)",1.44,False,0.0218,visual_iou=0.022; vars=['circle_radius'],False,"the model code draws two filled circles and two sets of lines, while the ground truth draws a complex path of arcs and lines.",llm_after_visual_false
 58,q3,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape and also inserts the horizontal diameters of each circle.
 
 Constraint - Use these variables strictly:
@@ -54547,7 +54547,7 @@ draw_circle_with_diameter()
 t.penup()
 t.goto(50, 0)
 t.pendown()
-draw_circle_with_diameter()",1.28,False,0.0616,visual_iou=0.062; vars=['circle_radius']
+draw_circle_with_diameter()",1.28,False,0.0616,visual_iou=0.062; vars=['circle_radius'],False,"the model code draws two filled circles with diameters, while the ground truth code draws a complex path of arcs and lines.",llm_after_visual_false
 58,q2,..\Datasets\TurtleBench\Tasks\58\image\58.png,"recreates the given shape and also inserts the vertical diameters of each circle.
 
 Constraint - Use these variables strictly:
@@ -54582,7 +54582,7 @@ draw_circle_with_diameter(circle_radius)
 t.penup()
 t.goto(0, 0)
 t.pendown()
-draw_circle_with_diameter(circle_radius)",1.33,False,0.0166,visual_iou=0.017; vars=['circle_radius']
+draw_circle_with_diameter(circle_radius)",1.33,False,0.0166,visual_iou=0.017; vars=['circle_radius'],False,"the model code draws two circles with intersecting crosshairs, while the ground truth draws a square and a circle.",llm_after_visual_false
 59,q1,..\Datasets\TurtleBench\Tasks\59\image\59.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54657,7 +54657,7 @@ t.forward(smallest_square_side)
 t.left(90)
 t.forward(smallest_square_side)
 t.left(90)
-t.forward(smallest_square_side)",5.97,False,0.1435,"visual_iou=0.143; vars=['largest_square_side', 'smallest_square_side']"
+t.forward(smallest_square_side)",5.97,False,0.1435,"visual_iou=0.143; vars=['largest_square_side', 'smallest_square_side']",False,"the model code draws a large square and three small squares, while the ground truth code draws a different arrangement of squares and polygons.",llm_after_visual_false
 59,q2,..\Datasets\TurtleBench\Tasks\59\image\59.png,"in the given shape, connects the midpoints of each side of the largest square to the midpoints of adjacent sides.
 
 Constraint - Use these variables strictly:
@@ -54753,7 +54753,7 @@ t.goto((midpoints[2][0] + midpoints[0][0])/2, (midpoints[2][1] + midpoints[0][1]
 t.penup()
 t.goto(midpoints[3])
 t.pendown()
-t.goto((midpoints[3][0] + midpoints[1][0])/2, (midpoints[3][1] + midpoints[1][1])/2)",3.54,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.goto((midpoints[3][0] + midpoints[1][0])/2, (midpoints[3][1] + midpoints[1][1])/2)",3.54,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a specific configuration of squares and connecting lines, while the ground truth code draws a completely different set of overlapping polygons.",llm_after_visual_false
 60,q1,..\Datasets\TurtleBench\Tasks\60\image\60.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54784,7 +54784,7 @@ for side in triangle_sides:
     t.forward(5)
     t.left(90)
     t.pendown()
-    side -= 40",1.06,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+    side -= 40",1.06,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,the model code includes fill commands and specific repositioning logic that alters the final output compared to the ground truth.,llm_after_visual_false
 60,q3,..\Datasets\TurtleBench\Tasks\60\image\60.png,"in the given shape only creates the two smallest triangles.
 
 Constraint - Use these variables strictly:
@@ -54812,7 +54812,7 @@ for i in range(2):
     t.penup()
     t.forward(triangle_sides[i+1] - triangle_sides[i])
     t.backward(triangle_sides[i+1] - triangle_sides[i])
-    t.pendown()",1.36,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+    t.pendown()",1.36,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,"the model code draws two triangles with different orientations and fills, while the ground truth draws two triangles with the same orientation and no fill.",llm_after_visual_false
 60,q2,..\Datasets\TurtleBench\Tasks\60\image\60.png,"in the given shape only creates the two largest triangles.
 
 Constraint - Use these variables strictly:
@@ -54843,7 +54843,7 @@ for i in range(2):
     t.left(60)
     t.forward(triangle_sides[i] / math.sqrt(3))
     t.right(60)
-    t.pendown()",1.2,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+    t.pendown()",1.2,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,"the model code draws two triangles with specific relative positioning, while the ground truth code draws two triangles of different sizes at the same starting point.",llm_after_visual_false
 61,q1,..\Datasets\TurtleBench\Tasks\61\image\61.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54867,7 +54867,7 @@ t.penup()
 t.goto(-semicircle_radius, 0)
 t.pendown()
 
-t.goto(semicircle_radius, 0)",1.27,False,0.0108,visual_iou=0.011; vars=['semicircle_radius']
+t.goto(semicircle_radius, 0)",1.27,False,0.0108,visual_iou=0.011; vars=['semicircle_radius'],True,both draw a semicircle and close it with a straight diameter line.,llm_after_visual_false
 61,q3,..\Datasets\TurtleBench\Tasks\61\image\61.png,"creates the same shape + two lines that divide the semicircle into three equal slices.
 
 Constraint - Use these variables strictly:
@@ -54900,7 +54900,7 @@ t.goto(0, -100)
 t.penup()
 t.goto(-50, -100)
 t.pendown()
-t.goto(50, -100)",5.22,False,0.005,visual_iou=0.005; vars=['semicircle_radius']
+t.goto(50, -100)",5.22,False,0.005,visual_iou=0.005; vars=['semicircle_radius'],False,"the model code draws a semicircle with a horizontal line segment, while the ground truth code draws a semicircle with a three-spoke star pattern.",llm_after_visual_false
 61,q2,..\Datasets\TurtleBench\Tasks\61\image\61.png,"creates the same shape + a line that divides the semicircle into two equal slices.
 
 Constraint - Use these variables strictly:
@@ -54925,7 +54925,7 @@ t.circle(semicircle_radius, 180)
 t.penup()
 t.goto(-100, 0)
 t.pendown()
-t.goto(100, 0)",1.63,False,0.0228,visual_iou=0.023; vars=['semicircle_radius']
+t.goto(100, 0)",1.63,False,0.0228,visual_iou=0.023; vars=['semicircle_radius'],False,"the model code draws a semicircle and a horizontal line, while the ground truth code draws a semicircle and a vertical line segment.",llm_after_visual_false
 62,q1,..\Datasets\TurtleBench\Tasks\62\image\62.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -54989,7 +54989,7 @@ t.pendown()
 t.goto(150, -90)
 t.goto(150, 90)
 t.goto(-150, 90)
-t.goto(-150, -90)",2.28,False,0.0233,"visual_iou=0.023; vars=['radius', 'rectangle_length']"
+t.goto(-150, -90)",2.28,False,0.0233,"visual_iou=0.023; vars=['radius', 'rectangle_length']",False,"the model code draws two circles and a rectangle, while the ground truth code draws a stadium (capsule) shape.",llm_after_visual_false
 62,q3,..\Datasets\TurtleBench\Tasks\62\image\62.png,"creates the given shape without the circles.
 
 Constraint - Use these variables strictly:
@@ -55030,7 +55030,7 @@ t.goto(90, 0)
 t.pendown()
 
 t.right(90)
-t.circle(radius, 180)",2.6,False,0.0858,"visual_iou=0.086; vars=['radius', 'rectangle_length']"
+t.circle(radius, 180)",2.6,False,0.0858,"visual_iou=0.086; vars=['radius', 'rectangle_length']",False,"the ground truth code only draws a rectangle, while the model code draws a rectangle plus two semicircles.",llm_after_visual_false
 62,q2,..\Datasets\TurtleBench\Tasks\62\image\62.png,"creates the given shape without the rectangle.
 
 Constraint - Use these variables strictly:
@@ -55056,7 +55056,7 @@ def draw_circles():
     t.goto(150, 0)
     t.pendown()
 
-    t.circle(radius)",1.02,False,0.0,missing_drawn_strokes
+    t.circle(radius)",1.02,False,0.0,missing_drawn_strokes,False,"the model code draws circles at fixed coordinates (-150, 0) and (150, 0), while the ground truth code draws circles at positions dependent on the variable `rectangle_length`.",llm_after_visual_false
 63,q1,..\Datasets\TurtleBench\Tasks\63\image\63.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56164,7 +56164,7 @@ for _ in range(6):
     t.forward(hexagon_side)
     t.left(120)
     t.circle(semicircle_radius, 180)
-    t.left(",44.81,False,0.0,"model_exec_error: '(' was never closed (<string>, line 1097)"
+    t.left(",44.81,False,0.0,"model_exec_error: '(' was never closed (<string>, line 1097)",False,"the model code draws a complex pattern of hexagons and many overlapping semicircles, while the ground truth draws a single hexagon with modified edges.",llm_after_visual_false
 63,q2,..\Datasets\TurtleBench\Tasks\63\image\63.png,"creates the given shape + its longest diagonals.
 
 Constraint - Use these variables strictly:
@@ -56224,7 +56224,7 @@ def draw_shape():
 
     draw_diagonals()
 
-draw_shape()",2.78,False,0.0288,"visual_iou=0.029; vars=['hexagon_side', 'semicircle_radius']"
+draw_shape()",2.78,False,0.0288,"visual_iou=0.029; vars=['hexagon_side', 'semicircle_radius']",False,"the model code draws a complex hexagon with semicircles on its sides and internal diagonals, while the ground truth code draws a different geometric pattern.",llm_after_visual_false
 64,q1,..\Datasets\TurtleBench\Tasks\64\image\64.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56271,7 +56271,7 @@ for _ in range(2):
         t.forward(triangle_side)
         t.left(120)
     t.left(60)
-t.end_fill()",1.78,False,0.0181,visual_iou=0.018; vars=['triangle_side']
+t.end_fill()",1.78,False,0.0181,visual_iou=0.018; vars=['triangle_side'],False,"the model code draws two filled triangles and a cross shape, while the ground truth code draws four overlapping triangles.",llm_after_visual_false
 65,q1,..\Datasets\TurtleBench\Tasks\65\image\65.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56313,7 +56313,7 @@ t.right(180)
 draw_semicircle(180)
 t.end_fill()
 
-t.hideturtle()",1.68,False,0.0083,visual_iou=0.008; vars=['semicircle_radius']
+t.hideturtle()",1.68,False,0.0083,visual_iou=0.008; vars=['semicircle_radius'],False,"the model code draws three semicircles forming a clover-like shape, while the ground truth code draws three semicircles connected in a different geometric arrangement.",llm_after_visual_false
 65,q2,..\Datasets\TurtleBench\Tasks\65\image\65.png,"in the given shape extends each semicircle to a complete circle.
 
 Constraint - Use these variables strictly:
@@ -56332,7 +56332,7 @@ semicircle_radius = 100
 
 for _ in range(3):
     t.circle(semicircle_radius)
-    t.left(120)",0.96,False,0.0124,visual_iou=0.012; vars=['semicircle_radius']
+    t.left(120)",0.96,False,0.0124,visual_iou=0.012; vars=['semicircle_radius'],False,"the model code draws three full circles, while the ground truth code draws a complex pattern of full circles and semicircles.",llm_after_visual_false
 66,q4,..\Datasets\TurtleBench\Tasks\66\image\66.png,"creates the given shape without the lines between the segments and also inserts horizontal and vertical diameters of the smaller circle.
 
 Constraint - Use these variables strictly:
@@ -56397,7 +56397,7 @@ t.backward(small_circle_radius)
 t.left(90)
 t.forward(small_circle_radius)
 t.backward(small_circle_radius)
-t.left(45)",2.22,False,0.0494,"visual_iou=0.049; vars=['large_circle_radius', 'small_circle_radius']"
+t.left(45)",2.22,False,0.0494,"visual_iou=0.049; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws a large circle and a small circle, while the ground truth code draws a large circle and a complex pattern of arcs and lines.",llm_after_visual_false
 66,q1,..\Datasets\TurtleBench\Tasks\66\image\66.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56433,7 +56433,7 @@ t.pendown()
 for _ in range(4):
     t.forward(large_circle_radius)
     t.backward(large_circle_radius)
-    t.right(90)",1.5,False,0.8415,"visual_iou=0.842; vars=['large_circle_radius', 'small_circle_radius']"
+    t.right(90)",1.5,False,0.8415,"visual_iou=0.842; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two separate circles and a cross, while the ground truth draws a different configuration of arcs and a single small circle.",llm_after_visual_false
 66,q3,..\Datasets\TurtleBench\Tasks\66\image\66.png,"in the given shape, adds a line to each of the four segments around the smaller circle to divide each into two equal segments.
 
 Constraint - Use these variables strictly:
@@ -56482,7 +56482,7 @@ for i in range(4):
     angle += math.radians(45)
     x = large_circle_radius * math.cos(angle)
     y = large_circle_radius * math.sin(angle)
-    t.goto(x, y)",2.83,False,0.0188,"visual_iou=0.019; vars=['large_circle_radius', 'small_circle_radius']"
+    t.goto(x, y)",2.83,False,0.0188,"visual_iou=0.019; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two squares and a star-like pattern of lines, while the ground truth draws a circle and a partial arc.",llm_after_visual_false
 66,q2,..\Datasets\TurtleBench\Tasks\66\image\66.png,"creates the given shape + the horizontal and vertical diameters of the smaller circle.
 
 Constraint - Use these variables strictly:
@@ -56546,7 +56546,7 @@ t.penup()
 t.goto(0, 0)
 t.pendown()
 
-t.goto(0, -small_circle_radius)",2.29,False,0.8479,"visual_iou=0.848; vars=['large_circle_radius', 'small_circle_radius']"
+t.goto(0, -small_circle_radius)",2.29,False,0.8479,"visual_iou=0.848; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two concentric circles and a cross, while the ground truth draws a different pattern involving partial arcs and a single small circle.",llm_after_visual_false
 67,q1,..\Datasets\TurtleBench\Tasks\67\image\67.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56572,7 +56572,7 @@ for _ in range(4):
     t.forward(semicircle_radius)
     t.right(90)
     t.backward(semicircle_radius)
-    t.left(90)",4.48,False,0.0431,visual_iou=0.043; vars=['semicircle_radius']
+    t.left(90)",4.48,False,0.0431,visual_iou=0.043; vars=['semicircle_radius'],False,the model code draws an additional square-like shape in the center that is absent in the ground truth.,llm_after_visual_false
 67,q3,..\Datasets\TurtleBench\Tasks\67\image\67.png,"creates the given shape reflected across the vertical line in the middle of the shape.
 
 Constraint - Use these variables strictly:
@@ -56648,7 +56648,7 @@ t.right(90)
 t.forward(semicircle_radius)
 t.right(90)
 t.forward(semicircle_radius)
-t.right(90)",3.07,False,0.3418,visual_iou=0.342; vars=['semicircle_radius']
+t.right(90)",3.07,False,0.3418,visual_iou=0.342; vars=['semicircle_radius'],False,"the model code draws a complex, overlapping mess of semicircles and lines, while the ground truth draws a simple four-sided shape with curved edges.",llm_after_visual_false
 67,q2,..\Datasets\TurtleBench\Tasks\67\image\67.png,"creates the given pattern but with eight petals that are evenly spaced around the central point to maintain symmetry.
 
 Constraint - Use these variables strictly:
@@ -56666,7 +56666,7 @@ t.pendown()
 for i in range(8):
     t.setheading(45 * i)
     t.circle(semicircle_radius, 90)
-    t.left(45)",0.94,False,0.1366,visual_iou=0.137; vars=['semicircle_radius']
+    t.left(45)",0.94,False,0.1366,visual_iou=0.137; vars=['semicircle_radius'],False,"the model code draws a series of 90-degree arcs, while the ground truth draws 180-degree arcs connected by straight lines.",llm_after_visual_false
 68,q1,..\Datasets\TurtleBench\Tasks\68\image\68.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56707,7 +56707,7 @@ def draw_shape(t):
     t.forward(semicircle_radius * 2)
 
 semicircle_radius = 50
-draw_shape(t)",1.91,False,0.0084,visual_iou=0.008; vars=['semicircle_radius']
+draw_shape(t)",1.91,False,0.0084,visual_iou=0.008; vars=['semicircle_radius'],False,"the model code draws complex shapes involving semicircles and fills, while the ground truth code draws a simple square and cross lines.",llm_after_visual_false
 68,q3,..\Datasets\TurtleBench\Tasks\68\image\68.png,"creates the given shape without the square.
 
 Constraint - Use these variables strictly:
@@ -56756,7 +56756,7 @@ t.pendown()
 # Draw the left semicircle
 t.begin_fill()
 t.circle(semicircle_radius, 90)
-t.end_fill()",2.07,False,0.0053,visual_iou=0.005; vars=['semicircle_radius']
+t.end_fill()",2.07,False,0.0053,visual_iou=0.005; vars=['semicircle_radius'],False,"the model code draws four disconnected arcs, while the ground truth code draws a continuous closed shape.",llm_after_visual_false
 68,q2,..\Datasets\TurtleBench\Tasks\68\image\68.png,"creates the given shape + a circle that circumscribes the whole shape.
 
 Constraint - Use these variables strictly:
@@ -56797,7 +56797,7 @@ t.end_fill()
 t.penup()
 t.goto(0, -semicircle_radius - 10)
 t.pendown()
-t.circle(semicircle_radius + 10)",2.2,False,0.0209,visual_iou=0.021; vars=['semicircle_radius']
+t.circle(semicircle_radius + 10)",2.2,False,0.0209,visual_iou=0.021; vars=['semicircle_radius'],False,the two snippets draw entirely different geometric shapes and patterns.,llm_after_visual_false
 69,q1,..\Datasets\TurtleBench\Tasks\69\image\69.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -56828,7 +56828,7 @@ def draw_shape(t):
         t.right(90)
 
 semicircle_radius = 100
-draw_shape(t)",1.4,False,0.0145,visual_iou=0.015; vars=['semicircle_radius']
+draw_shape(t)",1.4,False,0.0145,visual_iou=0.015; vars=['semicircle_radius'],False,"the model code draws four semicircles forming a flower-like shape, while the ground truth code draws a series of connected semicircles forming a different path.",llm_after_visual_false
 69,q3,..\Datasets\TurtleBench\Tasks\69\image\69.png,"creates the given shape without the semicircles at the top and the bottom.
 
 Constraint - Use these variables strictly:
@@ -67155,7 +67155,7 @@ t.goto(-100, 0)
 t.pendown()
 t.goto(0, 0)
 t.penup()
-t.goto(",422.02,False,0.0,"model_exec_error: '(' was never closed (<string>, line 10314)"
+t.goto(",422.02,False,0.0,"model_exec_error: '(' was never closed (<string>, line 10314)",False,"the model code is a chaotic, repetitive mess of redundant commands that does not produce a clean geometric shape, whereas the ground truth code draws a specific, structured pattern.",llm_after_visual_false
 69,q2,..\Datasets\TurtleBench\Tasks\69\image\69.png,"creates the given shape without the semicircles on the left and the right.
 
 Constraint - Use these variables strictly:
@@ -67224,7 +67224,7 @@ t.pendown()
 t.circle(semicircle_radius / math.sqrt(2), 90)
 t.circle(semicircle_radius / math.sqrt(2), 90)
 t.circle(semicircle_radius / math.sqrt(2), 90)
-t.circle(semicircle_radius / math.sqrt(2), 90)",2.62,False,0.032,visual_iou=0.032; vars=['semicircle_radius']
+t.circle(semicircle_radius / math.sqrt(2), 90)",2.62,False,0.032,visual_iou=0.032; vars=['semicircle_radius'],False,"the model code draws four overlapping semicircles and a square, while the ground truth code draws a completely different geometric pattern of lines and arcs.",llm_after_visual_false
 70,q1,..\Datasets\TurtleBench\Tasks\70\image\70.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67299,7 +67299,7 @@ small_triangle_side = 50
 t.hideturtle()
 t.tracer(0, 0)
 draw_complex_shape(t, small_triangle_side * 2)
-t.update()",2.94,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'tracer'
+t.update()",2.94,False,0.0,model_exec_error: 'FakeTurtle' object has no attribute 'tracer',False,"the model code draws a complex fractal-like arrangement of triangles, while the ground truth code draws a simple triangular grid pattern.",llm_after_visual_false
 70,q3,..\Datasets\TurtleBench\Tasks\70\image\70.png,"in the given shape replaces the larger triangle with a square of the same side length while extending the pattern of smaller triangles to the square.
 
 Constraint - Use these variables strictly:
@@ -67363,7 +67363,7 @@ small_triangle_side = 50
 t.speed(0)
 t.hideturtle()
 
-draw_complex_shape(t, small_triangle_side)",2.35,False,0.0554,visual_iou=0.055; vars=['small_triangle_side']
+draw_complex_shape(t, small_triangle_side)",2.35,False,0.0554,visual_iou=0.055; vars=['small_triangle_side'],False,"the model code draws a square with triangles attached to its sides, while the ground truth code draws a complex pattern of overlapping triangles that does not form the same shape.",llm_after_visual_false
 70,q2,..\Datasets\TurtleBench\Tasks\70\image\70.png,"creates the given shape but with only the middle triangle on each side of the larger triangle.
 
 Constraint - Use these variables strictly:
@@ -67421,7 +67421,7 @@ draw_small_triangle(t, 0, 0, 0)
 t.penup()
 t.goto(small_triangle_side, 0)
 t.pendown()
-draw_small_triangle(t, 0, 0, 0)",2.67,False,0.0043,visual_iou=0.004; vars=['small_triangle_side']
+draw_small_triangle(t, 0, 0, 0)",2.67,False,0.0043,visual_iou=0.004; vars=['small_triangle_side'],False,"the model code draws six separate triangles at specific coordinates, while the ground truth code draws a complex pattern of connected triangles and lines.",llm_after_visual_false
 71,q1,..\Datasets\TurtleBench\Tasks\71\image\71.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67438,7 +67438,7 @@ for i in range(181):
     x = radius * math.sin(angle)
     y = radius * math.cos(angle)
     t.goto(x, y)
-t.end_fill()",0.9,False,0.0049,visual_iou=0.005; vars=['radius']
+t.end_fill()",0.9,False,0.0049,visual_iou=0.005; vars=['radius'],True,both draw a semicircle of the same radius.,llm_after_visual_false
 72,q1,..\Datasets\TurtleBench\Tasks\72\image\72.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67457,7 +67457,7 @@ t.pendown()
 
 for _ in range(4):
     t.circle(radius)
-    t.left(90)",1.1,False,0.0499,visual_iou=0.050; vars=['radius']
+    t.left(90)",1.1,False,0.0499,visual_iou=0.050; vars=['radius'],False,"the model code draws four full circles in a clover pattern, while the ground truth draws a different path with partial arcs.",llm_after_visual_false
 73,q1,..\Datasets\TurtleBench\Tasks\73\image\73.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67500,7 +67500,7 @@ t.penup()
 t.goto(-100/3 + largest_triangle_side/3 * math.cos(math.pi/6) + largest_triangle_side/3 * math.cos(math.pi/6), -50 + largest_triangle_side * math.sqrt(3)/6 + largest_triangle_side/3 * math.sin(math.pi/6) - largest_triangle_side/3 * math.sin(math.pi/6))
 t.pendown()
 
-draw_triangle(largest_triangle_side/3)",2.41,False,0.0121,visual_iou=0.012; vars=['largest_triangle_side']
+draw_triangle(largest_triangle_side/3)",2.41,False,0.0121,visual_iou=0.012; vars=['largest_triangle_side'],False,"the model code draws a large triangle with three smaller triangles attached, while the ground truth draws a large triangle with one smaller triangle inside/overlapping.",llm_after_visual_false
 74,q1,..\Datasets\TurtleBench\Tasks\74\image\74.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67513,7 +67513,7 @@ t.goto(-100, -100)
 t.pendown()
 for _ in range(4):
     t.forward(square_side)
-    t.left(90)",3.01,False,0.7509,visual_iou=0.751; vars=['square_side']
+    t.left(90)",3.01,False,0.7509,visual_iou=0.751; vars=['square_side'],False,"the first snippet draws a closed square, while the second snippet draws an open three-sided path.",llm_after_visual_false
 75,q1,..\Datasets\TurtleBench\Tasks\75\image\75.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67567,7 +67567,7 @@ t.forward(half_side * math.sqrt(2))
 t.left(90)
 t.forward(half_side * math.sqrt(2))
 t.left(90)
-t.forward(half_side * math.sqrt(2))",2.22,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.forward(half_side * math.sqrt(2))",2.22,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws three separate shapes (a square and two rotated squares), while the ground truth draws one square and one rotated square.",llm_after_visual_false
 76,q1,..\Datasets\TurtleBench\Tasks\76\image\76.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -67585,7 +67585,7 @@ angle = 144  # Interior angle of a regular pentagon in degrees
 
 for _ in range(5):
     t.forward(pentagon_side)
-    t.left(angle)",1.14,False,0.0058,visual_iou=0.006; vars=['pentagon_side']
+    t.left(angle)",1.14,False,0.0058,visual_iou=0.006; vars=['pentagon_side'],False,"the model code draws a pentagram (star) due to the 144-degree turn, while the ground truth draws a regular pentagon.",llm_after_visual_false
 77,q1,..\Datasets\TurtleBench\Tasks\77\image\77.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80421,7 +80421,7 @@ t.goto(0, 0)
 t.pendown()
 
 def draw_pentagon():
-    for i in range(5",436.36,False,0.0,"model_exec_error: '(' was never closed (<string>, line 12822)"
+    for i in range(5",436.36,False,0.0,"model_exec_error: '(' was never closed (<string>, line 12822)",False,"The model code draws a pentagon and a pentagram (star) using different geometric logic and parameters than the ground truth code, which uses a different approach to calculate the star's side length and orientation.",llm_after_visual_false
 78,q1,..\Datasets\TurtleBench\Tasks\78\image\78.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80467,7 +80467,7 @@ def draw_shape():
     t.forward(triangle_side)
     t.end_fill()
 
-draw_shape()",2.01,False,0.0116,visual_iou=0.012; vars=['triangle_side']
+draw_shape()",2.01,False,0.0116,visual_iou=0.012; vars=['triangle_side'],False,"the model code draws a complex overlapping triangle pattern with a fill, while the ground truth code draws three separate triangles rotated around a central point.",llm_after_visual_false
 79,q1,..\Datasets\TurtleBench\Tasks\79\image\79.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80505,7 +80505,7 @@ t.forward(triangle_side * math.sin(math.radians(60)))
 t.penup()
 t.goto(100, -100)
 t.pendown()
-draw_triangle()",2.17,False,0.0096,visual_iou=0.010; vars=['triangle_side']
+draw_triangle()",2.17,False,0.0096,visual_iou=0.010; vars=['triangle_side'],False,"the model code draws three separate shapes (two triangles and a V-shape), while the ground truth draws two overlapping triangles.",llm_after_visual_false
 80,q1,..\Datasets\TurtleBench\Tasks\80\image\80.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80529,7 +80529,7 @@ t.penup()
 t.goto(semicircle_radius, 0)
 t.pendown()
 t.setheading(180)
-t.forward(semicircle_radius)",1.19,False,0.016,visual_iou=0.016; vars=['semicircle_radius']
+t.forward(semicircle_radius)",1.19,False,0.016,visual_iou=0.016; vars=['semicircle_radius'],False,"the model draws a semicircle and a diameter, while the ground truth draws a semicircle and a perpendicular line segment.",llm_after_visual_false
 81,q1,..\Datasets\TurtleBench\Tasks\81\image\81.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80569,7 +80569,7 @@ t.right(90)
 t.forward(semicircle_radius)
 t.left(90)
 t.pendown()
-t.circle(semicircle_radius/2, 180)",2.38,False,0.1197,visual_iou=0.120; vars=['semicircle_radius']
+t.circle(semicircle_radius/2, 180)",2.38,False,0.1197,visual_iou=0.120; vars=['semicircle_radius'],False,"the model code draws multiple semicircles at different positions, while the ground truth draws full circles and a line.",llm_after_visual_false
 82,q1,..\Datasets\TurtleBench\Tasks\82\image\82.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80621,7 +80621,7 @@ t.goto(circle_radius, circle_radius)
 t.penup()
 t.goto(-circle_radius, circle_radius)
 t.pendown()
-t.goto(circle_radius, -circle_radius)",1.64,False,0.3496,visual_iou=0.350; vars=['circle_radius']
+t.goto(circle_radius, -circle_radius)",1.64,False,0.3496,visual_iou=0.350; vars=['circle_radius'],False,"the model code draws a circle with an inscribed 8-pointed star (cross and diagonals), while the ground truth code draws a circle with a square and additional lines.",llm_after_visual_false
 83,q1,..\Datasets\TurtleBench\Tasks\83\image\83.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80665,7 +80665,7 @@ t.speed(0)
 t.penup()
 t.goto(0, -large_triangle_side * math.sqrt(3)/6)
 t.pendown()
-draw_triangular_triangles(t, large_triangle_side)",2.21,False,0.0295,visual_iou=0.029; vars=['large_triangle_side']
+draw_triangular_triangles(t, large_triangle_side)",2.21,False,0.0295,visual_iou=0.029; vars=['large_triangle_side'],False,"the model code draws two smaller triangles of size/3, while the ground truth draws a sequence of triangles with different sizes (size, size/2, and size/4).",llm_after_visual_false
 84,q1,..\Datasets\TurtleBench\Tasks\84\image\84.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80697,7 +80697,7 @@ t.pendown()
 for _ in range(4):
     t.forward(radius)
     t.backward(radius)
-    t.left(90)",1.1,False,0.0766,visual_iou=0.077; vars=['radius']
+    t.left(90)",1.1,False,0.0766,visual_iou=0.077; vars=['radius'],False,"the model code draws a complex spirograph-like flower and a cross, while the ground truth draws a different geometric pattern and a single circle.",llm_after_visual_false
 85,q1,..\Datasets\TurtleBench\Tasks\85\image\85.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80764,7 +80764,7 @@ t.forward(150)
 t.left(120)
 t.forward(120)
 t.left(60)
-t.forward(150)",2.92,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+t.forward(150)",2.92,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,"the model code draws multiple distinct triangles and lines, while the ground truth code draws a complex sequence of polygons.",llm_after_visual_false
 86,q1,..\Datasets\TurtleBench\Tasks\86\image\86.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80824,7 +80824,7 @@ def draw_shape():
 
     t.hideturtle()
 
-draw_shape()",2.09,False,0.0,gt_exec_error: name 'triangle_sides' is not defined
+draw_shape()",2.09,False,0.0,gt_exec_error: name 'triangle_sides' is not defined,False,"The model code draws a star-like pattern of five pentagons, while the ground truth code draws a different arrangement of three polygons.",llm_after_visual_false
 87,q1,..\Datasets\TurtleBench\Tasks\87\image\87.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80909,7 +80909,7 @@ def draw_shape():
     t.right(60)
     t.forward(100)
 
-draw_shape()",2.91,False,0.0,gt_exec_error: name 'triangle_sides' is not defined
+draw_shape()",2.91,False,0.0,gt_exec_error: name 'triangle_sides' is not defined,False,"the model code draws three hexagons and several lines, while the ground truth code draws three polygons of different sizes and a triangle structure.",llm_after_visual_false
 88,q1,..\Datasets\TurtleBench\Tasks\88\image\88.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -80971,7 +80971,7 @@ t.left(90)
 t.forward(triangle_sides[1])
 t.left(90)
 t.forward(triangle_sides[2])
-t.end_fill()",2.06,False,0.0,model_exec_error: name 'triangle_sides' is not defined
+t.end_fill()",2.06,False,0.0,model_exec_error: name 'triangle_sides' is not defined,False,"the model code draws a triangle and two rectangles, while the ground truth code draws two squares and various lines.",llm_after_visual_false
 89,q1,..\Datasets\TurtleBench\Tasks\89\image\89.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -81012,7 +81012,7 @@ def draw_lines():
     t.goto(0, 0)
 
 draw_diamond()
-draw_lines()",1.74,False,0.0065,visual_iou=0.006; vars=['large_square_side']
+draw_lines()",1.74,False,0.0065,visual_iou=0.006; vars=['large_square_side'],False,"the model code draws a single large square with two internal lines, while the ground truth draws four smaller squares arranged in a radial pattern.",llm_after_visual_false
 91,q1,..\Datasets\TurtleBench\Tasks\91\image\91.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82036,7 +82036,7 @@ t.pendown()
 
 t.pensize(3)
 t.setheading(0)
-t.forward(triangle_side * math.sqrt(3) / 2)",34.8,False,0.0388,visual_iou=0.039; vars=['triangle_side']
+t.forward(triangle_side * math.sqrt(3) / 2)",34.8,False,0.0388,visual_iou=0.039; vars=['triangle_side'],False,"the model code draws a complex series of overlapping lines and shapes including a hexagon and internal diagonals, while the ground truth code draws a flower-like pattern of six triangles.",llm_after_visual_false
 92,q1,..\Datasets\TurtleBench\Tasks\92\image\92.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82079,7 +82079,7 @@ t.goto(0, 0)
 t.pendown()
 
 t.left(60)
-draw_triangle()",1.47,False,0.0139,visual_iou=0.014; vars=['triangle_side']
+draw_triangle()",1.47,False,0.0139,visual_iou=0.014; vars=['triangle_side'],False,"the model code draws a complex arrangement of triangles and lines, while the ground truth code draws a single equilateral triangle three times in the same spot.",llm_after_visual_false
 93,q1,..\Datasets\TurtleBench\Tasks\93\image\93.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82119,7 +82119,7 @@ def draw_shape(t):
     t.forward(pentagon_side)
     t.penup()
     t.goto(0, 0)
-    t.pendown()",2.22,False,0.0,missing_drawn_strokes
+    t.pendown()",2.22,False,0.0,missing_drawn_strokes,False,"the model code draws two pentagons and an extra line segment, while the ground truth code draws two overlapping pentagons.",llm_after_visual_false
 94,q1,..\Datasets\TurtleBench\Tasks\94\image\94.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82168,7 +82168,7 @@ t.goto(0, 0)
 t.right(18)
 t.pendown()
 
-draw_pentagon(t, pentagon_side * 0.7, 0)",1.73,False,0.0266,visual_iou=0.027; vars=['pentagon_side']
+draw_pentagon(t, pentagon_side * 0.7, 0)",1.73,False,0.0266,visual_iou=0.027; vars=['pentagon_side'],False,"the model code draws four pentagons of varying sizes and positions, while the ground truth code draws three pentagons of the same size.",llm_after_visual_false
 95,q1,..\Datasets\TurtleBench\Tasks\95\image\95.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82213,7 +82213,7 @@ def draw_shape(t):
 pentagon_side = 100
 t.speed(0)
 t.hideturtle()
-draw_shape(t)",1.73,False,0.0725,visual_iou=0.072; vars=['pentagon_side']
+draw_shape(t)",1.73,False,0.0725,visual_iou=0.072; vars=['pentagon_side'],False,"the model code draws three distinct pentagons at different locations, while the ground truth code draws three pentagons sharing a common vertex or overlapping differently.",llm_after_visual_false
 96,q1,..\Datasets\TurtleBench\Tasks\96\image\96.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82234,7 +82234,7 @@ for _ in range(8):
     t.forward(side)
     t.right(90)
     t.forward(side)
-    t.left(45)",1.45,False,0.0029,visual_iou=0.003; vars=['side']
+    t.left(45)",1.45,False,0.0029,visual_iou=0.003; vars=['side'],False,the model code draws a complex zigzag pattern while the ground truth code draws a simple octagon.,llm_after_visual_false
 97,q1,..\Datasets\TurtleBench\Tasks\97\image\97.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82282,7 +82282,7 @@ t.speed(0)
 t.hideturtle()
 t.pensize(2)
 
-draw_shape(t)",1.73,False,0.0384,visual_iou=0.038; vars=['star_side']
+draw_shape(t)",1.73,False,0.0384,visual_iou=0.038; vars=['star_side'],False,"the model code draws two stars and a square, while the ground truth code draws two octagons.",llm_after_visual_false
 99,q1,..\Datasets\TurtleBench\Tasks\99\image\99.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82313,7 +82313,7 @@ def draw_segment(angle):
     t.right(180)
 
 draw_segment(45)
-draw_segment(-45)",1.18,False,0.0044,visual_iou=0.004; vars=['side']
+draw_segment(-45)",1.18,False,0.0044,visual_iou=0.004; vars=['side'],False,"the model code draws two distinct geometric shapes (a mirrored pair of rectangles), while the ground truth code draws a single complex path.",llm_after_visual_false
 100,q1,..\Datasets\TurtleBench\Tasks\100\image\100.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82379,7 +82379,7 @@ t.right(60)
 t.backward(large_triangle_side)
 t.left(180)
 t.pendown()
-draw_large_triangle()",2.19,False,0.0029,"visual_iou=0.003; vars=['large_triangle_side', 'small_triangle_side']"
+draw_large_triangle()",2.19,False,0.0029,"visual_iou=0.003; vars=['large_triangle_side', 'small_triangle_side']",False,"the model code draws a complex fractal-like arrangement of triangles, while the ground truth code draws a different set of overlapping triangles with different positioning and orientations.",llm_after_visual_false
 101,q1,..\Datasets\TurtleBench\Tasks\101\image\101.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82419,7 +82419,7 @@ t.begin_fill()
 for _ in range(4):
     t.forward(square_side)
     t.left(90)
-t.end_fill()",1.29,True,0.9594,"visual_iou=0.959; vars=['square_side', 'triangle_side']"
+t.end_fill()",1.29,True,0.9594,"visual_iou=0.959; vars=['square_side', 'triangle_side']",True,"visual_iou=0.959; vars=['square_side', 'triangle_side']",visual
 102,q1,..\Datasets\TurtleBench\Tasks\102\image\102.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82461,7 +82461,7 @@ t.pendown()
 t.goto(0, 100)
 t.goto(triangle_side, -100)
 t.goto(-triangle_side, -100)
-t.goto(0, 100)",2.46,False,0.0849,"visual_iou=0.085; vars=['square_side', 'triangle_side']"
+t.goto(0, 100)",2.46,False,0.0849,"visual_iou=0.085; vars=['square_side', 'triangle_side']",False,"the model code draws a square and a separate triangle, while the ground truth code draws a triangle and a square with different orientations and relative positioning.",llm_after_visual_false
 103,q1,..\Datasets\TurtleBench\Tasks\103\image\103.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82500,7 +82500,7 @@ draw_diamond()
 t.right(60)
 draw_diamond()
 t.right(60)
-draw_diamond()",1.52,False,0.2573,visual_iou=0.257; vars=['triangle_side']
+draw_diamond()",1.52,False,0.2573,visual_iou=0.257; vars=['triangle_side'],False,"the model code draws a complex geometric pattern of overlapping diamonds, while the ground truth code draws a series of triangles along a line.",llm_after_visual_false
 104,q1,..\Datasets\TurtleBench\Tasks\104\image\104.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82542,7 +82542,7 @@ t.penup()
 t.goto(-radius, 0)
 t.pendown()
 
-t.forward(2 * radius)",1.35,False,0.0185,visual_iou=0.019; vars=['triangle_side']
+t.forward(2 * radius)",1.35,False,0.0185,visual_iou=0.019; vars=['triangle_side'],False,"the shapes drawn are entirely different, consisting of a circle and a triangle in the first code versus a complex polygon pattern and a circle in the second.",llm_after_visual_false
 105,q1,..\Datasets\TurtleBench\Tasks\105\image\105.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82609,7 +82609,7 @@ t.left(90)
 t.forward(small_square_side)
 t.left(90)
 t.forward(small_square_side)
-t.end_fill()",2.06,False,0.1634,visual_iou=0.163; vars=['small_square_side']
+t.end_fill()",2.06,False,0.1634,visual_iou=0.163; vars=['small_square_side'],False,"the model code draws three separate squares in a specific arrangement, while the ground truth code draws a different configuration of squares with additional connecting lines.",llm_after_visual_false
 106,q1,..\Datasets\TurtleBench\Tasks\106\image\106.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82661,7 +82661,7 @@ t.circle(100)
 
 t.penup()
 t.goto(-100, -100)
-t.pendown()",1.56,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.pendown()",1.56,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square divided into four quadrants with a circle inscribed in the top-right quadrant, while the ground truth code draws a different arrangement of squares and a circle.",llm_after_visual_false
 107,q1,..\Datasets\TurtleBench\Tasks\107\image\107.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82692,7 +82692,7 @@ t.penup()
 t.goto(150, 0)
 t.pendown()
 
-t.circle(small_circle_radius)",1.07,False,0.3373,"visual_iou=0.337; vars=['large_circle_radius', 'small_circle_radius']"
+t.circle(small_circle_radius)",1.07,False,0.3373,"visual_iou=0.337; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws three distinct circles in a row, while the ground truth code draws a complex overlapping pattern of circles.",llm_after_visual_false
 108,q1,..\Datasets\TurtleBench\Tasks\108\image\108.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82713,7 +82713,7 @@ t.penup()
 t.goto(0, small_circle_radius)
 t.pendown()
 
-t.circle(small_circle_radius)",1.01,False,0.0449,"visual_iou=0.045; vars=['large_circle_radius', 'small_circle_radius']"
+t.circle(small_circle_radius)",1.01,False,0.0449,"visual_iou=0.045; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two separate circles, while the ground truth code draws a single circle and a second circle starting from a different position.",llm_after_visual_false
 109,q1,..\Datasets\TurtleBench\Tasks\109\image\109.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82751,7 +82751,7 @@ t.pendown()
 
 t.right(180)
 t.circle(small_semicircle_radius, 180)
-t.right(180)",1.48,False,0.0079,visual_iou=0.008; vars=['large_semicircle_radius']
+t.right(180)",1.48,False,0.0079,visual_iou=0.008; vars=['large_semicircle_radius'],False,"the model code draws a large semicircle and two small semicircles, while the ground truth draws two full small circles and a large semicircle.",llm_after_visual_false
 110,q1,..\Datasets\TurtleBench\Tasks\110\image\110.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82888,7 +82888,7 @@ def draw_venn_circle(center_x, center_y, radius, angle):
 draw_venn_circle(-50, 0, semicircle_radius, 0)
 draw_venn_circle(50, 0, semicircle_radius, 180)
 draw_venn_circle(0, 50, semicircle_radius, 90)
-draw_venn_circle(0, -50, semicircle_radius, 270)",6.42,False,0.0226,visual_iou=0.023; vars=['semicircle_radius']
+draw_venn_circle(0, -50, semicircle_radius, 270)",6.42,False,0.0226,visual_iou=0.023; vars=['semicircle_radius'],False,"the two snippets draw entirely different geometric patterns consisting of different numbers, positions, and orientations of arcs.",llm_after_visual_false
 112,q1,..\Datasets\TurtleBench\Tasks\112\image\112.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82929,7 +82929,7 @@ t.pendown()
 
 t.left(90)
 t.circle(semicircle_radius, 180)
-t.right(90)",1.83,False,0.0059,"visual_iou=0.006; vars=['semicircle_radius', 'triangle_side']"
+t.right(90)",1.83,False,0.0059,"visual_iou=0.006; vars=['semicircle_radius', 'triangle_side']",False,"the model code draws a triangle with two separate semicircles, while the ground truth code draws a single continuous path combining a triangle and a semicircle.",llm_after_visual_false
 113,q1,..\Datasets\TurtleBench\Tasks\113\image\113.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82981,7 +82981,7 @@ t.pendown()
 
 t.begin_fill()
 t.circle(semicircle_radius, 180)
-t.end_fill()",1.85,False,0.0088,"visual_iou=0.009; vars=['semicircle_radius', 'square_side']"
+t.end_fill()",1.85,False,0.0088,"visual_iou=0.009; vars=['semicircle_radius', 'square_side']",False,"the model code draws a square with four semicircles inside, while the ground truth code draws a complex path with different segment lengths and orientations.",llm_after_visual_false
 114,q1,..\Datasets\TurtleBench\Tasks\114\image\114.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -82999,7 +82999,7 @@ t.pendown()
 for _ in range(2):
     t.circle(semicircle_radius, 180)
     t.left(180)
-    t.forward(semicircle_radius * 2)",0.83,False,0.0155,visual_iou=0.016; vars=['semicircle_radius']
+    t.forward(semicircle_radius * 2)",0.83,False,0.0155,visual_iou=0.016; vars=['semicircle_radius'],False,"the model code draws a shape with straight lines, while the ground truth code draws two overlapping semicircles.",llm_after_visual_false
 115,q1,..\Datasets\TurtleBench\Tasks\115\image\115.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -83060,7 +83060,7 @@ t.left(90)
 t.forward(small_square_side)
 t.left(90)
 t.forward(small_square_side)
-t.end_fill()",2.11,False,0.0855,visual_iou=0.085; vars=['small_square_side']
+t.end_fill()",2.11,False,0.0855,visual_iou=0.085; vars=['small_square_side'],False,"the model code draws three overlapping squares in a specific arrangement, while the ground truth code draws three squares rotating around a single shared vertex.",llm_after_visual_false
 116,q1,..\Datasets\TurtleBench\Tasks\116\image\116.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -83145,7 +83145,7 @@ t.forward(small_square_side)
 t.setheading(180)
 t.forward(small_square_side)
 t.setheading(270)
-t.forward(small_square_side)",3.08,False,0.0,gt_exec_error: name 'sqrt' is not defined
+t.forward(small_square_side)",3.08,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a square with internal cross-lines, while the ground truth code draws a complex pattern of overlapping squares and additional lines.",llm_after_visual_false
 117,q1,..\Datasets\TurtleBench\Tasks\117\image\117.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -83197,7 +83197,7 @@ t.speed(0)
 t.penup()
 t.goto(-small_square_side, -small_square_side)
 t.pendown()
-draw_shape()",1.83,False,0.0,gt_exec_error: name 'sqrt' is not defined
+draw_shape()",1.83,False,0.0,gt_exec_error: name 'sqrt' is not defined,False,"the model code draws a complex pattern of four squares with internal diagonals, while the ground truth code draws a single square with a specific set of intersecting lines repeated four times.",llm_after_visual_false
 118,q1,..\Datasets\TurtleBench\Tasks\118\image\118.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -83294,7 +83294,7 @@ def setup():
     t.speed(0)
     draw_shape()
 
-setup()",3.4,False,0.0,model_exec_error: name 'squares_sides' is not defined
+setup()",3.4,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"The model code draws a complex arrangement of multiple rectangles, while the ground truth code draws four squares and a diagonal line.",llm_after_visual_false
 119,q1,..\Datasets\TurtleBench\Tasks\119\image\119.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92295,7 +92295,7 @@ t.forward(squares_sides[3] - 40)
 t.left(90)
 t.forward(40)
 t.left(90)
-t.forward",438.89,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.forward",438.89,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"The model code draws a series of complex, overlapping paths based on `squares_sides` with specific offsets, while the ground truth code draws four distinct squares.",llm_after_visual_false
 120,q1,..\Datasets\TurtleBench\Tasks\120\image\120.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92397,7 +92397,7 @@ t.forward(40)
 t.left(90)
 t.forward(40)
 t.left(90)
-t.end_fill()",3.69,False,0.0,model_exec_error: name 'squares_sides' is not defined
+t.end_fill()",3.69,False,0.0,model_exec_error: name 'squares_sides' is not defined,False,"the model code draws a series of rectangles and complex polygons, while the ground truth draws four squares and a diagonal line.",llm_after_visual_false
 121,q1,..\Datasets\TurtleBench\Tasks\121\image\121.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92419,7 +92419,7 @@ t.pendown()
 
 for _ in range(2):
     t.circle(radius, 90)
-    t.circle(radius/2, 90)",0.85,False,0.0074,visual_iou=0.007; vars=['radius']
+    t.circle(radius/2, 90)",0.85,False,0.0074,visual_iou=0.007; vars=['radius'],False,"the model code draws a series of arcs, while the ground truth code draws a combination of an arc and straight line segments.",llm_after_visual_false
 122,q1,..\Datasets\TurtleBench\Tasks\122\image\122.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92448,7 +92448,7 @@ def draw_large_shape():
         draw_small_diamond()
         t.right(90)
 
-draw_large_shape()",1.29,False,0.0597,visual_iou=0.060; vars=['small_diamond_side']
+draw_large_shape()",1.29,False,0.0597,visual_iou=0.060; vars=['small_diamond_side'],False,"the model code draws a four-pointed star-like pattern with 90-degree symmetry, while the ground truth code draws a hexagon-based pattern.",llm_after_visual_false
 123,q1,..\Datasets\TurtleBench\Tasks\123\image\123.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92500,7 +92500,7 @@ t.forward(pentagon_side / 2)
 t.left(108)
 t.forward(pentagon_side / 2)
 t.left(144)
-t.end_fill()",1.94,False,0.0241,visual_iou=0.024; vars=['pentagon_side']
+t.end_fill()",1.94,False,0.0241,visual_iou=0.024; vars=['pentagon_side'],False,"the model code draws two pentagons plus an additional complex star-like shape, while the ground truth only draws two overlapping pentagons.",llm_after_visual_false
 124,q1,..\Datasets\TurtleBench\Tasks\124\image\124.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92540,7 +92540,7 @@ def draw_shape(t):
     t.left(90)
     t.forward(hexagon_side)
     t.left(90)
-    t.forward(hexagon_side/2)",1.63,False,0.0,missing_drawn_strokes
+    t.forward(hexagon_side/2)",1.63,False,0.0,missing_drawn_strokes,False,the model code includes additional lines forming a rectangle/cross shape that are absent in the ground truth code.,llm_after_visual_false
 125,q1,..\Datasets\TurtleBench\Tasks\125\image\125.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92605,7 +92605,7 @@ def draw_shape():
 
 circle_radius = 100
 t.speed(0)
-draw_shape()",3.38,False,0.0076,visual_iou=0.008; vars=['circle_radius']
+draw_shape()",3.38,False,0.0076,visual_iou=0.008; vars=['circle_radius'],False,"the model code draws two separate circles and two rectangles, while the ground truth draws a different configuration of circles and a square.",llm_after_visual_false
 126,q1,..\Datasets\TurtleBench\Tasks\126\image\126.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92653,7 +92653,7 @@ t.goto(50, -circle_radius/2)
 t.penup()
 t.goto(-50, circle_radius/2)
 t.pendown()
-t.goto(50, circle_radius/2)",3.01,False,0.1147,visual_iou=0.115; vars=['circle_radius']
+t.goto(50, circle_radius/2)",3.01,False,0.1147,visual_iou=0.115; vars=['circle_radius'],False,"the model code draws two ellipses and connecting lines, while the ground truth code draws a complex path of arcs and straight lines.",llm_after_visual_false
 128,q1,..\Datasets\TurtleBench\Tasks\128\image\128.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92689,7 +92689,7 @@ t.pendown()
 for _ in range(4):
     t.forward(large_circle_radius)
     t.backward(large_circle_radius)
-    t.right(90)",1.25,False,0.8931,"visual_iou=0.893; vars=['large_circle_radius', 'small_circle_radius']"
+    t.right(90)",1.25,False,0.8931,"visual_iou=0.893; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws two separate circles and a cross, while the ground truth draws a different configuration of arcs and a single circle.",llm_after_visual_false
 129,q1,..\Datasets\TurtleBench\Tasks\129\image\129.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92736,7 +92736,7 @@ t.pendown()
 
 t.begin_fill()
 t.circle(small_circle_radius)
-t.end_fill()",2.39,False,0.0278,"visual_iou=0.028; vars=['large_circle_radius', 'small_circle_radius']"
+t.end_fill()",2.39,False,0.0278,"visual_iou=0.028; vars=['large_circle_radius', 'small_circle_radius']",False,"the model code draws a complex pattern of multiple circles, while the ground truth code draws a single circle and a partial arc.",llm_after_visual_false
 130,q1,..\Datasets\TurtleBench\Tasks\130\image\130.png,"creates exactly the same shape.
 
 Constraint - Use these variables strictly:
@@ -92805,4 +92805,4 @@ t.goto(100, -100)
 t.penup()
 t.goto(-100, -100)
 t.pendown()
-t.goto(100, 100)",2.63,False,0.0977,visual_iou=0.098; vars=['semicircle_radius']
+t.goto(100, 100)",2.63,False,0.0977,visual_iou=0.098; vars=['semicircle_radius'],False,"the model code draws a square with four semicircles and two diagonals, while the ground truth code draws a completely different geometric pattern.",llm_after_visual_false
